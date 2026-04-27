@@ -1,0 +1,3911 @@
+{
+  "generatedAt": "2026-04-27T10:26:27.310Z",
+  "totalFandoms": 550,
+  "categories": [
+    {
+      "name": "Anime & Manga",
+      "fandoms": [
+        {
+          "name": "僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia (Anime *a* Manga)/works",
+          "count": 356002,
+          "rank": 1,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Haikyuu!!",
+          "url": "https://archiveofourown.org/tags/Haikyuu!!/works",
+          "count": 169935,
+          "rank": 2,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Sherlock Holmes & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Sherlock Holmes *a* Related Fandoms/works",
+          "count": 139515,
+          "rank": 3,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Naruto (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Naruto (Anime *a* Manga)/works",
+          "count": 139162,
+          "rank": 4,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "呪術廻戦 | Jujutsu Kaisen (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/呪術廻戦 | Jujutsu Kaisen (Anime *a* Manga)/works",
+          "count": 115699,
+          "rank": 5,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "文豪ストレイドッグス | Bungou Stray Dogs",
+          "url": "https://archiveofourown.org/tags/文豪ストレイドッグス | Bungou Stray Dogs/works",
+          "count": 102869,
+          "rank": 6,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "One Piece - All Media Types",
+          "url": "https://archiveofourown.org/tags/One Piece - All Media Types/works",
+          "count": 95919,
+          "rank": 7,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "One Piece (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/One Piece (Anime *a* Manga)/works",
+          "count": 95038,
+          "rank": 8,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Shingeki no Kyojin | Attack on Titan",
+          "url": "https://archiveofourown.org/tags/Shingeki no Kyojin | Attack on Titan/works",
+          "count": 94699,
+          "rank": 9,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Pocket Monsters | Pokemon - All Media Types",
+          "url": "https://archiveofourown.org/tags/Pocket Monsters | Pokemon - All Media Types/works",
+          "count": 82451,
+          "rank": 10,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Dangan Ronpa Series",
+          "url": "https://archiveofourown.org/tags/Dangan Ronpa Series/works",
+          "count": 71824,
+          "rank": 11,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "ジョジョの奇妙な冒険 | JoJo no Kimyou na Bouken | JoJo's Bizarre Adventure",
+          "url": "https://archiveofourown.org/tags/ジョジョの奇妙な冒険 | JoJo no Kimyou na Bouken | JoJo's Bizarre Adventure/works",
+          "count": 66258,
+          "rank": 12,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Hetalia (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Hetalia (Anime *a* Manga)/works",
+          "count": 62938,
+          "rank": 13,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "鬼滅の刃 | Demon Slayer: Kimetsu no Yaiba (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/鬼滅の刃 | Demon Slayer: Kimetsu no Yaiba (Anime *a* Manga)/works",
+          "count": 49682,
+          "rank": 14,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "The Legend of Zelda & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/The Legend of Zelda *a* Related Fandoms/works",
+          "count": 47432,
+          "rank": 15,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Sonic the Hedgehog - All Media Types",
+          "url": "https://archiveofourown.org/tags/Sonic the Hedgehog - All Media Types/works",
+          "count": 45925,
+          "rank": 16,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "逆転裁判 | Gyakuten Saiban | Ace Attorney",
+          "url": "https://archiveofourown.org/tags/逆転裁判 | Gyakuten Saiban | Ace Attorney/works",
+          "count": 41756,
+          "rank": 17,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Yuri!!! on Ice (Anime)",
+          "url": "https://archiveofourown.org/tags/Yuri!!! on Ice (Anime)/works",
+          "count": 37340,
+          "rank": 18,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Yu-Gi-Oh! Series",
+          "url": "https://archiveofourown.org/tags/Yu-Gi-Oh! Series/works",
+          "count": 33234,
+          "rank": 19,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Blue Lock - All Media Types",
+          "url": "https://archiveofourown.org/tags/Blue Lock - All Media Types/works",
+          "count": 31549,
+          "rank": 20,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Blue Lock (Manga)",
+          "url": "https://archiveofourown.org/tags/Blue Lock (Manga)/works",
+          "count": 30608,
+          "rank": 21,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Bleach (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Bleach (Anime *a* Manga)/works",
+          "count": 30061,
+          "rank": 22,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Fullmetal Alchemist - All Media Types",
+          "url": "https://archiveofourown.org/tags/Fullmetal Alchemist - All Media Types/works",
+          "count": 26484,
+          "rank": 23,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "New Dangan Ronpa V3: Everyone's New Semester of Killing",
+          "url": "https://archiveofourown.org/tags/New Dangan Ronpa V3: Everyone's New Semester of Killing/works",
+          "count": 24864,
+          "rank": 24,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Kuroko no Basuke | Kuroko's Basketball",
+          "url": "https://archiveofourown.org/tags/Kuroko no Basuke | Kuroko's Basketball/works",
+          "count": 23593,
+          "rank": 25,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Fairy Tail",
+          "url": "https://archiveofourown.org/tags/Fairy Tail/works",
+          "count": 23085,
+          "rank": 26,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Fate/stay night & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Fate*s*stay night *a* Related Fandoms/works",
+          "count": 22890,
+          "rank": 27,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Blue Lock (Anime)",
+          "url": "https://archiveofourown.org/tags/Blue Lock (Anime)/works",
+          "count": 21698,
+          "rank": 28,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Hunter X Hunter",
+          "url": "https://archiveofourown.org/tags/Hunter X Hunter/works",
+          "count": 20986,
+          "rank": 29,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "東京卍リベンジャーズ | Tokyo Revengers - All Media Types",
+          "url": "https://archiveofourown.org/tags/東京卍リベンジャーズ | Tokyo Revengers - All Media Types/works",
+          "count": 20638,
+          "rank": 30,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Dragon Ball",
+          "url": "https://archiveofourown.org/tags/Dragon Ball/works",
+          "count": 20090,
+          "rank": 31,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Super Dangan Ronpa 2",
+          "url": "https://archiveofourown.org/tags/Super Dangan Ronpa 2/works",
+          "count": 20069,
+          "rank": 32,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "東京卍リベンジャーズ | Tokyo Revengers (Manga)",
+          "url": "https://archiveofourown.org/tags/東京卍リベンジャーズ | Tokyo Revengers (Manga)/works",
+          "count": 19911,
+          "rank": 33,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Devil May Cry (Gameverse)",
+          "url": "https://archiveofourown.org/tags/Devil May Cry (Gameverse)/works",
+          "count": 19288,
+          "rank": 34,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Kamen Rider - All Media Types",
+          "url": "https://archiveofourown.org/tags/Kamen Rider - All Media Types/works",
+          "count": 18853,
+          "rank": 35,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "名探偵コナン | Detective Conan | Case Closed",
+          "url": "https://archiveofourown.org/tags/名探偵コナン | Detective Conan | Case Closed/works",
+          "count": 18482,
+          "rank": 36,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Yu-Gi-Oh! Duel Monsters (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Yu-Gi-Oh! Duel Monsters (Anime *a* Manga)/works",
+          "count": 17679,
+          "rank": 37,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Katekyou Hitman Reborn!",
+          "url": "https://archiveofourown.org/tags/Katekyou Hitman Reborn!/works",
+          "count": 17223,
+          "rank": 38,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Death Note (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Death Note (Anime *a* Manga)/works",
+          "count": 17115,
+          "rank": 39,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Free!",
+          "url": "https://archiveofourown.org/tags/Free!/works",
+          "count": 16770,
+          "rank": 40,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Gundam & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Gundam *a* Related Fandoms/works",
+          "count": 16629,
+          "rank": 41,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "SK8 the Infinity (Anime)",
+          "url": "https://archiveofourown.org/tags/SK8 the Infinity (Anime)/works",
+          "count": 16286,
+          "rank": 42,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Dangan Ronpa: Trigger Happy Havoc",
+          "url": "https://archiveofourown.org/tags/Dangan Ronpa: Trigger Happy Havoc/works",
+          "count": 16157,
+          "rank": 43,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "InuYasha - A Feudal Fairy Tale",
+          "url": "https://archiveofourown.org/tags/InuYasha - A Feudal Fairy Tale/works",
+          "count": 16070,
+          "rank": 44,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "東京卍リベンジャーズ | Tokyo Revengers (Anime)",
+          "url": "https://archiveofourown.org/tags/東京卍リベンジャーズ | Tokyo Revengers (Anime)/works",
+          "count": 15449,
+          "rank": 45,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Slam Dunk (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Slam Dunk (Anime *a* Manga)/works",
+          "count": 15434,
+          "rank": 46,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Fullmetal Alchemist: Brotherhood & Manga",
+          "url": "https://archiveofourown.org/tags/Fullmetal Alchemist: Brotherhood *a* Manga/works",
+          "count": 14919,
+          "rank": 47,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Fate/Grand Order",
+          "url": "https://archiveofourown.org/tags/Fate*s*Grand Order/works",
+          "count": 14577,
+          "rank": 48,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Kuroshitsuji | Black Butler",
+          "url": "https://archiveofourown.org/tags/Kuroshitsuji | Black Butler/works",
+          "count": 13490,
+          "rank": 49,
+          "category": "Anime & Manga"
+        },
+        {
+          "name": "Pocket Monsters | Pokemon (Anime 1997-2023)",
+          "url": "https://archiveofourown.org/tags/Pocket Monsters | Pokemon (Anime 1997-2023)/works",
+          "count": 12982,
+          "rank": 50,
+          "category": "Anime & Manga"
+        }
+      ]
+    },
+    {
+      "name": "Books & Literature",
+      "fandoms": [
+        {
+          "name": "Harry Potter - J. K. Rowling",
+          "url": "https://archiveofourown.org/tags/Harry Potter - J*d* K*d* Rowling/works",
+          "count": 581693,
+          "rank": 1,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars - All Media Types/works",
+          "count": 251616,
+          "rank": 2,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Sherlock Holmes & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Sherlock Holmes *a* Related Fandoms/works",
+          "count": 139515,
+          "rank": 3,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "A Song of Ice and Fire & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/A Song of Ice and Fire *a* Related Fandoms/works",
+          "count": 113987,
+          "rank": 4,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "J. R. R. Tolkien's Middle-earth Legendarium & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/J*d* R*d* R*d* Tolkien's Middle-earth Legendarium *a* Related Fandoms/works",
+          "count": 112903,
+          "rank": 5,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Dragon Age - All Media Types",
+          "url": "https://archiveofourown.org/tags/Dragon Age - All Media Types/works",
+          "count": 92475,
+          "rank": 6,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu *a* Related Fandoms/works",
+          "count": 91418,
+          "rank": 7,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Doctor Who",
+          "url": "https://archiveofourown.org/tags/Doctor Who/works",
+          "count": 86247,
+          "rank": 8,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Good Omens - All Media Types",
+          "url": "https://archiveofourown.org/tags/Good Omens - All Media Types/works",
+          "count": 80349,
+          "rank": 9,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "魔道祖师 - 墨香铜臭 | Módào Zǔshī - Mòxiāng Tóngxiù",
+          "url": "https://archiveofourown.org/tags/魔道祖师 - 墨香铜臭 | Módào Zǔshī - Mòxiāng Tóngxiù/works",
+          "count": 78529,
+          "rank": 10,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars: Rise of Empire Era - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: Rise of Empire Era - All Media Types/works",
+          "count": 76194,
+          "rank": 11,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Dangan Ronpa Series",
+          "url": "https://archiveofourown.org/tags/Dangan Ronpa Series/works",
+          "count": 71824,
+          "rank": 12,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Percy Jackson and the Olympians & Related Fandoms - All Media Types",
+          "url": "https://archiveofourown.org/tags/Percy Jackson and the Olympians *a* Related Fandoms - All Media Types/works",
+          "count": 71447,
+          "rank": 13,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Dungeons & Dragons (Roleplaying Game)",
+          "url": "https://archiveofourown.org/tags/Dungeons *a* Dragons (Roleplaying Game)/works",
+          "count": 67911,
+          "rank": 14,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "A Song of Ice and Fire - George R. R. Martin",
+          "url": "https://archiveofourown.org/tags/A Song of Ice and Fire - George R*d* R*d* Martin/works",
+          "count": 65532,
+          "rank": 15,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Arthurian Mythology & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Arthurian Mythology *a* Related Fandoms/works",
+          "count": 64672,
+          "rank": 16,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "PRATCHETT Terry - Works",
+          "url": "https://archiveofourown.org/tags/PRATCHETT Terry - Works/works",
+          "count": 54730,
+          "rank": 17,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars: The Clone Wars (2008) - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: The Clone Wars (2008) - All Media Types/works",
+          "count": 52306,
+          "rank": 18,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Lord of the Rings - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Lord of the Rings - All Media Types/works",
+          "count": 52213,
+          "rank": 19,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "GAIMAN Neil - Works",
+          "url": "https://archiveofourown.org/tags/GAIMAN Neil - Works/works",
+          "count": 51925,
+          "rank": 20,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Good Omens - Neil Gaiman & Terry Pratchett",
+          "url": "https://archiveofourown.org/tags/Good Omens - Neil Gaiman *a* Terry Pratchett/works",
+          "count": 50422,
+          "rank": 21,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Forgotten Realms (Roleplaying Game)",
+          "url": "https://archiveofourown.org/tags/Forgotten Realms (Roleplaying Game)/works",
+          "count": 50030,
+          "rank": 22,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Percy Jackson and the Olympians - Rick Riordan",
+          "url": "https://archiveofourown.org/tags/Percy Jackson and the Olympians - Rick Riordan/works",
+          "count": 47078,
+          "rank": 23,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Avatar: The Last Airbender (Cartoon 2005)",
+          "url": "https://archiveofourown.org/tags/Avatar: The Last Airbender (Cartoon 2005)/works",
+          "count": 45562,
+          "rank": 24,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Shadowhunter Chronicles - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Shadowhunter Chronicles - All Media Types/works",
+          "count": 42785,
+          "rank": 25,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Wiedźmin | The Witcher - All Media Types",
+          "url": "https://archiveofourown.org/tags/Wiedźmin | The Witcher - All Media Types/works",
+          "count": 42379,
+          "rank": 26,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Hobbit - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Hobbit - All Media Types/works",
+          "count": 39582,
+          "rank": 27,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars: Rebellion Era - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: Rebellion Era - All Media Types/works",
+          "count": 39538,
+          "rank": 28,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars Prequel Trilogy",
+          "url": "https://archiveofourown.org/tags/Star Wars Prequel Trilogy/works",
+          "count": 38911,
+          "rank": 29,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Silmarillion and other histories of Middle-Earth - J. R. R. Tolkien",
+          "url": "https://archiveofourown.org/tags/The Silmarillion and other histories of Middle-Earth - J*d* R*d* R*d* Tolkien/works",
+          "count": 35427,
+          "rank": 30,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Gravity Falls",
+          "url": "https://archiveofourown.org/tags/Gravity Falls/works",
+          "count": 34347,
+          "rank": 31,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Mass Effect - All Media Types",
+          "url": "https://archiveofourown.org/tags/Mass Effect - All Media Types/works",
+          "count": 31148,
+          "rank": 32,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Game Changers | Heated Rivalry - All Media Types",
+          "url": "https://archiveofourown.org/tags/Game Changers | Heated Rivalry - All Media Types/works",
+          "count": 30722,
+          "rank": 33,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Vampire Diaries & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/The Vampire Diaries *a* Related Fandoms/works",
+          "count": 28942,
+          "rank": 34,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Lord of the Rings - J. R. R. Tolkien",
+          "url": "https://archiveofourown.org/tags/The Lord of the Rings - J*d* R*d* R*d* Tolkien/works",
+          "count": 28031,
+          "rank": 35,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "人渣反派自救系统 - 墨香铜臭 | The Scum Villain's Self-Saving System - Mòxiāng Tóngxiù",
+          "url": "https://archiveofourown.org/tags/人渣反派自救系统 - 墨香铜臭 | The Scum Villain's Self-Saving System - Mòxiāng Tóngxiù/works",
+          "count": 28006,
+          "rank": 36,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "天官赐福 - 墨香铜臭 | Tian Guan Ci Fu | Heaven Official's Blessing - Moxiang Tongxiu",
+          "url": "https://archiveofourown.org/tags/天官赐福 - 墨香铜臭 | Tian Guan Ci Fu | Heaven Official's Blessing - Moxiang Tongxiu/works",
+          "count": 27773,
+          "rank": 37,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Hunger Games Series - All Media Types",
+          "url": "https://archiveofourown.org/tags/Hunger Games Series - All Media Types/works",
+          "count": 27619,
+          "rank": 38,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Les Misérables - All Media Types",
+          "url": "https://archiveofourown.org/tags/Les Misérables - All Media Types/works",
+          "count": 23810,
+          "rank": 39,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Fate/stay night & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Fate*s*stay night *a* Related Fandoms/works",
+          "count": 22890,
+          "rank": 40,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "全职高手 - 蝴蝶蓝 | Quánzhí Gāoshǒu - Húdié Lán",
+          "url": "https://archiveofourown.org/tags/全职高手 - 蝴蝶蓝 | Quánzhí Gāoshǒu - Húdié Lán/works",
+          "count": 22195,
+          "rank": 41,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "All For The Game - Nora Sakavic",
+          "url": "https://archiveofourown.org/tags/All For The Game - Nora Sakavic/works",
+          "count": 22046,
+          "rank": 42,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "The Heroes of Olympus - Rick Riordan",
+          "url": "https://archiveofourown.org/tags/The Heroes of Olympus - Rick Riordan/works",
+          "count": 22028,
+          "rank": 43,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Twilight Series - All Media Types",
+          "url": "https://archiveofourown.org/tags/Twilight Series - All Media Types/works",
+          "count": 21483,
+          "rank": 44,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars Legends - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars Legends - All Media Types/works",
+          "count": 20734,
+          "rank": 45,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Grishaverse - All Media Types",
+          "url": "https://archiveofourown.org/tags/Grishaverse - All Media Types/works",
+          "count": 20167,
+          "rank": 46,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "KING Stephen - Works",
+          "url": "https://archiveofourown.org/tags/KING Stephen - Works/works",
+          "count": 19773,
+          "rank": 47,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Star Wars Original Trilogy",
+          "url": "https://archiveofourown.org/tags/Star Wars Original Trilogy/works",
+          "count": 18623,
+          "rank": 48,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "名探偵コナン | Detective Conan | Case Closed",
+          "url": "https://archiveofourown.org/tags/名探偵コナン | Detective Conan | Case Closed/works",
+          "count": 18482,
+          "rank": 49,
+          "category": "Books & Literature"
+        },
+        {
+          "name": "Ancient Greek Religion & Lore",
+          "url": "https://archiveofourown.org/tags/Ancient Greek Religion *a* Lore/works",
+          "count": 17530,
+          "rank": 50,
+          "category": "Books & Literature"
+        }
+      ]
+    },
+    {
+      "name": "Cartoons & Comics & Graphic Novels",
+      "fandoms": [
+        {
+          "name": "Marvel",
+          "url": "https://archiveofourown.org/tags/Marvel/works",
+          "count": 676626,
+          "rank": 1,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Marvel Cinematic Universe",
+          "url": "https://archiveofourown.org/tags/Marvel Cinematic Universe/works",
+          "count": 541400,
+          "rank": 2,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "DCU",
+          "url": "https://archiveofourown.org/tags/DCU/works",
+          "count": 381326,
+          "rank": 3,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Star Wars - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars - All Media Types/works",
+          "count": 251616,
+          "rank": 4,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Batman - All Media Types",
+          "url": "https://archiveofourown.org/tags/Batman - All Media Types/works",
+          "count": 164327,
+          "rank": 5,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Sherlock Holmes & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Sherlock Holmes *a* Related Fandoms/works",
+          "count": 139515,
+          "rank": 6,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Disney Theatrical Animated Universe",
+          "url": "https://archiveofourown.org/tags/Disney Theatrical Animated Universe/works",
+          "count": 124062,
+          "rank": 7,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "DCU (Comics)",
+          "url": "https://archiveofourown.org/tags/DCU (Comics)/works",
+          "count": 118653,
+          "rank": 8,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Captain America - All Media Types",
+          "url": "https://archiveofourown.org/tags/Captain America - All Media Types/works",
+          "count": 111463,
+          "rank": 9,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Spider-Man - All Media Types",
+          "url": "https://archiveofourown.org/tags/Spider-Man - All Media Types/works",
+          "count": 100120,
+          "rank": 10,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Dragon Age - All Media Types",
+          "url": "https://archiveofourown.org/tags/Dragon Age - All Media Types/works",
+          "count": 92475,
+          "rank": 11,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu *a* Related Fandoms/works",
+          "count": 91418,
+          "rank": 12,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Hellaverse | Hazbin Hotel & Helluva Boss Universe",
+          "url": "https://archiveofourown.org/tags/Hellaverse | Hazbin Hotel *a* Helluva Boss Universe/works",
+          "count": 82528,
+          "rank": 13,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Good Omens - All Media Types",
+          "url": "https://archiveofourown.org/tags/Good Omens - All Media Types/works",
+          "count": 80349,
+          "rank": 14,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Voltron: Legendary Defender",
+          "url": "https://archiveofourown.org/tags/Voltron: Legendary Defender/works",
+          "count": 78792,
+          "rank": 15,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "League of Legends (Video Game) & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/League of Legends (Video Game) *a* Related Fandoms/works",
+          "count": 75317,
+          "rank": 16,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Transformers - All Media Types",
+          "url": "https://archiveofourown.org/tags/Transformers - All Media Types/works",
+          "count": 74458,
+          "rank": 17,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Marvel (Comics)",
+          "url": "https://archiveofourown.org/tags/Marvel (Comics)/works",
+          "count": 73622,
+          "rank": 18,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Miraculous Ladybug",
+          "url": "https://archiveofourown.org/tags/Miraculous Ladybug/works",
+          "count": 72565,
+          "rank": 19,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Hazbin Hotel (Cartoon)",
+          "url": "https://archiveofourown.org/tags/Hazbin Hotel (Cartoon)/works",
+          "count": 67121,
+          "rank": 20,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Homestuck",
+          "url": "https://archiveofourown.org/tags/Homestuck/works",
+          "count": 66015,
+          "rank": 21,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "X-Men - All Media Types",
+          "url": "https://archiveofourown.org/tags/X-Men - All Media Types/works",
+          "count": 62355,
+          "rank": 22,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Marvel 616",
+          "url": "https://archiveofourown.org/tags/Marvel 616/works",
+          "count": 61933,
+          "rank": 23,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Arcane: League of Legends (Cartoon 2021)",
+          "url": "https://archiveofourown.org/tags/Arcane: League of Legends (Cartoon 2021)/works",
+          "count": 58712,
+          "rank": 24,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Star Wars: The Clone Wars (2008) - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: The Clone Wars (2008) - All Media Types/works",
+          "count": 52306,
+          "rank": 25,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Thor (Movies)",
+          "url": "https://archiveofourown.org/tags/Thor (Movies)/works",
+          "count": 51763,
+          "rank": 26,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Spider-Man (Tom Holland Movies)",
+          "url": "https://archiveofourown.org/tags/Spider-Man (Tom Holland Movies)/works",
+          "count": 50219,
+          "rank": 27,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "The Legend of Zelda & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/The Legend of Zelda *a* Related Fandoms/works",
+          "count": 47432,
+          "rank": 28,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Sonic the Hedgehog - All Media Types",
+          "url": "https://archiveofourown.org/tags/Sonic the Hedgehog - All Media Types/works",
+          "count": 45925,
+          "rank": 29,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Avatar: The Last Airbender (Cartoon 2005)",
+          "url": "https://archiveofourown.org/tags/Avatar: The Last Airbender (Cartoon 2005)/works",
+          "count": 45562,
+          "rank": 30,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "RWBY",
+          "url": "https://archiveofourown.org/tags/RWBY/works",
+          "count": 45151,
+          "rank": 31,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Batman (Comics)",
+          "url": "https://archiveofourown.org/tags/Batman (Comics)/works",
+          "count": 40918,
+          "rank": 32,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Superman - All Media Types",
+          "url": "https://archiveofourown.org/tags/Superman - All Media Types/works",
+          "count": 39884,
+          "rank": 33,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "The Hobbit - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Hobbit - All Media Types/works",
+          "count": 39582,
+          "rank": 34,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Star Wars: Rebellion Era - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: Rebellion Era - All Media Types/works",
+          "count": 39538,
+          "rank": 35,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Star Wars Prequel Trilogy",
+          "url": "https://archiveofourown.org/tags/Star Wars Prequel Trilogy/works",
+          "count": 38911,
+          "rank": 36,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles - All Media Types",
+          "url": "https://archiveofourown.org/tags/Teenage Mutant Ninja Turtles - All Media Types/works",
+          "count": 34663,
+          "rank": 37,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Gravity Falls",
+          "url": "https://archiveofourown.org/tags/Gravity Falls/works",
+          "count": 34347,
+          "rank": 38,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "The Owl House (Cartoon)",
+          "url": "https://archiveofourown.org/tags/The Owl House (Cartoon)/works",
+          "count": 34139,
+          "rank": 39,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "LEGO - All Media Types",
+          "url": "https://archiveofourown.org/tags/LEGO - All Media Types/works",
+          "count": 32034,
+          "rank": 40,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Mass Effect - All Media Types",
+          "url": "https://archiveofourown.org/tags/Mass Effect - All Media Types/works",
+          "count": 31148,
+          "rank": 41,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "South Park",
+          "url": "https://archiveofourown.org/tags/South Park/works",
+          "count": 30896,
+          "rank": 42,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "The Flash - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Flash - All Media Types/works",
+          "count": 30154,
+          "rank": 43,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Transformers Generation One",
+          "url": "https://archiveofourown.org/tags/Transformers Generation One/works",
+          "count": 29672,
+          "rank": 44,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "天官赐福 - 墨香铜臭 | Tian Guan Ci Fu | Heaven Official's Blessing - Moxiang Tongxiu",
+          "url": "https://archiveofourown.org/tags/天官赐福 - 墨香铜臭 | Tian Guan Ci Fu | Heaven Official's Blessing - Moxiang Tongxiu/works",
+          "count": 27773,
+          "rank": 45,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Danny Phantom",
+          "url": "https://archiveofourown.org/tags/Danny Phantom/works",
+          "count": 23160,
+          "rank": 46,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Steven Universe (Cartoon)",
+          "url": "https://archiveofourown.org/tags/Steven Universe (Cartoon)/works",
+          "count": 22937,
+          "rank": 47,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Helluva Boss (Web Series)",
+          "url": "https://archiveofourown.org/tags/Helluva Boss (Web Series)/works",
+          "count": 21825,
+          "rank": 48,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Star Wars Legends - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars Legends - All Media Types/works",
+          "count": 20734,
+          "rank": 49,
+          "category": "Cartoons & Comics & Graphic Novels"
+        },
+        {
+          "name": "Archie Comics & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Archie Comics *a* Related Fandoms/works",
+          "count": 19324,
+          "rank": 50,
+          "category": "Cartoons & Comics & Graphic Novels"
+        }
+      ]
+    },
+    {
+      "name": "Celebrities & Real People",
+      "fandoms": [
+        {
+          "name": "Real Person Fiction",
+          "url": "https://archiveofourown.org/tags/Real Person Fiction/works",
+          "count": 874736,
+          "rank": 1,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Video Blogging RPF",
+          "url": "https://archiveofourown.org/tags/Video Blogging RPF/works",
+          "count": 321496,
+          "rank": 2,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Sports RPF",
+          "url": "https://archiveofourown.org/tags/Sports RPF/works",
+          "count": 169505,
+          "rank": 3,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Actor RPF",
+          "url": "https://archiveofourown.org/tags/Actor RPF/works",
+          "count": 157047,
+          "rank": 4,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Music RPF",
+          "url": "https://archiveofourown.org/tags/Music RPF/works",
+          "count": 120650,
+          "rank": 5,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Dream SMP",
+          "url": "https://archiveofourown.org/tags/Dream SMP/works",
+          "count": 82197,
+          "rank": 6,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Motorsport RPF",
+          "url": "https://archiveofourown.org/tags/Motorsport RPF/works",
+          "count": 56417,
+          "rank": 7,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Formula 1 RPF",
+          "url": "https://archiveofourown.org/tags/Formula 1 RPF/works",
+          "count": 52800,
+          "rank": 8,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Men's Football RPF",
+          "url": "https://archiveofourown.org/tags/Men's Football RPF/works",
+          "count": 43419,
+          "rank": 9,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Hermitcraft SMP",
+          "url": "https://archiveofourown.org/tags/Hermitcraft SMP/works",
+          "count": 34538,
+          "rank": 10,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Historical RPF",
+          "url": "https://archiveofourown.org/tags/Historical RPF/works",
+          "count": 30430,
+          "rank": 11,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Life Series | 3rd Life SMP Series",
+          "url": "https://archiveofourown.org/tags/Life Series | 3rd Life SMP Series/works",
+          "count": 24023,
+          "rank": 12,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Chinese Actor RPF",
+          "url": "https://archiveofourown.org/tags/Chinese Actor RPF/works",
+          "count": 21605,
+          "rank": 13,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "声入人心 | Super-Vocal (TV)",
+          "url": "https://archiveofourown.org/tags/声入人心 | Super-Vocal (TV)/works",
+          "count": 20384,
+          "rank": 14,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Supernatural (TV 2005) RPF",
+          "url": "https://archiveofourown.org/tags/Supernatural (TV 2005) RPF/works",
+          "count": 19668,
+          "rank": 15,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Phandom/The Fantastic Foursome (Video Blogging RPF)",
+          "url": "https://archiveofourown.org/tags/Phandom*s*The Fantastic Foursome (Video Blogging RPF)/works",
+          "count": 19364,
+          "rank": 16,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "World Wrestling Entertainment",
+          "url": "https://archiveofourown.org/tags/World Wrestling Entertainment/works",
+          "count": 18041,
+          "rank": 17,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "League of Legends RPF",
+          "url": "https://archiveofourown.org/tags/League of Legends RPF/works",
+          "count": 16683,
+          "rank": 18,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Table Tennis RPF",
+          "url": "https://archiveofourown.org/tags/Table Tennis RPF/works",
+          "count": 15614,
+          "rank": 19,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Men's Hockey RPF",
+          "url": "https://archiveofourown.org/tags/Men's Hockey RPF/works",
+          "count": 14852,
+          "rank": 20,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "British Actor RPF",
+          "url": "https://archiveofourown.org/tags/British Actor RPF/works",
+          "count": 13071,
+          "rank": 21,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Political RPF",
+          "url": "https://archiveofourown.org/tags/Political RPF/works",
+          "count": 13010,
+          "rank": 22,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Rooster Teeth/Achievement Hunter RPF",
+          "url": "https://archiveofourown.org/tags/Rooster Teeth*s*Achievement Hunter RPF/works",
+          "count": 13010,
+          "rank": 23,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Bandom",
+          "url": "https://archiveofourown.org/tags/Bandom/works",
+          "count": 12942,
+          "rank": 24,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "陈情令 | The Untamed (TV) RPF",
+          "url": "https://archiveofourown.org/tags/陈情令 | The Untamed (TV) RPF/works",
+          "count": 11827,
+          "rank": 25,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "QSMP | Quackity SMP",
+          "url": "https://archiveofourown.org/tags/QSMP | Quackity SMP/works",
+          "count": 11751,
+          "rank": 26,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Chinese History RPF",
+          "url": "https://archiveofourown.org/tags/Chinese History RPF/works",
+          "count": 11379,
+          "rank": 27,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Thai Actor RPF",
+          "url": "https://archiveofourown.org/tags/Thai Actor RPF/works",
+          "count": 10629,
+          "rank": 28,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Figure Skating RPF",
+          "url": "https://archiveofourown.org/tags/Figure Skating RPF/works",
+          "count": 9378,
+          "rank": 29,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "一年一度喜剧大赛 | Super Sketch Show (TV) RPF",
+          "url": "https://archiveofourown.org/tags/一年一度喜剧大赛 | Super Sketch Show (TV) RPF/works",
+          "count": 9363,
+          "rank": 30,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "American (US) Actor RPF",
+          "url": "https://archiveofourown.org/tags/American (US) Actor RPF/works",
+          "count": 9295,
+          "rank": 31,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Empires SMP",
+          "url": "https://archiveofourown.org/tags/Empires SMP/works",
+          "count": 8937,
+          "rank": 32,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Chinese Comedian RPF",
+          "url": "https://archiveofourown.org/tags/Chinese Comedian RPF/works",
+          "count": 7775,
+          "rank": 33,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "偶像练习生 | Idol Producer (TV)",
+          "url": "https://archiveofourown.org/tags/偶像练习生 | Idol Producer (TV)/works",
+          "count": 6091,
+          "rank": 34,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Women's Association Football | Women's Soccer RPF",
+          "url": "https://archiveofourown.org/tags/Women's Association Football | Women's Soccer RPF/works",
+          "count": 5512,
+          "rank": 35,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Swimming RPF",
+          "url": "https://archiveofourown.org/tags/Swimming RPF/works",
+          "count": 5415,
+          "rank": 36,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "The Lord of the Rings (Jackson Movies) RPF",
+          "url": "https://archiveofourown.org/tags/The Lord of the Rings (Jackson Movies) RPF/works",
+          "count": 5400,
+          "rank": 37,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "RuPaul's Drag Race (US) RPF",
+          "url": "https://archiveofourown.org/tags/RuPaul's Drag Race (US) RPF/works",
+          "count": 5184,
+          "rank": 38,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Lifesteal SMP",
+          "url": "https://archiveofourown.org/tags/Lifesteal SMP/works",
+          "count": 5070,
+          "rank": 39,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Marvel Cinematic Universe RPF",
+          "url": "https://archiveofourown.org/tags/Marvel Cinematic Universe RPF/works",
+          "count": 4754,
+          "rank": 40,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Vampires SMP",
+          "url": "https://archiveofourown.org/tags/Vampires SMP/works",
+          "count": 4627,
+          "rank": 41,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "逆爱 | Revenged Love (TV) RPF",
+          "url": "https://archiveofourown.org/tags/逆爱 | Revenged Love (TV) RPF/works",
+          "count": 4119,
+          "rank": 42,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Political RPF - US 21st c.",
+          "url": "https://archiveofourown.org/tags/Political RPF - US 21st c*d*/works",
+          "count": 4094,
+          "rank": 43,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Boys Planet (Korea TV)",
+          "url": "https://archiveofourown.org/tags/Boys Planet (Korea TV)/works",
+          "count": 4090,
+          "rank": 44,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Smosh (Video Blogging RPF)",
+          "url": "https://archiveofourown.org/tags/Smosh (Video Blogging RPF)/works",
+          "count": 4087,
+          "rank": 45,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Produce 101 (Korea TV)",
+          "url": "https://archiveofourown.org/tags/Produce 101 (Korea TV)/works",
+          "count": 3990,
+          "rank": 46,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "20th Century CE RPF",
+          "url": "https://archiveofourown.org/tags/20th Century CE RPF/works",
+          "count": 3844,
+          "rank": 47,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Tennis RPF",
+          "url": "https://archiveofourown.org/tags/Tennis RPF/works",
+          "count": 3722,
+          "rank": 48,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "Rhett & Link",
+          "url": "https://archiveofourown.org/tags/Rhett *a* Link/works",
+          "count": 3631,
+          "rank": 49,
+          "category": "Celebrities & Real People"
+        },
+        {
+          "name": "三国历史 | Three Kingdoms History RPF",
+          "url": "https://archiveofourown.org/tags/三国历史 | Three Kingdoms History RPF/works",
+          "count": 3560,
+          "rank": 50,
+          "category": "Celebrities & Real People"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "fandoms": [
+        {
+          "name": "Real Person Fiction",
+          "url": "https://archiveofourown.org/tags/Real Person Fiction/works",
+          "count": 874736,
+          "rank": 1,
+          "category": "Movies"
+        },
+        {
+          "name": "Marvel",
+          "url": "https://archiveofourown.org/tags/Marvel/works",
+          "count": 676626,
+          "rank": 2,
+          "category": "Movies"
+        },
+        {
+          "name": "Harry Potter - J. K. Rowling",
+          "url": "https://archiveofourown.org/tags/Harry Potter - J*d* K*d* Rowling/works",
+          "count": 581693,
+          "rank": 3,
+          "category": "Movies"
+        },
+        {
+          "name": "Marvel Cinematic Universe",
+          "url": "https://archiveofourown.org/tags/Marvel Cinematic Universe/works",
+          "count": 541400,
+          "rank": 4,
+          "category": "Movies"
+        },
+        {
+          "name": "DCU",
+          "url": "https://archiveofourown.org/tags/DCU/works",
+          "count": 381326,
+          "rank": 5,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars - All Media Types/works",
+          "count": 251616,
+          "rank": 6,
+          "category": "Movies"
+        },
+        {
+          "name": "The Avengers (Marvel Movies)",
+          "url": "https://archiveofourown.org/tags/The Avengers (Marvel Movies)/works",
+          "count": 213808,
+          "rank": 7,
+          "category": "Movies"
+        },
+        {
+          "name": "Batman - All Media Types",
+          "url": "https://archiveofourown.org/tags/Batman - All Media Types/works",
+          "count": 164327,
+          "rank": 8,
+          "category": "Movies"
+        },
+        {
+          "name": "Sherlock Holmes & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Sherlock Holmes *a* Related Fandoms/works",
+          "count": 139515,
+          "rank": 9,
+          "category": "Movies"
+        },
+        {
+          "name": "Disney Theatrical Animated Universe",
+          "url": "https://archiveofourown.org/tags/Disney Theatrical Animated Universe/works",
+          "count": 124062,
+          "rank": 10,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Trek",
+          "url": "https://archiveofourown.org/tags/Star Trek/works",
+          "count": 115724,
+          "rank": 11,
+          "category": "Movies"
+        },
+        {
+          "name": "J. R. R. Tolkien's Middle-earth Legendarium & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/J*d* R*d* R*d* Tolkien's Middle-earth Legendarium *a* Related Fandoms/works",
+          "count": 112903,
+          "rank": 12,
+          "category": "Movies"
+        },
+        {
+          "name": "Captain America - All Media Types",
+          "url": "https://archiveofourown.org/tags/Captain America - All Media Types/works",
+          "count": 111463,
+          "rank": 13,
+          "category": "Movies"
+        },
+        {
+          "name": "Spider-Man - All Media Types",
+          "url": "https://archiveofourown.org/tags/Spider-Man - All Media Types/works",
+          "count": 100120,
+          "rank": 14,
+          "category": "Movies"
+        },
+        {
+          "name": "Captain America (Chris Evans Movies)",
+          "url": "https://archiveofourown.org/tags/Captain America (Chris Evans Movies)/works",
+          "count": 97600,
+          "rank": 15,
+          "category": "Movies"
+        },
+        {
+          "name": "Shingeki no Kyojin | Attack on Titan",
+          "url": "https://archiveofourown.org/tags/Shingeki no Kyojin | Attack on Titan/works",
+          "count": 94699,
+          "rank": 16,
+          "category": "Movies"
+        },
+        {
+          "name": "Dragon Age - All Media Types",
+          "url": "https://archiveofourown.org/tags/Dragon Age - All Media Types/works",
+          "count": 92475,
+          "rank": 17,
+          "category": "Movies"
+        },
+        {
+          "name": "魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu *a* Related Fandoms/works",
+          "count": 91418,
+          "rank": 18,
+          "category": "Movies"
+        },
+        {
+          "name": "Good Omens - All Media Types",
+          "url": "https://archiveofourown.org/tags/Good Omens - All Media Types/works",
+          "count": 80349,
+          "rank": 19,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars: Rise of Empire Era - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: Rise of Empire Era - All Media Types/works",
+          "count": 76194,
+          "rank": 20,
+          "category": "Movies"
+        },
+        {
+          "name": "Transformers - All Media Types",
+          "url": "https://archiveofourown.org/tags/Transformers - All Media Types/works",
+          "count": 74458,
+          "rank": 21,
+          "category": "Movies"
+        },
+        {
+          "name": "Percy Jackson and the Olympians & Related Fandoms - All Media Types",
+          "url": "https://archiveofourown.org/tags/Percy Jackson and the Olympians *a* Related Fandoms - All Media Types/works",
+          "count": 71447,
+          "rank": 22,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars Sequel Trilogy",
+          "url": "https://archiveofourown.org/tags/Star Wars Sequel Trilogy/works",
+          "count": 69373,
+          "rank": 23,
+          "category": "Movies"
+        },
+        {
+          "name": "Arthurian Mythology & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Arthurian Mythology *a* Related Fandoms/works",
+          "count": 64672,
+          "rank": 24,
+          "category": "Movies"
+        },
+        {
+          "name": "X-Men - All Media Types",
+          "url": "https://archiveofourown.org/tags/X-Men - All Media Types/works",
+          "count": 62355,
+          "rank": 25,
+          "category": "Movies"
+        },
+        {
+          "name": "Iron Man (Movies)",
+          "url": "https://archiveofourown.org/tags/Iron Man (Movies)/works",
+          "count": 53838,
+          "rank": 26,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars: The Clone Wars (2008) - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: The Clone Wars (2008) - All Media Types/works",
+          "count": 52306,
+          "rank": 27,
+          "category": "Movies"
+        },
+        {
+          "name": "The Lord of the Rings - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Lord of the Rings - All Media Types/works",
+          "count": 52213,
+          "rank": 28,
+          "category": "Movies"
+        },
+        {
+          "name": "Thor (Movies)",
+          "url": "https://archiveofourown.org/tags/Thor (Movies)/works",
+          "count": 51763,
+          "rank": 29,
+          "category": "Movies"
+        },
+        {
+          "name": "Spider-Man (Tom Holland Movies)",
+          "url": "https://archiveofourown.org/tags/Spider-Man (Tom Holland Movies)/works",
+          "count": 50219,
+          "rank": 30,
+          "category": "Movies"
+        },
+        {
+          "name": "Sonic the Hedgehog - All Media Types",
+          "url": "https://archiveofourown.org/tags/Sonic the Hedgehog - All Media Types/works",
+          "count": 45925,
+          "rank": 31,
+          "category": "Movies"
+        },
+        {
+          "name": "The Shadowhunter Chronicles - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Shadowhunter Chronicles - All Media Types/works",
+          "count": 42785,
+          "rank": 32,
+          "category": "Movies"
+        },
+        {
+          "name": "Superman - All Media Types",
+          "url": "https://archiveofourown.org/tags/Superman - All Media Types/works",
+          "count": 39884,
+          "rank": 33,
+          "category": "Movies"
+        },
+        {
+          "name": "The Hobbit - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Hobbit - All Media Types/works",
+          "count": 39582,
+          "rank": 34,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars: Rebellion Era - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: Rebellion Era - All Media Types/works",
+          "count": 39538,
+          "rank": 35,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars Prequel Trilogy",
+          "url": "https://archiveofourown.org/tags/Star Wars Prequel Trilogy/works",
+          "count": 38911,
+          "rank": 36,
+          "category": "Movies"
+        },
+        {
+          "name": "X-Men (Movieverse)",
+          "url": "https://archiveofourown.org/tags/X-Men (Movieverse)/works",
+          "count": 37287,
+          "rank": 37,
+          "category": "Movies"
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles - All Media Types",
+          "url": "https://archiveofourown.org/tags/Teenage Mutant Ninja Turtles - All Media Types/works",
+          "count": 34663,
+          "rank": 38,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Trek: Alternate Original Series (Movies)",
+          "url": "https://archiveofourown.org/tags/Star Trek: Alternate Original Series (Movies)/works",
+          "count": 33450,
+          "rank": 39,
+          "category": "Movies"
+        },
+        {
+          "name": "Mass Effect - All Media Types",
+          "url": "https://archiveofourown.org/tags/Mass Effect - All Media Types/works",
+          "count": 31148,
+          "rank": 40,
+          "category": "Movies"
+        },
+        {
+          "name": "South Park",
+          "url": "https://archiveofourown.org/tags/South Park/works",
+          "count": 30896,
+          "rank": 41,
+          "category": "Movies"
+        },
+        {
+          "name": "Hunger Games Series - All Media Types",
+          "url": "https://archiveofourown.org/tags/Hunger Games Series - All Media Types/works",
+          "count": 27619,
+          "rank": 42,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Trek: The Original Series (TV)",
+          "url": "https://archiveofourown.org/tags/Star Trek: The Original Series (TV)/works",
+          "count": 23108,
+          "rank": 43,
+          "category": "Movies"
+        },
+        {
+          "name": "Twilight Series - All Media Types",
+          "url": "https://archiveofourown.org/tags/Twilight Series - All Media Types/works",
+          "count": 21483,
+          "rank": 44,
+          "category": "Movies"
+        },
+        {
+          "name": "The Hobbit (Jackson Movies)",
+          "url": "https://archiveofourown.org/tags/The Hobbit (Jackson Movies)/works",
+          "count": 20824,
+          "rank": 45,
+          "category": "Movies"
+        },
+        {
+          "name": "Star Wars Legends - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars Legends - All Media Types/works",
+          "count": 20734,
+          "rank": 46,
+          "category": "Movies"
+        },
+        {
+          "name": "Addams Family - All Media Types",
+          "url": "https://archiveofourown.org/tags/Addams Family - All Media Types/works",
+          "count": 20630,
+          "rank": 47,
+          "category": "Movies"
+        },
+        {
+          "name": "IT (Movies - Muschietti)",
+          "url": "https://archiveofourown.org/tags/IT (Movies - Muschietti)/works",
+          "count": 19522,
+          "rank": 48,
+          "category": "Movies"
+        },
+        {
+          "name": "Archie Comics & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Archie Comics *a* Related Fandoms/works",
+          "count": 19324,
+          "rank": 49,
+          "category": "Movies"
+        },
+        {
+          "name": "DC Extended Universe",
+          "url": "https://archiveofourown.org/tags/DC Extended Universe/works",
+          "count": 18919,
+          "rank": 50,
+          "category": "Movies"
+        }
+      ]
+    },
+    {
+      "name": "Music & Bands",
+      "fandoms": [
+        {
+          "name": "K-pop",
+          "url": "https://archiveofourown.org/tags/K-pop/works",
+          "count": 779075,
+          "rank": 1,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "방탄소년단 | Bangtan Boys | BTS",
+          "url": "https://archiveofourown.org/tags/방탄소년단 | Bangtan Boys | BTS/works",
+          "count": 217473,
+          "rank": 2,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Music RPF",
+          "url": "https://archiveofourown.org/tags/Music RPF/works",
+          "count": 120650,
+          "rank": 3,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Stray Kids (Band)",
+          "url": "https://archiveofourown.org/tags/Stray Kids (Band)/works",
+          "count": 96077,
+          "rank": 4,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Rock Music RPF",
+          "url": "https://archiveofourown.org/tags/Rock Music RPF/works",
+          "count": 82594,
+          "rank": 5,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "NCT (Band)",
+          "url": "https://archiveofourown.org/tags/NCT (Band)/works",
+          "count": 75550,
+          "rank": 6,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "One Direction (Band)",
+          "url": "https://archiveofourown.org/tags/One Direction (Band)/works",
+          "count": 66811,
+          "rank": 7,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "SEVENTEEN (Band)",
+          "url": "https://archiveofourown.org/tags/SEVENTEEN (Band)/works",
+          "count": 62118,
+          "rank": 8,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "EXO (Band)",
+          "url": "https://archiveofourown.org/tags/EXO (Band)/works",
+          "count": 48739,
+          "rank": 9,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "ATEEZ (Band)",
+          "url": "https://archiveofourown.org/tags/ATEEZ (Band)/works",
+          "count": 40846,
+          "rank": 10,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Jpop",
+          "url": "https://archiveofourown.org/tags/Jpop/works",
+          "count": 38872,
+          "rank": 11,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "TOMORROW X TOGETHER | TXT (Korea Band)",
+          "url": "https://archiveofourown.org/tags/TOMORROW X TOGETHER | TXT (Korea Band)/works",
+          "count": 27750,
+          "rank": 12,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "My Chemical Romance",
+          "url": "https://archiveofourown.org/tags/My Chemical Romance/works",
+          "count": 26400,
+          "rank": 13,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "ENHYPEN (Band)",
+          "url": "https://archiveofourown.org/tags/ENHYPEN (Band)/works",
+          "count": 25718,
+          "rank": 14,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "声入人心 | Super-Vocal (TV)",
+          "url": "https://archiveofourown.org/tags/声入人心 | Super-Vocal (TV)/works",
+          "count": 20384,
+          "rank": 15,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "GOT7",
+          "url": "https://archiveofourown.org/tags/GOT7/works",
+          "count": 14270,
+          "rank": 16,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Monsta X (Band)",
+          "url": "https://archiveofourown.org/tags/Monsta X (Band)/works",
+          "count": 13221,
+          "rank": 17,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Ghost (Sweden Band)",
+          "url": "https://archiveofourown.org/tags/Ghost (Sweden Band)/works",
+          "count": 13163,
+          "rank": 18,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Bandom",
+          "url": "https://archiveofourown.org/tags/Bandom/works",
+          "count": 12942,
+          "rank": 19,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Super Junior",
+          "url": "https://archiveofourown.org/tags/Super Junior/works",
+          "count": 12876,
+          "rank": 20,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "ZEROBASEONE | ZB1 (Korea Band)",
+          "url": "https://archiveofourown.org/tags/ZEROBASEONE | ZB1 (Korea Band)/works",
+          "count": 12755,
+          "rank": 21,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Fall Out Boy",
+          "url": "https://archiveofourown.org/tags/Fall Out Boy/works",
+          "count": 12578,
+          "rank": 22,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Twenty One Pilots",
+          "url": "https://archiveofourown.org/tags/Twenty One Pilots/works",
+          "count": 12523,
+          "rank": 23,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "TWICE (Band)",
+          "url": "https://archiveofourown.org/tags/TWICE (Band)/works",
+          "count": 12005,
+          "rank": 24,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "1960s Music Scene RPF",
+          "url": "https://archiveofourown.org/tags/1960s Music Scene RPF/works",
+          "count": 10477,
+          "rank": 25,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "5 Seconds of Summer (Band)",
+          "url": "https://archiveofourown.org/tags/5 Seconds of Summer (Band)/works",
+          "count": 10075,
+          "rank": 26,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "ヒプノシスマイク | Hypnosis Mic (Albums)",
+          "url": "https://archiveofourown.org/tags/ヒプノシスマイク | Hypnosis Mic (Albums)/works",
+          "count": 9877,
+          "rank": 27,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Jrock",
+          "url": "https://archiveofourown.org/tags/Jrock/works",
+          "count": 9428,
+          "rank": 28,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "The Beatles (Band)",
+          "url": "https://archiveofourown.org/tags/The Beatles (Band)/works",
+          "count": 9230,
+          "rank": 29,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Pop Music RPF",
+          "url": "https://archiveofourown.org/tags/Pop Music RPF/works",
+          "count": 9211,
+          "rank": 30,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Queen (Band)",
+          "url": "https://archiveofourown.org/tags/Queen (Band)/works",
+          "count": 9091,
+          "rank": 31,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "TFBOYS (Band)",
+          "url": "https://archiveofourown.org/tags/TFBOYS (Band)/works",
+          "count": 8827,
+          "rank": 32,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Vocaloid",
+          "url": "https://archiveofourown.org/tags/Vocaloid/works",
+          "count": 8684,
+          "rank": 33,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "MIRROR (Hong Kong Band)",
+          "url": "https://archiveofourown.org/tags/MIRROR (Hong Kong Band)/works",
+          "count": 8135,
+          "rank": 34,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "EPIC - Jorge Rivera-Herrans (Albums)",
+          "url": "https://archiveofourown.org/tags/EPIC - Jorge Rivera-Herrans (Albums)/works",
+          "count": 8053,
+          "rank": 35,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Panic! at the Disco",
+          "url": "https://archiveofourown.org/tags/Panic! at the Disco/works",
+          "count": 7896,
+          "rank": 36,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Arashi (Band)",
+          "url": "https://archiveofourown.org/tags/Arashi (Band)/works",
+          "count": 7838,
+          "rank": 37,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "SHINee",
+          "url": "https://archiveofourown.org/tags/SHINee/works",
+          "count": 7714,
+          "rank": 38,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "The Boyz (Korea Band)",
+          "url": "https://archiveofourown.org/tags/The Boyz (Korea Band)/works",
+          "count": 7027,
+          "rank": 39,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "偶像练习生 | Idol Producer (TV)",
+          "url": "https://archiveofourown.org/tags/偶像练习生 | Idol Producer (TV)/works",
+          "count": 6091,
+          "rank": 40,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Snow Man (Japan Band)",
+          "url": "https://archiveofourown.org/tags/Snow Man (Japan Band)/works",
+          "count": 5960,
+          "rank": 41,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Wanna One (Band)",
+          "url": "https://archiveofourown.org/tags/Wanna One (Band)/works",
+          "count": 5492,
+          "rank": 42,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "PLAVE (Band)",
+          "url": "https://archiveofourown.org/tags/PLAVE (Band)/works",
+          "count": 5176,
+          "rank": 43,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "VIXX (Band)",
+          "url": "https://archiveofourown.org/tags/VIXX (Band)/works",
+          "count": 5172,
+          "rank": 44,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "RIIZE (Band)",
+          "url": "https://archiveofourown.org/tags/RIIZE (Band)/works",
+          "count": 4874,
+          "rank": 45,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "DBSK | Tohoshinki | TVfXQ | TVXQ",
+          "url": "https://archiveofourown.org/tags/DBSK | Tohoshinki | TVfXQ | TVXQ/works",
+          "count": 4867,
+          "rank": 46,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "BOYNEXTDOOR (Korea Band)",
+          "url": "https://archiveofourown.org/tags/BOYNEXTDOOR (Korea Band)/works",
+          "count": 4849,
+          "rank": 47,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "LOONA (Korea Band)",
+          "url": "https://archiveofourown.org/tags/LOONA (Korea Band)/works",
+          "count": 4672,
+          "rank": 48,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "Red Velvet (K-pop Band)",
+          "url": "https://archiveofourown.org/tags/Red Velvet (K-pop Band)/works",
+          "count": 4561,
+          "rank": 49,
+          "category": "Music & Bands"
+        },
+        {
+          "name": "&TEAM (Band)",
+          "url": "https://archiveofourown.org/tags/*a*TEAM (Band)/works",
+          "count": 4390,
+          "rank": 50,
+          "category": "Music & Bands"
+        }
+      ]
+    },
+    {
+      "name": "Other Media",
+      "fandoms": [
+        {
+          "name": "Original Work",
+          "url": "https://archiveofourown.org/tags/Original Work/works",
+          "count": 430691,
+          "rank": 1,
+          "category": "Other Media"
+        },
+        {
+          "name": "Video Blogging RPF",
+          "url": "https://archiveofourown.org/tags/Video Blogging RPF/works",
+          "count": 321496,
+          "rank": 2,
+          "category": "Other Media"
+        },
+        {
+          "name": "Star Wars - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars - All Media Types/works",
+          "count": 251616,
+          "rank": 3,
+          "category": "Other Media"
+        },
+        {
+          "name": "Sherlock Holmes & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Sherlock Holmes *a* Related Fandoms/works",
+          "count": 139515,
+          "rank": 4,
+          "category": "Other Media"
+        },
+        {
+          "name": "Disney Theatrical Animated Universe",
+          "url": "https://archiveofourown.org/tags/Disney Theatrical Animated Universe/works",
+          "count": 124062,
+          "rank": 5,
+          "category": "Other Media"
+        },
+        {
+          "name": "Doctor Who & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Doctor Who *a* Related Fandoms/works",
+          "count": 108232,
+          "rank": 6,
+          "category": "Other Media"
+        },
+        {
+          "name": "Minecraft (Video Game)",
+          "url": "https://archiveofourown.org/tags/Minecraft (Video Game)/works",
+          "count": 106344,
+          "rank": 7,
+          "category": "Other Media"
+        },
+        {
+          "name": "魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu *a* Related Fandoms/works",
+          "count": 91418,
+          "rank": 8,
+          "category": "Other Media"
+        },
+        {
+          "name": "Rock Music RPF",
+          "url": "https://archiveofourown.org/tags/Rock Music RPF/works",
+          "count": 82594,
+          "rank": 9,
+          "category": "Other Media"
+        },
+        {
+          "name": "Hellaverse | Hazbin Hotel & Helluva Boss Universe",
+          "url": "https://archiveofourown.org/tags/Hellaverse | Hazbin Hotel *a* Helluva Boss Universe/works",
+          "count": 82528,
+          "rank": 10,
+          "category": "Other Media"
+        },
+        {
+          "name": "Dream SMP",
+          "url": "https://archiveofourown.org/tags/Dream SMP/works",
+          "count": 82197,
+          "rank": 11,
+          "category": "Other Media"
+        },
+        {
+          "name": "Good Omens - All Media Types",
+          "url": "https://archiveofourown.org/tags/Good Omens - All Media Types/works",
+          "count": 80349,
+          "rank": 12,
+          "category": "Other Media"
+        },
+        {
+          "name": "Dungeons & Dragons (Roleplaying Game)",
+          "url": "https://archiveofourown.org/tags/Dungeons *a* Dragons (Roleplaying Game)/works",
+          "count": 67911,
+          "rank": 13,
+          "category": "Other Media"
+        },
+        {
+          "name": "Homestuck",
+          "url": "https://archiveofourown.org/tags/Homestuck/works",
+          "count": 66015,
+          "rank": 14,
+          "category": "Other Media"
+        },
+        {
+          "name": "Thor (Movies)",
+          "url": "https://archiveofourown.org/tags/Thor (Movies)/works",
+          "count": 51763,
+          "rank": 15,
+          "category": "Other Media"
+        },
+        {
+          "name": "Forgotten Realms (Roleplaying Game)",
+          "url": "https://archiveofourown.org/tags/Forgotten Realms (Roleplaying Game)/works",
+          "count": 50030,
+          "rank": 16,
+          "category": "Other Media"
+        },
+        {
+          "name": "Wiedźmin | The Witcher - All Media Types",
+          "url": "https://archiveofourown.org/tags/Wiedźmin | The Witcher - All Media Types/works",
+          "count": 42379,
+          "rank": 17,
+          "category": "Other Media"
+        },
+        {
+          "name": "Virtual Streamer Animated Characters",
+          "url": "https://archiveofourown.org/tags/Virtual Streamer Animated Characters/works",
+          "count": 35505,
+          "rank": 18,
+          "category": "Other Media"
+        },
+        {
+          "name": "Hermitcraft SMP",
+          "url": "https://archiveofourown.org/tags/Hermitcraft SMP/works",
+          "count": 34538,
+          "rank": 19,
+          "category": "Other Media"
+        },
+        {
+          "name": "Sanders Sides (Web Series)",
+          "url": "https://archiveofourown.org/tags/Sanders Sides (Web Series)/works",
+          "count": 33758,
+          "rank": 20,
+          "category": "Other Media"
+        },
+        {
+          "name": "LEGO - All Media Types",
+          "url": "https://archiveofourown.org/tags/LEGO - All Media Types/works",
+          "count": 32034,
+          "rank": 21,
+          "category": "Other Media"
+        },
+        {
+          "name": "The Magnus Archives (Podcast)",
+          "url": "https://archiveofourown.org/tags/The Magnus Archives (Podcast)/works",
+          "count": 31344,
+          "rank": 22,
+          "category": "Other Media"
+        },
+        {
+          "name": "Critical Role Exandrian Universe",
+          "url": "https://archiveofourown.org/tags/Critical Role Exandrian Universe/works",
+          "count": 30906,
+          "rank": 23,
+          "category": "Other Media"
+        },
+        {
+          "name": "Critical Role: Exandria (Web Series)",
+          "url": "https://archiveofourown.org/tags/Critical Role: Exandria (Web Series)/works",
+          "count": 30199,
+          "rank": 24,
+          "category": "Other Media"
+        },
+        {
+          "name": "Professional Wrestling",
+          "url": "https://archiveofourown.org/tags/Professional Wrestling/works",
+          "count": 25436,
+          "rank": 25,
+          "category": "Other Media"
+        },
+        {
+          "name": "Life Series | 3rd Life SMP Series",
+          "url": "https://archiveofourown.org/tags/Life Series | 3rd Life SMP Series/works",
+          "count": 24023,
+          "rank": 26,
+          "category": "Other Media"
+        },
+        {
+          "name": "Star Trek: The Original Series (TV)",
+          "url": "https://archiveofourown.org/tags/Star Trek: The Original Series (TV)/works",
+          "count": 23108,
+          "rank": 27,
+          "category": "Other Media"
+        },
+        {
+          "name": "Helluva Boss (Web Series)",
+          "url": "https://archiveofourown.org/tags/Helluva Boss (Web Series)/works",
+          "count": 21825,
+          "rank": 28,
+          "category": "Other Media"
+        },
+        {
+          "name": "Supernatural (TV 2005) RPF",
+          "url": "https://archiveofourown.org/tags/Supernatural (TV 2005) RPF/works",
+          "count": 19668,
+          "rank": 29,
+          "category": "Other Media"
+        },
+        {
+          "name": "Phandom/The Fantastic Foursome (Video Blogging RPF)",
+          "url": "https://archiveofourown.org/tags/Phandom*s*The Fantastic Foursome (Video Blogging RPF)/works",
+          "count": 19364,
+          "rank": 30,
+          "category": "Other Media"
+        },
+        {
+          "name": "World Wrestling Entertainment",
+          "url": "https://archiveofourown.org/tags/World Wrestling Entertainment/works",
+          "count": 18041,
+          "rank": 31,
+          "category": "Other Media"
+        },
+        {
+          "name": "Nijisanji (Virtual Streamers)",
+          "url": "https://archiveofourown.org/tags/Nijisanji (Virtual Streamers)/works",
+          "count": 17300,
+          "rank": 32,
+          "category": "Other Media"
+        },
+        {
+          "name": "LEGO Ninjago (Cartoon 2011-2022)",
+          "url": "https://archiveofourown.org/tags/LEGO Ninjago (Cartoon 2011-2022)/works",
+          "count": 17277,
+          "rank": 33,
+          "category": "Other Media"
+        },
+        {
+          "name": "League of Legends RPF",
+          "url": "https://archiveofourown.org/tags/League of Legends RPF/works",
+          "count": 16683,
+          "rank": 34,
+          "category": "Other Media"
+        },
+        {
+          "name": "Assassin's Creed - All Media Types",
+          "url": "https://archiveofourown.org/tags/Assassin's Creed - All Media Types/works",
+          "count": 14898,
+          "rank": 35,
+          "category": "Other Media"
+        },
+        {
+          "name": "Men's Hockey RPF",
+          "url": "https://archiveofourown.org/tags/Men's Hockey RPF/works",
+          "count": 14852,
+          "rank": 36,
+          "category": "Other Media"
+        },
+        {
+          "name": "The Amazing Digital Circus (Web Series)",
+          "url": "https://archiveofourown.org/tags/The Amazing Digital Circus (Web Series)/works",
+          "count": 13927,
+          "rank": 37,
+          "category": "Other Media"
+        },
+        {
+          "name": "Warhammer 40.000",
+          "url": "https://archiveofourown.org/tags/Warhammer 40*d*000/works",
+          "count": 13353,
+          "rank": 38,
+          "category": "Other Media"
+        },
+        {
+          "name": "Rooster Teeth/Achievement Hunter RPF",
+          "url": "https://archiveofourown.org/tags/Rooster Teeth*s*Achievement Hunter RPF/works",
+          "count": 13010,
+          "rank": 39,
+          "category": "Other Media"
+        },
+        {
+          "name": "Alien Stage (Web Series)",
+          "url": "https://archiveofourown.org/tags/Alien Stage (Web Series)/works",
+          "count": 12146,
+          "rank": 40,
+          "category": "Other Media"
+        },
+        {
+          "name": "Hololive Productions (Virtual Streamers)",
+          "url": "https://archiveofourown.org/tags/Hololive Productions (Virtual Streamers)/works",
+          "count": 11826,
+          "rank": 41,
+          "category": "Other Media"
+        },
+        {
+          "name": "QSMP | Quackity SMP",
+          "url": "https://archiveofourown.org/tags/QSMP | Quackity SMP/works",
+          "count": 11751,
+          "rank": 42,
+          "category": "Other Media"
+        },
+        {
+          "name": "Creepypasta - Fandom",
+          "url": "https://archiveofourown.org/tags/Creepypasta - Fandom/works",
+          "count": 11720,
+          "rank": 43,
+          "category": "Other Media"
+        },
+        {
+          "name": "Object and Concept Anthropomorphism",
+          "url": "https://archiveofourown.org/tags/Object and Concept Anthropomorphism/works",
+          "count": 11664,
+          "rank": 44,
+          "category": "Other Media"
+        },
+        {
+          "name": "LEGO Monkie Kid",
+          "url": "https://archiveofourown.org/tags/LEGO Monkie Kid/works",
+          "count": 11036,
+          "rank": 45,
+          "category": "Other Media"
+        },
+        {
+          "name": "The Adventure Zone (Podcast)",
+          "url": "https://archiveofourown.org/tags/The Adventure Zone (Podcast)/works",
+          "count": 10302,
+          "rank": 46,
+          "category": "Other Media"
+        },
+        {
+          "name": "Red vs. Blue",
+          "url": "https://archiveofourown.org/tags/Red vs*d* Blue/works",
+          "count": 9897,
+          "rank": 47,
+          "category": "Other Media"
+        },
+        {
+          "name": "Unspecified Fandom",
+          "url": "https://archiveofourown.org/tags/Unspecified Fandom/works",
+          "count": 9549,
+          "rank": 48,
+          "category": "Other Media"
+        },
+        {
+          "name": "James Cameron's Avatar - All Media Types",
+          "url": "https://archiveofourown.org/tags/James Cameron's Avatar - All Media Types/works",
+          "count": 9540,
+          "rank": 49,
+          "category": "Other Media"
+        },
+        {
+          "name": "Murder Drones (Web Series)",
+          "url": "https://archiveofourown.org/tags/Murder Drones (Web Series)/works",
+          "count": 9333,
+          "rank": 50,
+          "category": "Other Media"
+        }
+      ]
+    },
+    {
+      "name": "Theater",
+      "fandoms": [
+        {
+          "name": "Good Omens - All Media Types",
+          "url": "https://archiveofourown.org/tags/Good Omens - All Media Types/works",
+          "count": 80349,
+          "rank": 1,
+          "category": "Theater"
+        },
+        {
+          "name": "Les Misérables - All Media Types",
+          "url": "https://archiveofourown.org/tags/Les Misérables - All Media Types/works",
+          "count": 23810,
+          "rank": 2,
+          "category": "Theater"
+        },
+        {
+          "name": "Hamilton - Miranda",
+          "url": "https://archiveofourown.org/tags/Hamilton - Miranda/works",
+          "count": 20874,
+          "rank": 3,
+          "category": "Theater"
+        },
+        {
+          "name": "Slam Dunk (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Slam Dunk (Anime *a* Manga)/works",
+          "count": 15434,
+          "rank": 4,
+          "category": "Theater"
+        },
+        {
+          "name": "Bishoujo Senshi Sailor Moon | Pretty Guardian Sailor Moon",
+          "url": "https://archiveofourown.org/tags/Bishoujo Senshi Sailor Moon | Pretty Guardian Sailor Moon/works",
+          "count": 11394,
+          "rank": 5,
+          "category": "Theater"
+        },
+        {
+          "name": "James Cameron's Avatar - All Media Types",
+          "url": "https://archiveofourown.org/tags/James Cameron's Avatar - All Media Types/works",
+          "count": 9540,
+          "rank": 6,
+          "category": "Theater"
+        },
+        {
+          "name": "Newsies - All Media Types",
+          "url": "https://archiveofourown.org/tags/Newsies - All Media Types/works",
+          "count": 8951,
+          "rank": 7,
+          "category": "Theater"
+        },
+        {
+          "name": "Be More Chill - Iconis/Tracz",
+          "url": "https://archiveofourown.org/tags/Be More Chill - Iconis*s*Tracz/works",
+          "count": 7522,
+          "rank": 8,
+          "category": "Theater"
+        },
+        {
+          "name": "Hatchetfield Series - Team StarKid",
+          "url": "https://archiveofourown.org/tags/Hatchetfield Series - Team StarKid/works",
+          "count": 6928,
+          "rank": 9,
+          "category": "Theater"
+        },
+        {
+          "name": "Wicked - All Media Types",
+          "url": "https://archiveofourown.org/tags/Wicked - All Media Types/works",
+          "count": 6865,
+          "rank": 10,
+          "category": "Theater"
+        },
+        {
+          "name": "Newsies!: the Musical - Fierstein/Menken",
+          "url": "https://archiveofourown.org/tags/Newsies!: the Musical - Fierstein*s*Menken/works",
+          "count": 6630,
+          "rank": 11,
+          "category": "Theater"
+        },
+        {
+          "name": "Le Fantôme de l'Opéra | Phantom of the Opera & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Le Fantôme de l'Opéra | Phantom of the Opera *a* Related Fandoms/works",
+          "count": 6365,
+          "rank": 12,
+          "category": "Theater"
+        },
+        {
+          "name": "SHAKESPEARE William - Works",
+          "url": "https://archiveofourown.org/tags/SHAKESPEARE William - Works/works",
+          "count": 6363,
+          "rank": 13,
+          "category": "Theater"
+        },
+        {
+          "name": "Harry Potter and the Cursed Child - Thorne & Rowling",
+          "url": "https://archiveofourown.org/tags/Harry Potter and the Cursed Child - Thorne *a* Rowling/works",
+          "count": 5555,
+          "rank": 14,
+          "category": "Theater"
+        },
+        {
+          "name": "Dear Evan Hansen - Pasek & Paul/Levenson",
+          "url": "https://archiveofourown.org/tags/Dear Evan Hansen - Pasek *a* Paul*s*Levenson/works",
+          "count": 5479,
+          "rank": 15,
+          "category": "Theater"
+        },
+        {
+          "name": "Heathers: The Musical - Murphy & O'Keefe",
+          "url": "https://archiveofourown.org/tags/Heathers: The Musical - Murphy *a* O'Keefe/works",
+          "count": 4245,
+          "rank": 16,
+          "category": "Theater"
+        },
+        {
+          "name": "Phantom of the Opera - Lloyd Webber",
+          "url": "https://archiveofourown.org/tags/Phantom of the Opera - Lloyd Webber/works",
+          "count": 3431,
+          "rank": 17,
+          "category": "Theater"
+        },
+        {
+          "name": "Beetlejuice - All Media Types",
+          "url": "https://archiveofourown.org/tags/Beetlejuice - All Media Types/works",
+          "count": 3380,
+          "rank": 18,
+          "category": "Theater"
+        },
+        {
+          "name": "Ride the Cyclone: A New Musical - Maxwell & Richmond",
+          "url": "https://archiveofourown.org/tags/Ride the Cyclone: A New Musical - Maxwell *a* Richmond/works",
+          "count": 3323,
+          "rank": 19,
+          "category": "Theater"
+        },
+        {
+          "name": "Falsettos - Lapine/Finn",
+          "url": "https://archiveofourown.org/tags/Falsettos - Lapine*s*Finn/works",
+          "count": 2818,
+          "rank": 20,
+          "category": "Theater"
+        },
+        {
+          "name": "Les Misérables - Schönberg/Boublil",
+          "url": "https://archiveofourown.org/tags/Les Misérables - Schönberg*s*Boublil/works",
+          "count": 2797,
+          "rank": 21,
+          "category": "Theater"
+        },
+        {
+          "name": "Redactedverse - Redacted ASMR",
+          "url": "https://archiveofourown.org/tags/Redactedverse - Redacted ASMR/works",
+          "count": 2680,
+          "rank": 22,
+          "category": "Theater"
+        },
+        {
+          "name": "Le Fantôme de l'Opéra | Phantom of the Opera - Gaston Leroux",
+          "url": "https://archiveofourown.org/tags/Le Fantôme de l'Opéra | Phantom of the Opera - Gaston Leroux/works",
+          "count": 2674,
+          "rank": 23,
+          "category": "Theater"
+        },
+        {
+          "name": "Wicked - Schwartz/Holzman",
+          "url": "https://archiveofourown.org/tags/Wicked - Schwartz*s*Holzman/works",
+          "count": 2630,
+          "rank": 24,
+          "category": "Theater"
+        },
+        {
+          "name": "Romeo and Juliet - Shakespeare",
+          "url": "https://archiveofourown.org/tags/Romeo and Juliet - Shakespeare/works",
+          "count": 2301,
+          "rank": 25,
+          "category": "Theater"
+        },
+        {
+          "name": "Six - Marlow/Moss",
+          "url": "https://archiveofourown.org/tags/Six - Marlow*s*Moss/works",
+          "count": 2268,
+          "rank": 26,
+          "category": "Theater"
+        },
+        {
+          "name": "The Outsiders: The Musical - Jamestown Revival & Levine/Rapp",
+          "url": "https://archiveofourown.org/tags/The Outsiders: The Musical - Jamestown Revival *a* Levine*s*Rapp/works",
+          "count": 2134,
+          "rank": 27,
+          "category": "Theater"
+        },
+        {
+          "name": "Starlight Express - Phillips/Stilgoe/Webber",
+          "url": "https://archiveofourown.org/tags/Starlight Express - Phillips*s*Stilgoe*s*Webber/works",
+          "count": 1734,
+          "rank": 28,
+          "category": "Theater"
+        },
+        {
+          "name": "Beetlejuice - Perfect/Brown & King",
+          "url": "https://archiveofourown.org/tags/Beetlejuice - Perfect*s*Brown *a* King/works",
+          "count": 1700,
+          "rank": 29,
+          "category": "Theater"
+        },
+        {
+          "name": "Mozart l'Opéra Rock - Mozart/Baguian & Guirao",
+          "url": "https://archiveofourown.org/tags/Mozart l'Opéra Rock - Mozart*s*Baguian *a* Guirao/works",
+          "count": 1699,
+          "rank": 30,
+          "category": "Theater"
+        },
+        {
+          "name": "Spies Are Forever - Talkfine/Tin Can Brothers",
+          "url": "https://archiveofourown.org/tags/Spies Are Forever - Talkfine*s*Tin Can Brothers/works",
+          "count": 1675,
+          "rank": 31,
+          "category": "Theater"
+        },
+        {
+          "name": "Mean Girls - Richmond/Benjamin/Fey",
+          "url": "https://archiveofourown.org/tags/Mean Girls - Richmond*s*Benjamin*s*Fey/works",
+          "count": 1647,
+          "rank": 32,
+          "category": "Theater"
+        },
+        {
+          "name": "Hadestown - Mitchell",
+          "url": "https://archiveofourown.org/tags/Hadestown - Mitchell/works",
+          "count": 1636,
+          "rank": 33,
+          "category": "Theater"
+        },
+        {
+          "name": "Cats - Andrew Lloyd Webber",
+          "url": "https://archiveofourown.org/tags/Cats - Andrew Lloyd Webber/works",
+          "count": 1600,
+          "rank": 34,
+          "category": "Theater"
+        },
+        {
+          "name": "The Book of Mormon - Parker/Stone/Lopez",
+          "url": "https://archiveofourown.org/tags/The Book of Mormon - Parker*s*Stone*s*Lopez/works",
+          "count": 1505,
+          "rank": 35,
+          "category": "Theater"
+        },
+        {
+          "name": "Hamlet - Shakespeare",
+          "url": "https://archiveofourown.org/tags/Hamlet - Shakespeare/works",
+          "count": 1309,
+          "rank": 36,
+          "category": "Theater"
+        },
+        {
+          "name": "Jesus Christ Superstar - Webber/Rice",
+          "url": "https://archiveofourown.org/tags/Jesus Christ Superstar - Webber*s*Rice/works",
+          "count": 1033,
+          "rank": 37,
+          "category": "Theater"
+        },
+        {
+          "name": "Spring Awakening - Sheik/Sater",
+          "url": "https://archiveofourown.org/tags/Spring Awakening - Sheik*s*Sater/works",
+          "count": 1016,
+          "rank": 38,
+          "category": "Theater"
+        },
+        {
+          "name": "Roméo et Juliette - Presgurvic",
+          "url": "https://archiveofourown.org/tags/Roméo et Juliette - Presgurvic/works",
+          "count": 998,
+          "rank": 39,
+          "category": "Theater"
+        },
+        {
+          "name": "Rent - Larson",
+          "url": "https://archiveofourown.org/tags/Rent - Larson/works",
+          "count": 968,
+          "rank": 40,
+          "category": "Theater"
+        },
+        {
+          "name": "Elisabeth - Levay/Kunze",
+          "url": "https://archiveofourown.org/tags/Elisabeth - Levay*s*Kunze/works",
+          "count": 899,
+          "rank": 41,
+          "category": "Theater"
+        },
+        {
+          "name": "Chess - Rice/Ulvaeus/Andersson",
+          "url": "https://archiveofourown.org/tags/Chess - Rice*s*Ulvaeus*s*Andersson/works",
+          "count": 865,
+          "rank": 42,
+          "category": "Theater"
+        },
+        {
+          "name": "In the Heights - Miranda/Hudes",
+          "url": "https://archiveofourown.org/tags/In the Heights - Miranda*s*Hudes/works",
+          "count": 826,
+          "rank": 43,
+          "category": "Theater"
+        },
+        {
+          "name": "Икар - Круглов/Макуни | Icarus - Kruglov/Makuni",
+          "url": "https://archiveofourown.org/tags/Икар - Круглов*s*Макуни | Icarus - Kruglov*s*Makuni/works",
+          "count": 820,
+          "rank": 44,
+          "category": "Theater"
+        },
+        {
+          "name": "The Prom - Sklar/Beguelin/Martin",
+          "url": "https://archiveofourown.org/tags/The Prom - Sklar*s*Beguelin*s*Martin/works",
+          "count": 759,
+          "rank": 45,
+          "category": "Theater"
+        },
+        {
+          "name": "Natasha Pierre and the Great Comet of 1812 - Malloy",
+          "url": "https://archiveofourown.org/tags/Natasha Pierre and the Great Comet of 1812 - Malloy/works",
+          "count": 704,
+          "rank": 46,
+          "category": "Theater"
+        },
+        {
+          "name": "Operation Mincemeat - SpitLip",
+          "url": "https://archiveofourown.org/tags/Operation Mincemeat - SpitLip/works",
+          "count": 649,
+          "rank": 47,
+          "category": "Theater"
+        },
+        {
+          "name": "Anastasia - Flaherty/Ahrens/McNally",
+          "url": "https://archiveofourown.org/tags/Anastasia - Flaherty*s*Ahrens*s*McNally/works",
+          "count": 647,
+          "rank": 48,
+          "category": "Theater"
+        },
+        {
+          "name": "Death Becomes Her - Mattison & Carey/Pennette",
+          "url": "https://archiveofourown.org/tags/Death Becomes Her - Mattison *a* Carey*s*Pennette/works",
+          "count": 588,
+          "rank": 49,
+          "category": "Theater"
+        },
+        {
+          "name": "Tanz der Vampire | Dance of the Vampires - Steinman/Kunze",
+          "url": "https://archiveofourown.org/tags/Tanz der Vampire | Dance of the Vampires - Steinman*s*Kunze/works",
+          "count": 563,
+          "rank": 50,
+          "category": "Theater"
+        }
+      ]
+    },
+    {
+      "name": "TV Shows",
+      "fandoms": [
+        {
+          "name": "Marvel",
+          "url": "https://archiveofourown.org/tags/Marvel/works",
+          "count": 676626,
+          "rank": 1,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Marvel Cinematic Universe",
+          "url": "https://archiveofourown.org/tags/Marvel Cinematic Universe/works",
+          "count": 541400,
+          "rank": 2,
+          "category": "TV Shows"
+        },
+        {
+          "name": "DCU",
+          "url": "https://archiveofourown.org/tags/DCU/works",
+          "count": 381326,
+          "rank": 3,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Supernatural (TV 2005)",
+          "url": "https://archiveofourown.org/tags/Supernatural (TV 2005)/works",
+          "count": 272488,
+          "rank": 4,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Batman - All Media Types",
+          "url": "https://archiveofourown.org/tags/Batman - All Media Types/works",
+          "count": 164327,
+          "rank": 5,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Sherlock Holmes & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Sherlock Holmes *a* Related Fandoms/works",
+          "count": 139515,
+          "rank": 6,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Stranger Things (TV 2016)",
+          "url": "https://archiveofourown.org/tags/Stranger Things (TV 2016)/works",
+          "count": 131925,
+          "rank": 7,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Teen Wolf (TV)",
+          "url": "https://archiveofourown.org/tags/Teen Wolf (TV)/works",
+          "count": 125396,
+          "rank": 8,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Sherlock (BBC TV 2010)",
+          "url": "https://archiveofourown.org/tags/Sherlock (BBC TV 2010)/works",
+          "count": 119390,
+          "rank": 9,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Star Trek",
+          "url": "https://archiveofourown.org/tags/Star Trek/works",
+          "count": 115724,
+          "rank": 10,
+          "category": "TV Shows"
+        },
+        {
+          "name": "A Song of Ice and Fire & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/A Song of Ice and Fire *a* Related Fandoms/works",
+          "count": 113987,
+          "rank": 11,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Doctor Who & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Doctor Who *a* Related Fandoms/works",
+          "count": 108232,
+          "rank": 12,
+          "category": "TV Shows"
+        },
+        {
+          "name": "One Piece - All Media Types",
+          "url": "https://archiveofourown.org/tags/One Piece - All Media Types/works",
+          "count": 95919,
+          "rank": 13,
+          "category": "TV Shows"
+        },
+        {
+          "name": "魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu *a* Related Fandoms/works",
+          "count": 91418,
+          "rank": 14,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Doctor Who",
+          "url": "https://archiveofourown.org/tags/Doctor Who/works",
+          "count": 86247,
+          "rank": 15,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Good Omens - All Media Types",
+          "url": "https://archiveofourown.org/tags/Good Omens - All Media Types/works",
+          "count": 80349,
+          "rank": 16,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Good Omens (TV)",
+          "url": "https://archiveofourown.org/tags/Good Omens (TV)/works",
+          "count": 72109,
+          "rank": 17,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Arthurian Mythology & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/Arthurian Mythology *a* Related Fandoms/works",
+          "count": 64672,
+          "rank": 18,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Game of Thrones (TV)",
+          "url": "https://archiveofourown.org/tags/Game of Thrones (TV)/works",
+          "count": 64196,
+          "rank": 19,
+          "category": "TV Shows"
+        },
+        {
+          "name": "9-1-1 (TV)",
+          "url": "https://archiveofourown.org/tags/9-1-1 (TV)/works",
+          "count": 61968,
+          "rank": 20,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Doctor Who (2005)",
+          "url": "https://archiveofourown.org/tags/Doctor Who (2005)/works",
+          "count": 60531,
+          "rank": 21,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Merlin (TV)",
+          "url": "https://archiveofourown.org/tags/Merlin (TV)/works",
+          "count": 58538,
+          "rank": 22,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Stargate - All Media Types",
+          "url": "https://archiveofourown.org/tags/Stargate - All Media Types/works",
+          "count": 56030,
+          "rank": 23,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Once Upon a Time (TV)",
+          "url": "https://archiveofourown.org/tags/Once Upon a Time (TV)/works",
+          "count": 53342,
+          "rank": 24,
+          "category": "TV Shows"
+        },
+        {
+          "name": "陈情令 | The Untamed (TV)",
+          "url": "https://archiveofourown.org/tags/陈情令 | The Untamed (TV)/works",
+          "count": 50711,
+          "rank": 25,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Sonic the Hedgehog - All Media Types",
+          "url": "https://archiveofourown.org/tags/Sonic the Hedgehog - All Media Types/works",
+          "count": 45925,
+          "rank": 26,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Criminal Minds (US TV)",
+          "url": "https://archiveofourown.org/tags/Criminal Minds (US TV)/works",
+          "count": 43712,
+          "rank": 27,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The Shadowhunter Chronicles - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Shadowhunter Chronicles - All Media Types/works",
+          "count": 42785,
+          "rank": 28,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Wiedźmin | The Witcher - All Media Types",
+          "url": "https://archiveofourown.org/tags/Wiedźmin | The Witcher - All Media Types/works",
+          "count": 42379,
+          "rank": 29,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Hannibal (TV)",
+          "url": "https://archiveofourown.org/tags/Hannibal (TV)/works",
+          "count": 41984,
+          "rank": 30,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Supergirl (TV 2015)",
+          "url": "https://archiveofourown.org/tags/Supergirl (TV 2015)/works",
+          "count": 41358,
+          "rank": 31,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Buffy the Vampire Slayer (TV)",
+          "url": "https://archiveofourown.org/tags/Buffy the Vampire Slayer (TV)/works",
+          "count": 40720,
+          "rank": 32,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Glee (TV 2009)",
+          "url": "https://archiveofourown.org/tags/Glee (TV 2009)/works",
+          "count": 40438,
+          "rank": 33,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The 100 (TV)",
+          "url": "https://archiveofourown.org/tags/The 100 (TV)/works",
+          "count": 36447,
+          "rank": 34,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles - All Media Types",
+          "url": "https://archiveofourown.org/tags/Teenage Mutant Ninja Turtles - All Media Types/works",
+          "count": 34663,
+          "rank": 35,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Our Flag Means Death (TV)",
+          "url": "https://archiveofourown.org/tags/Our Flag Means Death (TV)/works",
+          "count": 33800,
+          "rank": 36,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Star Trek: Alternate Original Series (Movies)",
+          "url": "https://archiveofourown.org/tags/Star Trek: Alternate Original Series (Movies)/works",
+          "count": 33450,
+          "rank": 37,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Shadowhunters (TV)",
+          "url": "https://archiveofourown.org/tags/Shadowhunters (TV)/works",
+          "count": 32996,
+          "rank": 38,
+          "category": "TV Shows"
+        },
+        {
+          "name": "House of the Dragon (TV)",
+          "url": "https://archiveofourown.org/tags/House of the Dragon (TV)/works",
+          "count": 32009,
+          "rank": 39,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The Walking Dead (TV)",
+          "url": "https://archiveofourown.org/tags/The Walking Dead (TV)/works",
+          "count": 31324,
+          "rank": 40,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Agents of S.H.I.E.L.D. (TV)",
+          "url": "https://archiveofourown.org/tags/Agents of S*d*H*d*I*d*E*d*L*d*D*d* (TV)/works",
+          "count": 31095,
+          "rank": 41,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Game Changers | Heated Rivalry - All Media Types",
+          "url": "https://archiveofourown.org/tags/Game Changers | Heated Rivalry - All Media Types/works",
+          "count": 30722,
+          "rank": 42,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The Flash - All Media Types",
+          "url": "https://archiveofourown.org/tags/The Flash - All Media Types/works",
+          "count": 30154,
+          "rank": 43,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Stargate Atlantis",
+          "url": "https://archiveofourown.org/tags/Stargate Atlantis/works",
+          "count": 29228,
+          "rank": 44,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Heated Rivalry (TV)",
+          "url": "https://archiveofourown.org/tags/Heated Rivalry (TV)/works",
+          "count": 29005,
+          "rank": 45,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The Vampire Diaries & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/The Vampire Diaries *a* Related Fandoms/works",
+          "count": 28942,
+          "rank": 46,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Stargate SG-1",
+          "url": "https://archiveofourown.org/tags/Stargate SG-1/works",
+          "count": 27772,
+          "rank": 47,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The X-Files",
+          "url": "https://archiveofourown.org/tags/The X-Files/works",
+          "count": 26249,
+          "rank": 48,
+          "category": "TV Shows"
+        },
+        {
+          "name": "The Flash (TV 2014)",
+          "url": "https://archiveofourown.org/tags/The Flash (TV 2014)/works",
+          "count": 25640,
+          "rank": 49,
+          "category": "TV Shows"
+        },
+        {
+          "name": "Law & Order: SVU",
+          "url": "https://archiveofourown.org/tags/Law *a* Order: SVU/works",
+          "count": 24034,
+          "rank": 50,
+          "category": "TV Shows"
+        }
+      ]
+    },
+    {
+      "name": "Video Games",
+      "fandoms": [
+        {
+          "name": "Harry Potter - J. K. Rowling",
+          "url": "https://archiveofourown.org/tags/Harry Potter - J*d* K*d* Rowling/works",
+          "count": 581683,
+          "rank": 1,
+          "category": "Video Games"
+        },
+        {
+          "name": "Star Wars - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars - All Media Types/works",
+          "count": 251617,
+          "rank": 2,
+          "category": "Video Games"
+        },
+        {
+          "name": "原神 | Genshin Impact (Video Game)",
+          "url": "https://archiveofourown.org/tags/原神 | Genshin Impact (Video Game)/works",
+          "count": 234389,
+          "rank": 3,
+          "category": "Video Games"
+        },
+        {
+          "name": "Final Fantasy Series",
+          "url": "https://archiveofourown.org/tags/Final Fantasy Series/works",
+          "count": 126044,
+          "rank": 4,
+          "category": "Video Games"
+        },
+        {
+          "name": "Minecraft (Video Game)",
+          "url": "https://archiveofourown.org/tags/Minecraft (Video Game)/works",
+          "count": 106343,
+          "rank": 5,
+          "category": "Video Games"
+        },
+        {
+          "name": "Dragon Age - All Media Types",
+          "url": "https://archiveofourown.org/tags/Dragon Age - All Media Types/works",
+          "count": 92475,
+          "rank": 6,
+          "category": "Video Games"
+        },
+        {
+          "name": "Fire Emblem Series",
+          "url": "https://archiveofourown.org/tags/Fire Emblem Series/works",
+          "count": 88789,
+          "rank": 7,
+          "category": "Video Games"
+        },
+        {
+          "name": "Dragon Age (Video Games)",
+          "url": "https://archiveofourown.org/tags/Dragon Age (Video Games)/works",
+          "count": 85801,
+          "rank": 8,
+          "category": "Video Games"
+        },
+        {
+          "name": "Pocket Monsters | Pokemon - All Media Types",
+          "url": "https://archiveofourown.org/tags/Pocket Monsters | Pokemon - All Media Types/works",
+          "count": 82450,
+          "rank": 9,
+          "category": "Video Games"
+        },
+        {
+          "name": "League of Legends (Video Game) & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/League of Legends (Video Game) *a* Related Fandoms/works",
+          "count": 75317,
+          "rank": 10,
+          "category": "Video Games"
+        },
+        {
+          "name": "Dangan Ronpa Series",
+          "url": "https://archiveofourown.org/tags/Dangan Ronpa Series/works",
+          "count": 71824,
+          "rank": 11,
+          "category": "Video Games"
+        },
+        {
+          "name": "崩坏：星穹铁道 | Honkai: Star Rail (Video Game)",
+          "url": "https://archiveofourown.org/tags/崩坏：星穹铁道 | Honkai: Star Rail (Video Game)/works",
+          "count": 67198,
+          "rank": 12,
+          "category": "Video Games"
+        },
+        {
+          "name": "Homestuck",
+          "url": "https://archiveofourown.org/tags/Homestuck/works",
+          "count": 66015,
+          "rank": 13,
+          "category": "Video Games"
+        },
+        {
+          "name": "Undertale (Video Game)",
+          "url": "https://archiveofourown.org/tags/Undertale (Video Game)/works",
+          "count": 64014,
+          "rank": 14,
+          "category": "Video Games"
+        },
+        {
+          "name": "Hetalia (Anime & Manga)",
+          "url": "https://archiveofourown.org/tags/Hetalia (Anime *a* Manga)/works",
+          "count": 62938,
+          "rank": 15,
+          "category": "Video Games"
+        },
+        {
+          "name": "Shin Megami Tensei Series",
+          "url": "https://archiveofourown.org/tags/Shin Megami Tensei Series/works",
+          "count": 58853,
+          "rank": 16,
+          "category": "Video Games"
+        },
+        {
+          "name": "Roblox (Video Game)",
+          "url": "https://archiveofourown.org/tags/Roblox (Video Game)/works",
+          "count": 56557,
+          "rank": 17,
+          "category": "Video Games"
+        },
+        {
+          "name": "Persona Series",
+          "url": "https://archiveofourown.org/tags/Persona Series/works",
+          "count": 56092,
+          "rank": 18,
+          "category": "Video Games"
+        },
+        {
+          "name": "Star Wars: The Clone Wars (2008) - All Media Types",
+          "url": "https://archiveofourown.org/tags/Star Wars: The Clone Wars (2008) - All Media Types/works",
+          "count": 52308,
+          "rank": 19,
+          "category": "Video Games"
+        },
+        {
+          "name": "Fire Emblem: Fuukasetsugetsu | Fire Emblem: Three Houses",
+          "url": "https://archiveofourown.org/tags/Fire Emblem: Fuukasetsugetsu | Fire Emblem: Three Houses/works",
+          "count": 51518,
+          "rank": 20,
+          "category": "Video Games"
+        },
+        {
+          "name": "Baldur's Gate (Video Games)",
+          "url": "https://archiveofourown.org/tags/Baldur's Gate (Video Games)/works",
+          "count": 48076,
+          "rank": 21,
+          "category": "Video Games"
+        },
+        {
+          "name": "The Legend of Zelda & Related Fandoms",
+          "url": "https://archiveofourown.org/tags/The Legend of Zelda *a* Related Fandoms/works",
+          "count": 47432,
+          "rank": 22,
+          "category": "Video Games"
+        },
+        {
+          "name": "Pocket Monsters | Pokemon (Main Video Game Series)",
+          "url": "https://archiveofourown.org/tags/Pocket Monsters | Pokemon (Main Video Game Series)/works",
+          "count": 46096,
+          "rank": 23,
+          "category": "Video Games"
+        },
+        {
+          "name": "Final Fantasy XIV",
+          "url": "https://archiveofourown.org/tags/Final Fantasy XIV/works",
+          "count": 46040,
+          "rank": 24,
+          "category": "Video Games"
+        },
+        {
+          "name": "Sonic the Hedgehog - All Media Types",
+          "url": "https://archiveofourown.org/tags/Sonic the Hedgehog - All Media Types/works",
+          "count": 45921,
+          "rank": 25,
+          "category": "Video Games"
+        },
+        {
+          "name": "Call of Duty (Video Games)",
+          "url": "https://archiveofourown.org/tags/Call of Duty (Video Games)/works",
+          "count": 44816,
+          "rank": 26,
+          "category": "Video Games"
+        },
+        {
+          "name": "Dragon Age: Inquisition",
+          "url": "https://archiveofourown.org/tags/Dragon Age: Inquisition/works",
+          "count": 43005,
+          "rank": 27,
+          "category": "Video Games"
+        },
+        {
+          "name": "Wiedźmin | The Witcher - All Media Types",
+          "url": "https://archiveofourown.org/tags/Wiedźmin | The Witcher - All Media Types/works",
+          "count": 42379,
+          "rank": 28,
+          "category": "Video Games"
+        },
+        {
+          "name": "逆転裁判 | Gyakuten Saiban | Ace Attorney",
+          "url": "https://archiveofourown.org/tags/逆転裁判 | Gyakuten Saiban | Ace Attorney/works",
+          "count": 41756,
+          "rank": 29,
+          "category": "Video Games"
+        },
+        {
+          "name": "Overwatch (Video Game)",
+          "url": "https://archiveofourown.org/tags/Overwatch (Video Game)/works",
+          "count": 40079,
+          "rank": 30,
+          "category": "Video Games"
+        },
+        {
+          "name": "Star Wars Prequel Trilogy",
+          "url": "https://archiveofourown.org/tags/Star Wars Prequel Trilogy/works",
+          "count": 38911,
+          "rank": 31,
+          "category": "Video Games"
+        },
+        {
+          "name": "Biohazard | Resident Evil (Gameverse)",
+          "url": "https://archiveofourown.org/tags/Biohazard | Resident Evil (Gameverse)/works",
+          "count": 38254,
+          "rank": 32,
+          "category": "Video Games"
+        },
+        {
+          "name": "プロジェクトセカイ カラフルステージ！| Project SEKAI COLORFUL STAGE! (Video Game)",
+          "url": "https://archiveofourown.org/tags/プロジェクトセカイ カラフルステージ！| Project SEKAI COLORFUL STAGE! (Video Game)/works",
+          "count": 37471,
+          "rank": 33,
+          "category": "Video Games"
+        },
+        {
+          "name": "Persona 5",
+          "url": "https://archiveofourown.org/tags/Persona 5/works",
+          "count": 37259,
+          "rank": 34,
+          "category": "Video Games"
+        },
+        {
+          "name": "Five Nights at Freddy's",
+          "url": "https://archiveofourown.org/tags/Five Nights at Freddy's/works",
+          "count": 36400,
+          "rank": 35,
+          "category": "Video Games"
+        },
+        {
+          "name": "第五人格 | Identity V (Video Game)",
+          "url": "https://archiveofourown.org/tags/第五人格 | Identity V (Video Game)/works",
+          "count": 35520,
+          "rank": 36,
+          "category": "Video Games"
+        },
+        {
+          "name": "Hermitcraft SMP",
+          "url": "https://archiveofourown.org/tags/Hermitcraft SMP/works",
+          "count": 34538,
+          "rank": 37,
+          "category": "Video Games"
+        },
+        {
+          "name": "Compilation of Final Fantasy VII",
+          "url": "https://archiveofourown.org/tags/Compilation of Final Fantasy VII/works",
+          "count": 32351,
+          "rank": 38,
+          "category": "Video Games"
+        },
+        {
+          "name": "LEGO - All Media Types",
+          "url": "https://archiveofourown.org/tags/LEGO - All Media Types/works",
+          "count": 32034,
+          "rank": 39,
+          "category": "Video Games"
+        },
+        {
+          "name": "恋与深空 | Love and Deepspace (Video Game)",
+          "url": "https://archiveofourown.org/tags/恋与深空 | Love and Deepspace (Video Game)/works",
+          "count": 31813,
+          "rank": 40,
+          "category": "Video Games"
+        },
+        {
+          "name": "Mass Effect - All Media Types",
+          "url": "https://archiveofourown.org/tags/Mass Effect - All Media Types/works",
+          "count": 31148,
+          "rank": 41,
+          "category": "Video Games"
+        },
+        {
+          "name": "Detroit: Become Human (Video Game)",
+          "url": "https://archiveofourown.org/tags/Detroit: Become Human (Video Game)/works",
+          "count": 30991,
+          "rank": 42,
+          "category": "Video Games"
+        },
+        {
+          "name": "Ensemble Stars! (Video Game)",
+          "url": "https://archiveofourown.org/tags/Ensemble Stars! (Video Game)/works",
+          "count": 30181,
+          "rank": 43,
+          "category": "Video Games"
+        },
+        {
+          "name": "Final Fantasy XV",
+          "url": "https://archiveofourown.org/tags/Final Fantasy XV/works",
+          "count": 29672,
+          "rank": 44,
+          "category": "Video Games"
+        },
+        {
+          "name": "League of Legends (Video Game)",
+          "url": "https://archiveofourown.org/tags/League of Legends (Video Game)/works",
+          "count": 26823,
+          "rank": 45,
+          "category": "Video Games"
+        },
+        {
+          "name": "Mass Effect Trilogy",
+          "url": "https://archiveofourown.org/tags/Mass Effect Trilogy/works",
+          "count": 26352,
+          "rank": 46,
+          "category": "Video Games"
+        },
+        {
+          "name": "Cookie Run (Video Game)",
+          "url": "https://archiveofourown.org/tags/Cookie Run (Video Game)/works",
+          "count": 25797,
+          "rank": 47,
+          "category": "Video Games"
+        },
+        {
+          "name": "Kingdom Hearts (Video Games)",
+          "url": "https://archiveofourown.org/tags/Kingdom Hearts (Video Games)/works",
+          "count": 25354,
+          "rank": 48,
+          "category": "Video Games"
+        },
+        {
+          "name": "Twisted-Wonderland (Video Game)",
+          "url": "https://archiveofourown.org/tags/Twisted-Wonderland (Video Game)/works",
+          "count": 24962,
+          "rank": 49,
+          "category": "Video Games"
+        },
+        {
+          "name": "New Dangan Ronpa V3: Everyone's New Semester of Killing",
+          "url": "https://archiveofourown.org/tags/New Dangan Ronpa V3: Everyone's New Semester of Killing/works",
+          "count": 24864,
+          "rank": 50,
+          "category": "Video Games"
+        }
+      ]
+    },
+    {
+      "name": "Uncategorized Fandoms",
+      "fandoms": [
+        {
+          "name": "Cambridge International AS & A Level Mathematics(9709)",
+          "url": "https://archiveofourown.org/tags/Cambridge International AS *a* A Level Mathematics(9709)/works",
+          "count": 9709,
+          "rank": 1,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "The Lord of the Rings: The Hunt for Gollum (2027)",
+          "url": "https://archiveofourown.org/tags/The Lord of the Rings: The Hunt for Gollum (2027)/works",
+          "count": 2027,
+          "rank": 2,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": ":스프링 피버 | Spring Fever (2026)",
+          "url": "https://archiveofourown.org/tags/:스프링 피버 | Spring Fever (2026)/works",
+          "count": 2026,
+          "rank": 3,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Ancestors (2026)",
+          "url": "https://archiveofourown.org/tags/Ancestors (2026)/works",
+          "count": 2026,
+          "rank": 4,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Anime: Red River (2026)",
+          "url": "https://archiveofourown.org/tags/Anime: Red River (2026)/works",
+          "count": 2026,
+          "rank": 5,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Avatar Aang: The Last Airbender (2026)",
+          "url": "https://archiveofourown.org/tags/Avatar Aang: The Last Airbender (2026)/works",
+          "count": 2026,
+          "rank": 6,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Avatar: Aang The Last Airbender (2026)",
+          "url": "https://archiveofourown.org/tags/Avatar: Aang The Last Airbender (2026)/works",
+          "count": 2026,
+          "rank": 7,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Avatar: Legend of Aang (2026)",
+          "url": "https://archiveofourown.org/tags/Avatar: Legend of Aang (2026)/works",
+          "count": 2026,
+          "rank": 8,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Avatar: The legend of Aang (2026)",
+          "url": "https://archiveofourown.org/tags/Avatar: The legend of Aang (2026)/works",
+          "count": 2026,
+          "rank": 9,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Avatar: The Legend of Aang: The Last Airbender (2026)",
+          "url": "https://archiveofourown.org/tags/Avatar: The Legend of Aang: The Last Airbender (2026)/works",
+          "count": 2026,
+          "rank": 10,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Avengers: Doomsday (2026)",
+          "url": "https://archiveofourown.org/tags/Avengers: Doomsday (2026)/works",
+          "count": 2026,
+          "rank": 11,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Bhooth Bangla (2026)",
+          "url": "https://archiveofourown.org/tags/Bhooth Bangla (2026)/works",
+          "count": 2026,
+          "rank": 12,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Billionaire Biker (2026)",
+          "url": "https://archiveofourown.org/tags/Billionaire Biker (2026)/works",
+          "count": 2026,
+          "rank": 13,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Busboys (2026)",
+          "url": "https://archiveofourown.org/tags/Busboys (2026)/works",
+          "count": 2026,
+          "rank": 14,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Buttons' Gamezone (2026)",
+          "url": "https://archiveofourown.org/tags/Buttons' Gamezone (2026)/works",
+          "count": 2026,
+          "rank": 15,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Buttons’ Gamezone (2026)",
+          "url": "https://archiveofourown.org/tags/Buttons’ Gamezone (2026)/works",
+          "count": 2026,
+          "rank": 16,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Casa Grande (2026)",
+          "url": "https://archiveofourown.org/tags/Casa Grande (2026)/works",
+          "count": 2026,
+          "rank": 17,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Dating & Dragons: A Love Quest (2026)",
+          "url": "https://archiveofourown.org/tags/Dating *a* Dragons: A Love Quest (2026)/works",
+          "count": 2026,
+          "rank": 18,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "DC K.O.: Knightfight (2026)",
+          "url": "https://archiveofourown.org/tags/DC K*d*O*d*: Knightfight (2026)/works",
+          "count": 2026,
+          "rank": 19,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Die drei ??? - Toteninsel (2026)",
+          "url": "https://archiveofourown.org/tags/Die drei *q**q**q* - Toteninsel (2026)/works",
+          "count": 2026,
+          "rank": 20,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Die drei ??? Toteninsel (2026)",
+          "url": "https://archiveofourown.org/tags/Die drei *q**q**q* Toteninsel (2026)/works",
+          "count": 2026,
+          "rank": 21,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Forgotten Island (2026)",
+          "url": "https://archiveofourown.org/tags/Forgotten Island (2026)/works",
+          "count": 2026,
+          "rank": 22,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Funnier Games (2026)",
+          "url": "https://archiveofourown.org/tags/Funnier Games (2026)/works",
+          "count": 2026,
+          "rank": 23,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Half Man (2026)",
+          "url": "https://archiveofourown.org/tags/Half Man (2026)/works",
+          "count": 2026,
+          "rank": 24,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Handcuffed (2026)",
+          "url": "https://archiveofourown.org/tags/Handcuffed (2026)/works",
+          "count": 2026,
+          "rank": 25,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "In the Grey (2026)",
+          "url": "https://archiveofourown.org/tags/In the Grey (2026)/works",
+          "count": 2026,
+          "rank": 26,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Ink (2026)",
+          "url": "https://archiveofourown.org/tags/Ink (2026)/works",
+          "count": 2026,
+          "rank": 27,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Istiqomah Cinta (2026)",
+          "url": "https://archiveofourown.org/tags/Istiqomah Cinta (2026)/works",
+          "count": 2026,
+          "rank": 28,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Jordan Joost| Wedding (2026)",
+          "url": "https://archiveofourown.org/tags/Jordan Joost| Wedding (2026)/works",
+          "count": 2026,
+          "rank": 29,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "The Legend of Aang: The Last Airbender (2026)",
+          "url": "https://archiveofourown.org/tags/The Legend of Aang: The Last Airbender (2026)/works",
+          "count": 2026,
+          "rank": 30,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "LEGO Batman: Legacy of The Dark Knight (2026)",
+          "url": "https://archiveofourown.org/tags/LEGO Batman: Legacy of The Dark Knight (2026)/works",
+          "count": 2026,
+          "rank": 31,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Leviticus (2026)",
+          "url": "https://archiveofourown.org/tags/Leviticus (2026)/works",
+          "count": 2026,
+          "rank": 32,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Lorne (2026)",
+          "url": "https://archiveofourown.org/tags/Lorne (2026)/works",
+          "count": 2026,
+          "rank": 33,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "The Mandalorian and Grogu (2026)",
+          "url": "https://archiveofourown.org/tags/The Mandalorian and Grogu (2026)/works",
+          "count": 2026,
+          "rank": 34,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Marathon (2026)",
+          "url": "https://archiveofourown.org/tags/Marathon (2026)/works",
+          "count": 2026,
+          "rank": 35,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Marshals (2026)",
+          "url": "https://archiveofourown.org/tags/Marshals (2026)/works",
+          "count": 2026,
+          "rank": 36,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Mercy (2026)",
+          "url": "https://archiveofourown.org/tags/Mercy (2026)/works",
+          "count": 2026,
+          "rank": 37,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Merlin (2026)",
+          "url": "https://archiveofourown.org/tags/Merlin (2026)/works",
+          "count": 2026,
+          "rank": 38,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Mile End Kicks (2026)",
+          "url": "https://archiveofourown.org/tags/Mile End Kicks (2026)/works",
+          "count": 2026,
+          "rank": 39,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "The Moment (2026)",
+          "url": "https://archiveofourown.org/tags/The Moment (2026)/works",
+          "count": 2026,
+          "rank": 40,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "La Oficina | Prime Video (2026)",
+          "url": "https://archiveofourown.org/tags/La Oficina | Prime Video (2026)/works",
+          "count": 2026,
+          "rank": 41,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Outcome (2026)",
+          "url": "https://archiveofourown.org/tags/Outcome (2026)/works",
+          "count": 2026,
+          "rank": 42,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Project Nadir (2026)",
+          "url": "https://archiveofourown.org/tags/Project Nadir (2026)/works",
+          "count": 2026,
+          "rank": 43,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Rewrite (2026)",
+          "url": "https://archiveofourown.org/tags/Rewrite (2026)/works",
+          "count": 2026,
+          "rank": 44,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Sammy's children's day (2026)",
+          "url": "https://archiveofourown.org/tags/Sammy's children's day (2026)/works",
+          "count": 2026,
+          "rank": 45,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Sammy’s Children’s Day (2026)",
+          "url": "https://archiveofourown.org/tags/Sammy’s Children’s Day (2026)/works",
+          "count": 2026,
+          "rank": 46,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Siren's Kiss (2026)",
+          "url": "https://archiveofourown.org/tags/Siren's Kiss (2026)/works",
+          "count": 2026,
+          "rank": 47,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Soul Shift (2026)",
+          "url": "https://archiveofourown.org/tags/Soul Shift (2026)/works",
+          "count": 2026,
+          "rank": 48,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "Survive the Night (2026)",
+          "url": "https://archiveofourown.org/tags/Survive the Night (2026)/works",
+          "count": 2026,
+          "rank": 49,
+          "category": "Uncategorized Fandoms"
+        },
+        {
+          "name": "War Machine (2026)",
+          "url": "https://archiveofourown.org/tags/War Machine (2026)/works",
+          "count": 2026,
+          "rank": 50,
+          "category": "Uncategorized Fandoms"
+        }
+      ]
+    }
+  ]
+}
