@@ -1,0 +1,13 @@
+I want to build a website, FanNexus, that connects various fan fiction sites together. I'm thinking it should be a sort of search engine for fan fiction across different platforms, but with some slight inspiration from Netflix, but book themed. It should have two pages of sorts: a homepage that showcases featured stories (through which the user can scroll/browse, no pagination) with a search function (of course) and a search page where the user can input the link to a story and get recommendations for stories just like it. Additionally, include user profiles for tracking reading progress and favorite genres.
+
+FanNexus will scrape these story details from popular fanfic sites such as AO3, Spacebattles, Sufficient Velocity, Questionable Questing, FFnet, Wattpad, etc. No, not scraping the stories, but the details. Every detail each site has about a story should be scraped and stored: link, tags, fandom, author, rating, genre, word count, completion status, publication and update dates, summary, every bit of metadata available. There should be deduplication logic, of course, using fandom, title, author name, summary, whatever other metadata might be similar. And potentially a way to categorize and search this data effectively.
+
+Am I missing anything?
+
+Let us plan first. This site needs to be built for scale and performance as well as an overwhelmingly user-friendly and visually appealing experience. I want smooth, buttery, creamy animations between every change in pixel (from clicking a button to navigating between pages, with caching to ensure smooth operation), fonts, an overall premium look and experience. I'm thinking of a light and dark mode as well, but with room for the user to customize and adjust the color schemes and themes to their liking. The user should also be able to save their preferences.
+
+I have big dreams for this site, but what I have described so far is phase 1: a beautiful search engine.
+Phase 2 is to actually HAVE all fanfiction stories in database, with an immersive and customizable reader. All story interactions by user (likes, comments, etc) will be distributed to all source websites (AO3, Spacebattles, etc).
+Phase 3 would be incorporating ML algorithms to suggest personalized story recommendations and grade/rank/score stories based on certain elements (writing quality (first and foremost), plot complexity (still no idea how this will be accomplished), character development (out of a golden list of questions, how many can be answered about each identified character), and world-building (how many places named? how many characters? Character development is an element involved in the final score of this metric)).
+
+But those are months away. We begin with phase 1.
