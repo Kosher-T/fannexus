@@ -1,0 +1,46 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx esbuild server.ts --format=esm --platform=node --target=es2022 --packages=external --outfile=server.mjs && node server.mjs",
+    "start": "node dist/server.cjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "scrape:discover": "npx tsx src/services/scrapers/ao3/fandomDiscovery.ts",
+    "scrape:test": "npx tsx src/services/scrapers/ao3/testScraper.ts",
+    "scrape:local": "npx tsx src/services/scrapers/ao3/runLocalScraper.ts",
+    "scrape:run": "npx tsx src/services/scrapers/ao3/scrapingOrchestrator.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@tailwindcss/oxide-linux-x64-gnu": "^4.2.4",
+    "@tailwindcss/vite": "^4.2.4",
+    "@vitejs/plugin-react": "^5.0.4",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "firebase": "^12.12.1",
+    "firebase-admin": "^12.7.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.14.2",
+    "vite": "^6.2.0"
+  },
+  "devDependencies": {
+    "@firebase/eslint-plugin-security-rules": "^0.0.2",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^10.2.1",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.19.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "displayName": { "$ref": "#/properties/string" },
+        "email": { "$ref": "#/properties/string" },
+        "createdAt": { "$ref": "#/properties/timestamp" }
+      },
+      "required": ["email", "createdAt"]
+    },
+    "LibraryItem": {
+      "title": "LibraryItem",
+      "description": "A saved story in the user's library",
+      "type": "object",
+      "properties": {
+        "storyId": { "$ref": "#/properties/string" },
+        "status": {
+          "type": "string",
+          "enum": ["READING", "BOOKMARKED", "COMPLETED", "DROPPED"]
+        },
+        "addedAt": { "$ref": "#/properties/timestamp" }
+      },
+      "required": ["storyId", "status", "addedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/users/{userId}/library/{libraryItemId}": {
+      "schema": "LibraryItem",
+      "description": "User's saved stories"
+    }
+  }
+}
