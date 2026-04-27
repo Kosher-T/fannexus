@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+#.env*
+#serviceAccountKey.json
+#.gitignore
+#.env.example
+*.mjs
+#firebase-applet-config.json
+#firebase-blueprint.json
+
+# Scraper — test output excluded, but scraped data is tracked
+data/test_output.json
