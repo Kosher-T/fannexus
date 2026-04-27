@@ -1,0 +1,68 @@
+name: AO3 Scraper
+
+on:
+  schedule:
+    # 3-4 sessions per day at staggered times (UTC)
+    - cron: '15 1 * * *'    # ~1:15 AM UTC
+    - cron: '30 8 * * *'    # ~8:30 AM UTC  
+    - cron: '45 15 * * *'   # ~3:45 PM UTC
+    - cron: '0 22 * * *'    # ~10:00 PM UTC
+  workflow_dispatch: {}       # Manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330      # 5h30m hard limit (buffer before 6h GH limit)
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Random start delay (0-30 min jitter)
+        run: |
+          DELAY=$((RANDOM % 1800))
+          echo "Adding ${DELAY}s random start delay for jitter..."
+          sleep $DELAY
+
+      - name: Run AO3 scraper
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          npx tsx src/services/scrapers/ao3/scrapingOrchestrator.ts \
+            --runner-id=github-actions \
+            --max-duration=17400
+        # 17400s = 4h50m — leaves ~40min for git operations + jitter
+
+      - name: Commit scraped data
+        run: |
+          git config user.name "FanNexus Bot"
+          git config user.email "bot@fannexus.local"
+          
+          # Add all data files
+          git add data/ || true
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No new data to commit."
+          else
+            STORIES=$(wc -l < data/scraping/scraped_ids.txt 2>/dev/null || echo "0")
+            git commit -m "🤖 Scraping session $(date -u +%Y-%m-%dT%H:%M:%SZ) — ${STORIES} total stories"
+            
+            # Pull with rebase to handle concurrent pushes from local scraper
+            git pull --rebase origin main || git pull --rebase origin master || true
+            git push
+            
+            echo "✅ Scraped data committed and pushed."
+          fi
