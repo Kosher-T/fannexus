@@ -7,7 +7,7 @@
  * Uses firebase-admin SDK for server-side authentication (service account).
  */
 
-import * as admin from 'firebase-admin';
+import admin from 'firebase-admin';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
@@ -55,9 +55,9 @@ export function initFirebase(): admin.database.Database {
     }
 
     if (!admin.apps.length) {
-      const databaseURL = process.env.FIREBASE_RTDB_URL 
+      const databaseURL = process.env.FIREBASE_RTDB_URL
         || `https://gen-lang-client-0491033860-default-rtdb.firebaseio.com`;
-      
+
       admin.initializeApp({
         credential,
         databaseURL,

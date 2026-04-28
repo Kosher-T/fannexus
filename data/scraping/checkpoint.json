@@ -1,0 +1,13 @@
+{
+  "runnerId": "local",
+  "startedAt": "2026-04-28T14:10:13.091Z",
+  "lastActivity": "2026-04-28T14:10:13.076Z",
+  "activeFandom": null,
+  "completedFandoms": [],
+  "stats": {
+    "totalScraped": 0,
+    "totalFailed": 0,
+    "totalPages": 0,
+    "sessionScraped": 0
+  }
+}
