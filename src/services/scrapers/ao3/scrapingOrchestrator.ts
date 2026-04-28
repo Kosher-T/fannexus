@@ -389,8 +389,18 @@ export class ScrapingOrchestrator {
 
   private async gracefulShutdown(signal: string): Promise<void> {
     console.log(`\n\n🛑 Received ${signal}. Initiating graceful shutdown...`);
+    if (this.shouldStop) {
+      console.log('Forcing exit due to multiple signals...');
+      process.exit(1);
+    }
     this.shouldStop = true;
     this.scraper.isPaused = true;
+
+    // Safety timeout: if graceful shutdown hangs (e.g. Firebase unresponsive), force exit
+    setTimeout(() => {
+      console.log('\n🛑 Graceful shutdown timed out. Forcing exit.');
+      process.exit(1);
+    }, 5000).unref();
   }
 
   private async endSession(): Promise<void> {
