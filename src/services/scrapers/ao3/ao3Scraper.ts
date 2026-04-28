@@ -120,7 +120,9 @@ export class AO3Scraper extends BaseScraper {
             if (!rawUrl.startsWith('http')) {
               rawUrl = `${this.baseUrl}${rawUrl}`;
             }
-            try { resolvedUrl = decodeURI(rawUrl); } catch { resolvedUrl = rawUrl; }
+            // Keep the raw percent-encoded URL from AO3's HTML — it's already
+            // in the correct form for direct fetching (CJK, spaces, etc. encoded)
+            resolvedUrl = rawUrl;
           }
 
           const fullText = $item.text().trim();
@@ -546,7 +548,8 @@ export class AO3Scraper extends BaseScraper {
         let url = '';
         if (rawUrl) {
           if (!rawUrl.startsWith('http')) rawUrl = `${this.baseUrl}${rawUrl}`;
-          try { url = decodeURI(rawUrl); } catch { url = rawUrl; }
+          // Keep the raw percent-encoded URL — directly fetchable as-is
+          url = rawUrl;
         }
 
         const textContent = $li.text().trim();
