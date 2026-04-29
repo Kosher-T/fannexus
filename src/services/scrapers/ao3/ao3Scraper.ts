@@ -507,7 +507,7 @@ export class AO3Scraper extends BaseScraper {
 
   private buildWorkListUrl(fandomUrl: string, page: number, dateChunk?: DateChunk): string {
     const separator = fandomUrl.includes('?') ? '&' : '?';
-    let url = `${fandomUrl}${separator}page=${page}&view_adult=true`;
+    let url = `${fandomUrl}${separator}page=${page}`;
 
     if (dateChunk) {
       url += `&work_search[date_from]=${dateChunk.from}&work_search[date_to]=${dateChunk.to}`;
