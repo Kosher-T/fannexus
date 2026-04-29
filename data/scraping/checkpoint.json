@@ -1,14 +1,8 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-04-29T16:52:32.886Z",
+  "startedAt": "2026-04-29T17:02:25.340Z",
   "lastActivity": "2026-04-28T14:10:13.076Z",
-  "activeFandom": {
-    "name": "“Ikigai” vs. Ikigai - Hiroko Yoda",
-    "url": "https://archiveofourown.org/tags/%E2%80%9CIkigai%E2%80%9D%20vs*d*%20Ikigai%20-%20Hiroko%20Yoda/works",
-    "category": "Uncategorized Fandoms",
-    "dateChunk": null,
-    "lastPage": 0
-  },
+  "activeFandom": null,
   "completedFandoms": [],
   "stats": {
     "totalScraped": 0,

@@ -142,9 +142,7 @@ export class BaseScraper {
               details: { url, error: err.message },
             });
 
-            // Wait 5 minutes before giving up on this URL
-            console.warn(`[${this.sourceName}] ⏳ Waiting 5 minutes before abandoning ${url}...`);
-            await this.sleep(5 * 60 * 1000);
+            console.warn(`[${this.sourceName}] 🛑 Abandoning ${url} after ${retries} failed attempts.`);
             throw err;
           }
 

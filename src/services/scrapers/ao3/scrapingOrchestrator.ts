@@ -59,7 +59,7 @@ const TARGET_FANDOMS_FILE = path.join(DATA_DIR, 'ao3_target_fandoms.json');
 // Constants
 // ============================================================
 
-const MAX_CONSECUTIVE_ERRORS = 10;
+const MAX_CONSECUTIVE_ERRORS = 3;
 const RETRY_DELAY_MS = 10000;
 const DEFAULT_MAX_DURATION_S = 0;  // 0 = unlimited
 
