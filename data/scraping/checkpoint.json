@@ -1,12 +1,18 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-04-29T17:02:25.340Z",
+  "startedAt": "2026-04-29T17:23:51.520Z",
   "lastActivity": "2026-04-28T14:10:13.076Z",
-  "activeFandom": null,
+  "activeFandom": {
+    "name": "Law & Order: SVU",
+    "url": "https://archiveofourown.org/tags/Law%20*a*%20Order:%20SVU/works",
+    "category": "TV Shows",
+    "dateChunk": null,
+    "lastPage": 0
+  },
   "completedFandoms": [],
   "stats": {
     "totalScraped": 0,
-    "totalFailed": 0,
+    "totalFailed": 1,
     "totalPages": 0,
     "sessionScraped": 0
   }
