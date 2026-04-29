@@ -56,7 +56,7 @@ export async function discoverFandoms(): Promise<FandomTargetFile> {
 
       // Fall back to the top fandoms shown on the main media page
       const topFandoms: FandomTarget[] = category.topFandoms
-        .sort((a, b) => b.count - a.count)
+        .sort((a, b) => (b.count || 0) - (a.count || 0))
         .slice(0, TOP_N)
         .map((f, i) => ({
           name: f.name,
@@ -74,7 +74,7 @@ export async function discoverFandoms(): Promise<FandomTargetFile> {
 
       console.log(`   📊 Selected ${topFandoms.length} fandoms (from main page).`);
       topFandoms.slice(0, 5).forEach(f => {
-        console.log(`      #${f.rank} ${f.name} (${f.count.toLocaleString()} works)`);
+        console.log(`      #${f.rank} ${f.name} (${f.count !== null ? f.count.toLocaleString() : 'null'} works)`);
       });
       if (topFandoms.length > 5) console.log(`      ... and ${topFandoms.length - 5} more`);
       continue;
@@ -87,7 +87,7 @@ export async function discoverFandoms(): Promise<FandomTargetFile> {
 
     // Sort by count descending, take top N
     const topFandoms: FandomTarget[] = allFandoms
-      .sort((a, b) => b.count - a.count)
+      .sort((a, b) => (b.count || 0) - (a.count || 0))
       .slice(0, TOP_N)
       .map((f, i) => ({
         name: f.name,
@@ -105,7 +105,7 @@ export async function discoverFandoms(): Promise<FandomTargetFile> {
 
     console.log(`   ✅ Selected top ${topFandoms.length} fandoms:`);
     topFandoms.slice(0, 5).forEach(f => {
-      console.log(`      #${f.rank} ${f.name} (${f.count.toLocaleString()} works)`);
+      console.log(`      #${f.rank} ${f.name} (${f.count !== null ? f.count.toLocaleString() : 'null'} works)`);
     });
     if (topFandoms.length > 5) console.log(`      ... and ${topFandoms.length - 5} more`);
   }

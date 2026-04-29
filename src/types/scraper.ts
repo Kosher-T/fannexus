@@ -72,7 +72,7 @@ export interface StoryMetadata {
 export interface FandomTarget {
   name: string;
   url: string;
-  count: number;
+  count: number | null;
   rank: number;
   category: string;
 }

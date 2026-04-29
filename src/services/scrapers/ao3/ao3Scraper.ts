@@ -12,14 +12,14 @@ export interface FandomCategory {
   topFandoms: Array<{
     name: string;
     url: string;
-    count: number;
+    count: number | null;
   }>;
 }
 
 export interface FandomEntry {
   name: string;
   url: string;
-  count: number;
+  count: number | null;
 }
 
 // ============================================================
@@ -126,8 +126,9 @@ export class AO3Scraper extends BaseScraper {
           }
 
           const fullText = $item.text().trim();
-          const countMatch = fullText.match(/\(([\d,]+)\)\s*$/);
-          const count = countMatch ? parseInt(countMatch[1].replace(/,/g, '')) : 0;
+          const remainder = fullText.replace(name, '').trim();
+          const countMatch = remainder.match(/\(([\d,]+)\)\s*$/);
+          const count = countMatch ? parseInt(countMatch[1].replace(/,/g, '')) : null;
 
           if (name && resolvedUrl) {
             allFandoms.push({ name, url: resolvedUrl, count });
@@ -259,8 +260,9 @@ export class AO3Scraper extends BaseScraper {
    * sub-queries, each with <100K works (5000 pages × 20/page).
    * Starts from earliest AO3 date (2008) to present.
    */
-  buildDateRangeChunks(totalCount: number): DateChunk[] {
+  buildDateRangeChunks(totalCount: number | null): DateChunk[] {
     const chunks: DateChunk[] = [];
+    if (totalCount === null) return [];
     const maxWorksPerChunk = 90000; // Stay under 100K with margin
     const currentYear = new Date().getFullYear();
     const startYear = 2008; // AO3 launched in 2009, but be safe
@@ -532,8 +534,8 @@ export class AO3Scraper extends BaseScraper {
   private extractFandomsFromList(
     $: cheerio.CheerioAPI,
     section: cheerio.Cheerio<any>
-  ): Array<{ name: string; url: string; count: number }> {
-    const fandoms: Array<{ name: string; url: string; count: number }> = [];
+  ): Array<{ name: string; url: string; count: number | null }> {
+    const fandoms: Array<{ name: string; url: string; count: number | null }> = [];
     const listContainer = section.find('ul.index, ol.index').first();
 
     if (listContainer.length > 0) {
@@ -553,8 +555,9 @@ export class AO3Scraper extends BaseScraper {
         }
 
         const textContent = $li.text().trim();
-        const countMatch = textContent.match(/\(([\d,]+)\)/);
-        const count = countMatch ? parseInt(countMatch[1].replace(/,/g, '')) : 0;
+        const remainder = textContent.replace(name, '').trim();
+        const countMatch = remainder.match(/\(([\d,]+)\)/);
+        const count = countMatch ? parseInt(countMatch[1].replace(/,/g, '')) : null;
 
         if (name && url) {
           fandoms.push({ name, url, count });

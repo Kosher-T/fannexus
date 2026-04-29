@@ -166,7 +166,8 @@ export class ScrapingOrchestrator {
     console.log(`\n╔═══════════════════════════════════════════════════╗`);
     console.log(`║  📚 FANDOM: ${fandom.name.slice(0, 38).padEnd(38)}║`);
     console.log(`║  Category: ${fandom.category.slice(0, 39).padEnd(39)}║`);
-    console.log(`║  Expected: ~${fandom.count.toLocaleString()} works${' '.repeat(Math.max(0, 36 - `~${fandom.count.toLocaleString()} works`.length))}║`);
+    const countStr = fandom.count !== null ? fandom.count.toLocaleString() : 'null';
+    console.log(`║  Expected: ~${countStr} works${' '.repeat(Math.max(0, 36 - `~${countStr} works`.length))}║`);
     console.log(`╚═══════════════════════════════════════════════════╝\n`);
 
     // Determine if we need date-range chunking
