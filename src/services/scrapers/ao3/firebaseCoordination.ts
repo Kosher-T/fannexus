@@ -56,7 +56,7 @@ export function initFirebase(): admin.database.Database {
 
     if (!admin.apps.length) {
       const databaseURL = process.env.FIREBASE_RTDB_URL
-        || `https://gen-lang-client-0491033860-default-rtdb.firebaseio.com`;
+        || `https://gen-lang-client-0491033860-default-rtdb.europe-west1.firebasedatabase.app`;
 
       admin.initializeApp({
         credential,

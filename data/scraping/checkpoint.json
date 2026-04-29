@@ -1,8 +1,14 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-04-28T14:10:13.091Z",
+  "startedAt": "2026-04-29T13:57:23.657Z",
   "lastActivity": "2026-04-28T14:10:13.076Z",
-  "activeFandom": null,
+  "activeFandom": {
+    "name": "War Machine (2026)",
+    "url": "https://archiveofourown.org/tags/War%20Machine%20(2026)/works",
+    "category": "Uncategorized Fandoms",
+    "dateChunk": null,
+    "lastPage": 0
+  },
   "completedFandoms": [],
   "stats": {
     "totalScraped": 0,
