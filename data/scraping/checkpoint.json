@@ -1,13 +1,13 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-04-30T15:05:36.702Z",
-  "lastActivity": "2026-04-30T15:22:44.045Z",
+  "startedAt": "2026-04-30T15:39:31.287Z",
+  "lastActivity": "2026-04-30T15:57:19.596Z",
   "activeFandom": {
     "name": "Twisted-Wonderland (Video Game)",
     "url": "https://archiveofourown.org/tags/Twisted-Wonderland%20(Video%20Game)/works",
     "category": "Video Games",
     "dateChunk": null,
-    "lastPage": 2
+    "lastPage": 15
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -62,9 +62,9 @@
     "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works"
   ],
   "stats": {
-    "totalScraped": 399,
+    "totalScraped": 658,
     "totalFailed": 12,
-    "totalPages": 115,
-    "sessionScraped": 40
+    "totalPages": 131,
+    "sessionScraped": 259
   }
 }

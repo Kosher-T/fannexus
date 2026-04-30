@@ -66,9 +66,9 @@ export class BaseScraper {
   public async initBrowser(): Promise<void> {
     if (this.browser) return;
     console.log(`[${this.sourceName}] 🚀 Initializing headless browser...`);
-    this.browser = await chromium.launch({ 
+    this.browser = await chromium.launch({
       headless: true,
-      executablePath: process.env.GITHUB_ACTIONS ? undefined : '/usr/bin/google-chrome' 
+      executablePath: process.env.GITHUB_ACTIONS ? undefined : '/usr/bin/google-chrome'
     });
     this.context = await this.browser.newContext({
       viewport: { width: 1920, height: 1080 },
@@ -119,20 +119,20 @@ export class BaseScraper {
 
         // Open new page
         const page = await this.context!.newPage();
-        
+
         // Set User-Agent for this specific page
         await page.setExtraHTTPHeaders({ 'User-Agent': ua });
 
-        const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
         if (!response) {
-           await page.close();
-           throw new Error('No response from server');
+          await page.close();
+          throw new Error('No response from server');
         }
 
         const status = response.status();
         const body = await page.content();
-        
+
         // Close page to save memory
         await page.close();
 

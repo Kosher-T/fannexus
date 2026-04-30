@@ -50,7 +50,7 @@ const CATEGORY_MAP: Record<string, string> = {
 
 export class AO3Scraper extends BaseScraper {
   constructor() {
-    super('AO3', 'https://archiveofourown.org', 2000); // 2 second base rate limit
+    super('AO3', 'https://archiveofourown.org', 2500); // 2 second base rate limit
   }
 
   // ============================================================
