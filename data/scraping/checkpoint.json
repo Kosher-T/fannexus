@@ -1,13 +1,13 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-04-30T11:25:17.899Z",
-  "lastActivity": "2026-04-30T11:50:35.474Z",
+  "startedAt": "2026-04-30T15:05:36.702Z",
+  "lastActivity": "2026-04-30T13:43:45.256Z",
   "activeFandom": {
     "name": "New Dangan Ronpa V3: Everyone's New Semester of Killing",
     "url": "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works",
     "category": "Video Games",
     "dateChunk": null,
-    "lastPage": 15
+    "lastPage": 0
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -61,9 +61,9 @@
     "https://archiveofourown.org/tags/%E2%80%AA%E2%80%AB%E2%80%AC%E2%80%AE%20%E2%81%AA%E2%81%AB%E2%81%AD%E2%81%AE%E2%81%AF%20-%20Fandom/works"
   ],
   "stats": {
-    "totalScraped": 358,
+    "totalScraped": 359,
     "totalFailed": 8,
-    "totalPages": 85,
-    "sessionScraped": 335
+    "totalPages": 110,
+    "sessionScraped": 0
   }
 }
