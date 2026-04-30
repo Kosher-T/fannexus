@@ -13,7 +13,8 @@
     "scrape:discover": "npx tsx src/services/scrapers/ao3/fandomDiscovery.ts",
     "scrape:test": "npx tsx src/services/scrapers/ao3/testScraper.ts",
     "scrape:local": "npx tsx src/services/scrapers/ao3/runLocalScraper.ts",
-    "scrape:run": "npx tsx src/services/scrapers/ao3/scrapingOrchestrator.ts"
+    "scrape:run": "npx tsx src/services/scrapers/ao3/scrapingOrchestrator.ts",
+    "db:ingest": "npx tsx src/services/scrapers/ao3/ingestToFirestore.ts"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
