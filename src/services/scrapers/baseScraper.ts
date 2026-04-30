@@ -1,4 +1,5 @@
 import type { ScraperAlert } from '../../types/scraper';
+import { chromium, Browser, BrowserContext, Page } from 'playwright';
 
 // ============================================================
 // User-Agent rotation pool — realistic browser strings
@@ -31,6 +32,10 @@ export class BaseScraper {
   private lastFetchTime: number;
   private uaIndex: number;
 
+  // Playwright instances
+  private browser: Browser | null = null;
+  private context: BrowserContext | null = null;
+
   /**
    * If set, called whenever a notable event occurs (soft-ban, connection failure, etc.)
    */
@@ -56,6 +61,38 @@ export class BaseScraper {
   }
 
   /**
+   * Initializes the headless browser. Call this before scraping.
+   */
+  public async initBrowser(): Promise<void> {
+    if (this.browser) return;
+    console.log(`[${this.sourceName}] 🚀 Initializing headless browser...`);
+    this.browser = await chromium.launch({ 
+      headless: true,
+      executablePath: process.env.GITHUB_ACTIONS ? undefined : '/usr/bin/google-chrome' 
+    });
+    this.context = await this.browser.newContext({
+      viewport: { width: 1920, height: 1080 },
+    });
+    // Set AO3 adult consent cookie
+    await this.context.addCookies([{
+      name: 'view_adult',
+      value: 'true',
+      domain: 'archiveofourown.org',
+      path: '/'
+    }]);
+  }
+
+  /**
+   * Closes the headless browser. Call this when scraping is done.
+   */
+  public async closeBrowser(): Promise<void> {
+    if (this.context) await this.context.close();
+    if (this.browser) await this.browser.close();
+    this.context = null;
+    this.browser = null;
+  }
+
+  /**
    * Fetches HTML content from a URL with:
    * - Politeness delay (2s base + 0.5–1.5s random jitter)
    * - Rotating User-Agent strings
@@ -64,6 +101,10 @@ export class BaseScraper {
    * - Connection timeout recovery
    */
   protected async fetchHTML(url: string, retries: number = 3): Promise<string> {
+    if (!this.browser || !this.context) {
+      await this.initBrowser();
+    }
+
     await this.enforceDelay();
 
     for (let attempt = 1; attempt <= retries; attempt++) {
@@ -76,51 +117,50 @@ export class BaseScraper {
         const ua = this.getNextUserAgent();
         console.log(`[${this.sourceName}] 🌐 Fetching (Attempt ${attempt}/${retries}): ${url}`);
 
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 30000); // 30s timeout
+        // Open new page
+        const page = await this.context!.newPage();
+        
+        // Set User-Agent for this specific page
+        await page.setExtraHTTPHeaders({ 'User-Agent': ua });
 
-        const response = await fetch(url, {
-          headers: {
-            'User-Agent': ua,
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-            'Cache-Control': 'max-age=0',
-            'Cookie': 'view_adult=true',
-          },
-          signal: controller.signal,
-        });
+        const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
-        clearTimeout(timeout);
+        if (!response) {
+           await page.close();
+           throw new Error('No response from server');
+        }
+
+        const status = response.status();
+        const body = await page.content();
+        
+        // Close page to save memory
+        await page.close();
 
         // --- Soft-ban / rate limit detection ---
-        if (response.status === 429) {
-          const backoff = await this.handleSoftBan(attempt, response);
+        if (status === 429) {
+          const backoff = await this.handleSoftBan(attempt, { status, headers: new Map() } as any);
           if (backoff === -1) throw new Error('SOFT_BAN_MAX_BACKOFF');
           continue;
         }
 
         // --- Cloudflare challenge page detection ---
-        if (response.status === 403 || response.status === 503) {
-          const body = await response.text();
+        if (status === 403 || status === 503 || status === 525) {
           if (body.includes('cloudflare') || body.includes('cf-browser-verification') || body.includes('challenge-platform')) {
-            console.warn(`[${this.sourceName}] 🛡️ Cloudflare challenge detected (${response.status}).`);
-            const backoff = await this.handleSoftBan(attempt, response);
+            console.warn(`[${this.sourceName}] 🛡️ Cloudflare challenge detected (${status}).`);
+            const backoff = await this.handleSoftBan(attempt, { status, headers: new Map() } as any);
             if (backoff === -1) throw new Error('CLOUDFLARE_CHALLENGE');
             continue;
           }
-          throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+          throw new Error(`HTTP Error: ${status} ${response.statusText()}`);
         }
 
-        if (!response.ok) {
-          throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+        if (!response.ok()) {
+          throw new Error(`HTTP Error: ${status} ${response.statusText()}`);
         }
 
         // --- Success ---
         this.consecutiveBans = 0;
-        return await response.text();
+        return body;
 
       } catch (error: unknown) {
         const err = error instanceof Error ? error : new Error(String(error));
@@ -159,9 +199,10 @@ export class BaseScraper {
           throw err;
         }
 
-        const backoff = this.fetchDelayMs * attempt;
-        console.warn(`[${this.sourceName}] ⚠️ Fetch failed (${err.message}). Retrying in ${backoff / 1000}s...`);
-        await this.sleep(backoff);
+        // Determine wait time for next retry
+        const delay = attempt === 1 ? 4000 : 8000;
+        console.warn(`[${this.sourceName}] ⚠️ Fetch failed (${err.message}). Retrying in ${delay / 1000}s...`);
+        await new Promise((resolve) => setTimeout(resolve, delay));
       }
     }
 

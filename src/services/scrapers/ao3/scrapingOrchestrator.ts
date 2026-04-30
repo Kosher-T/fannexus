@@ -317,6 +317,12 @@ export class ScrapingOrchestrator {
         const dupMsg = dupCount > 0 ? ` (${dupCount} duplicates skipped)` : '';
         console.log(`   ✅ Page ${page}: ${newWorks} new works saved${dupMsg}.`);
 
+        // If less than 20 works are returned, it's the last page
+        if (works.length < 20) {
+          console.log(`   🏁 Page ${page}: Less than 20 works returned. End of listing.`);
+          hasMore = false;
+        }
+
         // Update checkpoint
         this.checkpoint.activeFandom!.lastPage = page;
         this.checkpoint.stats.totalPages++;
@@ -406,6 +412,7 @@ export class ScrapingOrchestrator {
 
   private async endSession(): Promise<void> {
     stopHeartbeat();
+    await this.scraper.closeBrowser();
 
     const elapsed = Math.round((Date.now() - this.startTime) / 1000);
     const minutes = Math.floor(elapsed / 60);
