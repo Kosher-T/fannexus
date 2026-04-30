@@ -1,13 +1,13 @@
 {
   "runnerId": "local",
   "startedAt": "2026-04-30T11:25:17.899Z",
-  "lastActivity": "2026-04-30T11:40:32.427Z",
+  "lastActivity": "2026-04-30T11:50:22.438Z",
   "activeFandom": {
-    "name": "‪ムロマキ | Muromaki",
-    "url": "https://archiveofourown.org/tags/%E2%80%AA%E3%83%A0%E3%83%AD%E3%83%9E%E3%82%AD%20%7C%20Muromaki/works",
-    "category": "Uncategorized Fandoms",
+    "name": "New Dangan Ronpa V3: Everyone's New Semester of Killing",
+    "url": "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works",
+    "category": "Video Games",
     "dateChunk": null,
-    "lastPage": 0
+    "lastPage": 14
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -56,12 +56,14 @@
     "https://archiveofourown.org/tags/die%20-%20Fandom/works",
     "https://archiveofourown.org/tags/_____tale%20Sans%20-%20Fandom/works",
     "https://archiveofourown.org/tags/____/works",
-    "https://archiveofourown.org/tags/%EF%B9%89/works"
+    "https://archiveofourown.org/tags/%EF%B9%89/works",
+    "https://archiveofourown.org/tags/%E2%80%AA%E3%83%A0%E3%83%AD%E3%83%9E%E3%82%AD%20%7C%20Muromaki/works",
+    "https://archiveofourown.org/tags/%E2%80%AA%E2%80%AB%E2%80%AC%E2%80%AE%20%E2%81%AA%E2%81%AB%E2%81%AD%E2%81%AE%E2%81%AF%20-%20Fandom/works"
   ],
   "stats": {
-    "totalScraped": 52,
-    "totalFailed": 6,
-    "totalPages": 68,
-    "sessionScraped": 29
+    "totalScraped": 338,
+    "totalFailed": 8,
+    "totalPages": 84,
+    "sessionScraped": 315
   }
 }
