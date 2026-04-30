@@ -1,8 +1,6 @@
 name: AO3 Scraper
 
 on:
-  push:
-    branches: [ main, master ]
   schedule:
     # 10-14 sessions per day at staggered times (UTC)
     - cron: '10 0 * * *'    # ~00:10 AM UTC
