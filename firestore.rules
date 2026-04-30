@@ -46,6 +46,15 @@ service cloud.firestore {
       // email and createdAt cannot change
     }
 
+    match /test/connection {
+      allow read: if true;
+    }
+
+    match /stories/{storyId} {
+      allow read: if true;
+      allow write: if false; 
+    }
+
     match /users/{userId} {
       allow get: if isValidId(userId) && isOwner(userId);
       allow list: if false; // Users cannot list all basic users
