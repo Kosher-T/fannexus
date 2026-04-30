@@ -53,6 +53,7 @@ const SCRAPED_DIR = path.join(DATA_DIR, 'scraped');
 const CHECKPOINT_FILE = path.join(SCRAPING_DIR, 'checkpoint.json');
 const SCRAPED_IDS_FILE = path.join(SCRAPING_DIR, 'scraped_ids.txt');
 const FAILED_WORKS_FILE = path.join(SCRAPING_DIR, 'failed_works.jsonl');
+const PENDING_INGEST_FILE = path.join(SCRAPING_DIR, 'pending_ingest_files.txt');
 const TARGET_FANDOMS_FILE = path.join(DATA_DIR, 'ao3_target_fandoms.json');
 
 // ============================================================
@@ -227,6 +228,10 @@ export class ScrapingOrchestrator {
 
     // Cleanup
     stopHeartbeat();
+
+    if (totalForFandom > 0) {
+      this.appendPendingIngestFile(outputFile);
+    }
 
     if (!this.shouldStop && !this.isTimeUp()) {
       // Fandom completed successfully
@@ -534,6 +539,11 @@ export class ScrapingOrchestrator {
   private logFailedWork(entry: FailedWork): void {
     this.ensureDir(SCRAPING_DIR);
     fs.appendFileSync(FAILED_WORKS_FILE, JSON.stringify(entry) + '\n');
+  }
+
+  private appendPendingIngestFile(filePath: string): void {
+    this.ensureDir(SCRAPING_DIR);
+    fs.appendFileSync(PENDING_INGEST_FILE, filePath + '\n');
   }
 
   // ============================================================
