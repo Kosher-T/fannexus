@@ -1,13 +1,13 @@
 {
   "runnerId": "local",
   "startedAt": "2026-04-30T11:25:17.899Z",
-  "lastActivity": "2026-04-30T11:38:08.866Z",
+  "lastActivity": "2026-04-30T11:40:32.427Z",
   "activeFandom": {
-    "name": "____",
-    "url": "https://archiveofourown.org/tags/____/works",
+    "name": "﹉",
+    "url": "https://archiveofourown.org/tags/%EF%B9%89/works",
     "category": "Uncategorized Fandoms",
     "dateChunk": null,
-    "lastPage": 0
+    "lastPage": 1
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -54,12 +54,13 @@
     "https://archiveofourown.org/tags/:Batman%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/-%20Naruto%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/die%20-%20Fandom/works",
-    "https://archiveofourown.org/tags/_____tale%20Sans%20-%20Fandom/works"
+    "https://archiveofourown.org/tags/_____tale%20Sans%20-%20Fandom/works",
+    "https://archiveofourown.org/tags/____/works"
   ],
   "stats": {
-    "totalScraped": 51,
-    "totalFailed": 5,
-    "totalPages": 67,
-    "sessionScraped": 28
+    "totalScraped": 52,
+    "totalFailed": 6,
+    "totalPages": 68,
+    "sessionScraped": 29
   }
 }
