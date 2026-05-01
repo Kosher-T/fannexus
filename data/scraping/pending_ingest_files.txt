@@ -1,1 +1,0 @@
-/home/itorousa/Documents/Code/fannexus/data/scraped/video_games/twisted_wonderland_video_game.jsonl
