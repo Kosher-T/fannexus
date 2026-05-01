@@ -59,7 +59,8 @@ async function ingestFile(
   db: admin.database.Database | admin.firestore.Firestore, 
   filePath: string, 
   isDryRun: boolean,
-  ingestedIds: Set<string>
+  ingestedIds: Set<string>,
+  limit: number
 ): Promise<string[]> {
   const firestore = admin.firestore();
   console.log(`\n📂 Processing: ${path.relative(DATA_DIR, filePath)}`);
@@ -75,6 +76,10 @@ async function ingestFile(
   const newIds: string[] = [];
 
   for await (const line of rl) {
+    if (newIds.length >= limit) {
+      break;
+    }
+
     if (!line.trim()) continue;
 
     try {
@@ -129,6 +134,17 @@ async function run() {
   const isDryRun = args.includes('--dry-run');
   const isAll = args.includes('--all');
 
+  let limit = Infinity;
+  const limitArg = args.find(arg => arg.startsWith('--limit='));
+  if (limitArg) {
+    limit = parseInt(limitArg.split('=')[1], 10);
+    if (isNaN(limit)) {
+      console.error('❌ Invalid limit provided. Must be a number. Example: --limit=5000');
+      process.exit(1);
+    }
+    console.log(`⏳ Limit set to ${limit} stories for this run.`);
+  }
+
   if (isDryRun) {
     console.log('=== DRY RUN MODE: No data will be written to Firestore ===');
   }
@@ -160,11 +176,28 @@ async function run() {
   console.log(`📋 Found ${files.length} files to process.`);
   let totalNewIngested = 0;
   const allNewIds: string[] = [];
+  const remainingFilesToProcess = [...files];
 
-  for (const file of files) {
-    const newIds = await ingestFile(db, file, isDryRun, ingestedIds);
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    const remainingLimit = limit - totalNewIngested;
+    if (remainingLimit <= 0) {
+      console.log(`🛑 Global limit of ${limit} reached. Stopping file processing.`);
+      break;
+    }
+    
+    const newIds = await ingestFile(db, file, isDryRun, ingestedIds, remainingLimit);
     totalNewIngested += newIds.length;
     allNewIds.push(...newIds);
+    
+    if (newIds.length < remainingLimit) {
+      // Fully processed this file
+      remainingFilesToProcess.shift();
+    } else {
+      // Hit the limit during this file, keep it and subsequent files in the pending list
+      console.log(`🛑 Reached the limit during file: ${path.basename(file)}`);
+      break;
+    }
   }
 
   if (!isDryRun && allNewIds.length > 0) {
@@ -174,9 +207,13 @@ async function run() {
   }
 
   if (!isDryRun && !isAll) {
-    // Clear pending files
-    fs.writeFileSync(PENDING_INGEST_FILE, '');
-    console.log('🧹 Cleared pending ingest files queue.');
+    if (remainingFilesToProcess.length === 0) {
+      fs.writeFileSync(PENDING_INGEST_FILE, '');
+      console.log('🧹 Cleared pending ingest files queue.');
+    } else {
+      fs.writeFileSync(PENDING_INGEST_FILE, remainingFilesToProcess.join('\n') + '\n');
+      console.log(`⏸️  Updated pending ingest files queue. ${remainingFilesToProcess.length} files remaining.`);
+    }
   }
 
   console.log('\n=============================================');
