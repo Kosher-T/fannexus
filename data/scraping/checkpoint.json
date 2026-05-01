@@ -1,13 +1,16 @@
 {
-  "runnerId": "local",
-  "startedAt": "2026-05-01T13:02:38.178Z",
-  "lastActivity": "2026-05-01T13:44:52.943Z",
+  "runnerId": "github-actions",
+  "startedAt": "2026-05-01T16:45:39.484Z",
+  "lastActivity": "2026-05-01T16:46:25.560Z",
   "activeFandom": {
-    "name": "Twisted-Wonderland (Video Game)",
-    "url": "https://archiveofourown.org/tags/Twisted-Wonderland%20(Video%20Game)/works",
-    "category": "Video Games",
-    "dateChunk": null,
-    "lastPage": 557
+    "name": "僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia (Anime & Manga)",
+    "url": "https://archiveofourown.org/tags/%E5%83%95%E3%81%AE%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%82%A2%20%7C%20Boku%20no%20Hero%20Academia%20%7C%20My%20Hero%20Academia%20(Anime%20*a*%20Manga)/works",
+    "category": "Anime & Manga",
+    "dateChunk": {
+      "from": "2010-01-01",
+      "to": "2010-12-31"
+    },
+    "lastPage": 1
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -62,9 +65,9 @@
     "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works"
   ],
   "stats": {
-    "totalScraped": 11493,
-    "totalFailed": 14,
-    "totalPages": 688,
-    "sessionScraped": 10835
+    "totalScraped": 11494,
+    "totalFailed": 16,
+    "totalPages": 689,
+    "sessionScraped": 1
   }
 }
