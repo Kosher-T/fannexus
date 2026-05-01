@@ -1,4 +1,6 @@
 name: AO3 Scraper
+permissions:
+  contents: write
 
 on:
   schedule:

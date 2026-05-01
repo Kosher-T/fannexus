@@ -46,10 +46,12 @@ service cloud.firestore {
       // email and createdAt cannot change
     }
 
+    // Allows the client connection tests to pass cleanly
     match /test/connection {
       allow read: if true;
     }
 
+    // Allows the UI search, list, and single fetches to access the scraped data
     match /stories/{storyId} {
       allow read: if true;
       allow write: if false; 
