@@ -5,31 +5,78 @@
       "description": "User profile data",
       "type": "object",
       "properties": {
-        "displayName": { "$ref": "#/properties/string" },
-        "email": { "$ref": "#/properties/string" },
-        "createdAt": { "$ref": "#/properties/timestamp" }
+        "displayName": {
+          "$ref": "#/properties/string"
+        },
+        "email": {
+          "$ref": "#/properties/string"
+        },
+        "createdAt": {
+          "$ref": "#/properties/timestamp"
+        }
       },
-      "required": ["email", "createdAt"]
+      "required": [
+        "email",
+        "createdAt"
+      ]
     },
     "LibraryItem": {
       "title": "LibraryItem",
       "description": "A saved story in the user's library",
       "type": "object",
       "properties": {
-        "storyId": { "$ref": "#/properties/string" },
+        "storyId": {
+          "$ref": "#/properties/string"
+        },
         "status": {
           "type": "string",
-          "enum": ["READING", "BOOKMARKED", "COMPLETED", "DROPPED"]
+          "enum": [
+            "READING",
+            "BOOKMARKED",
+            "COMPLETED",
+            "DROPPED"
+          ]
         },
-        "addedAt": { "$ref": "#/properties/timestamp" }
+        "addedAt": {
+          "$ref": "#/properties/timestamp"
+        }
       },
-      "required": ["storyId", "status", "addedAt"]
+      "required": [
+        "storyId",
+        "status",
+        "addedAt"
+      ]
+    },
+    "ReadingHistoryItem": {
+      "title": "ReadingHistoryItem",
+      "description": "A story the user last clicked on to read",
+      "type": "object",
+      "properties": {
+        "storyId": {
+          "$ref": "#/properties/string"
+        },
+        "platformId": {
+          "$ref": "#/properties/string"
+        },
+        "timestamp": {
+          "$ref": "#/properties/timestamp"
+        }
+      },
+      "required": [
+        "storyId",
+        "platformId",
+        "timestamp"
+      ]
     }
   },
   "firestore": {
     "/users/{userId}": {
       "schema": "User",
       "description": "User profiles"
+    },
+    "/users/{userId}/readingHistory/{historyId}": {
+      "schema": "ReadingHistoryItem",
+      "description": "User's reading history of clicked stories"
     },
     "/users/{userId}/library/{libraryItemId}": {
       "schema": "LibraryItem",

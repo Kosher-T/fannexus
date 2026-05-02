@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { Play, Info, Star, ChevronRight, Loader2 } from 'lucide-react';
+import { Info, Star, ChevronRight, Loader2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { PlatformIcon } from '../components/PlatformIcon';
 import { collection, query, limit, getDocs } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { StoryMetadata } from '../types/scraper';
 import { getSeededImage } from '../lib/defaultImages';
+import { useReadingHistory } from '../hooks/useReadingHistory';
+import { StoryCard } from '../components/StoryCard';
 
 export default function HomePage() {
   const navigate = useNavigate();
   const [stories, setStories] = useState<StoryMetadata[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isStoriesLoading, setIsStoriesLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const { readingNowStories, historyItems, isLoading: isHistoryLoading, removeFromHistory } = useReadingHistory();
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -28,7 +32,7 @@ export default function HomePage() {
         console.error("Error fetching stories:", err);
         setError("Failed to load stories.");
       } finally {
-        setIsLoading(false);
+        setIsStoriesLoading(false);
       }
     };
     fetchStories();
@@ -55,7 +59,7 @@ export default function HomePage() {
     navigate(`/story/${id}`);
   };
 
-  if (isLoading) {
+  if (isStoriesLoading || isHistoryLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-nexus-dark">
         <Loader2 className="w-8 h-8 text-accent animate-spin" />
@@ -145,8 +149,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Reading Now Row */}
+      {readingNowStories.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 mt-12 md:mt-16 relative z-20">
+          <div className="flex items-end justify-between mb-6">
+            <h2 className="text-2xl font-serif text-white tracking-tight font-light flex items-center gap-3">
+              Reading Now
+              <span className="text-xs font-sans tracking-widest text-white/30 uppercase border border-white/10 px-2 py-1 rounded-sm">{readingNowStories.length} updates</span>
+            </h2>
+          </div>
+
+          <div className="flex overflow-x-auto gap-4 md:gap-6 pb-6 snap-x snap-mandatory hide-scrollbar">
+            {readingNowStories.map((story, i) => {
+              const historyItem = historyItems.find(h => h.storyId === story.ao3Id);
+              return (
+                <div key={`reading-${story.ao3Id}`} className="shrink-0 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] snap-start">
+                  <StoryCard
+                    story={story}
+                    index={i}
+                    onClick={handleStoryClick}
+                    isReadingNow={true}
+                    onRemove={removeFromHistory}
+                    onShowMeta={handleStoryClick}
+                    onRead={addToHistory}
+                    platform={historyItem?.platformId}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {/* Recommended / Trending Row */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 mt-12 relative z-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 mt-12 md:mt-16 relative z-20">
         <div className="flex items-end justify-between mb-6">
           <h2 className="text-2xl font-serif text-white tracking-tight font-light">
             Curated Recommendations
@@ -159,41 +195,12 @@ export default function HomePage() {
         {/* Gallery Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
           {recommendedStories.map((story, i) => (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * i }}
+            <StoryCard
               key={story.ao3Id}
-              onClick={() => handleStoryClick(story.ao3Id)}
-              className="group cursor-pointer flex flex-col gap-3"
-            >
-              {/* Card Container */}
-              <div className="w-full aspect-[2/3] rounded-xl md:rounded-2xl bg-nexus-surface border border-white/10 relative overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-accent/5 group-hover:border-accent/40">
-                {story.coverImageUrl ? (
-                  <img src={story.coverImageUrl} alt={story.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 will-change-transform group-hover:scale-105" />
-                ) : (
-                  <img src={getSeededImage(story.ao3Id, false)} alt={story.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 will-change-transform group-hover:scale-105 saturate-50 mix-blend-luminosity" />
-                )}
-
-                {/* Overlay Elements */}
-                <div className="absolute inset-0 bg-gradient-to-t from-nexus-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                {/* Platform Badges Top Right */}
-                <div className="absolute top-2 right-2 sm:top-3 sm:right-3 flex flex-col gap-1.5 opacity-80 group-hover:opacity-100">
-                  <PlatformIcon platform={story.sourceSite === 'FFN' ? 'FFnet' : story.sourceSite as any} className="w-5 h-5 sm:w-6 sm:h-6 text-[9px] sm:text-[10px]" />
-                </div>
-              </div>
-
-              {/* Outside Information */}
-              <div>
-                <h3 className="font-serif text-base sm:text-lg font-normal text-white/90 line-clamp-1 group-hover:text-accent transition-colors">{story.title}</h3>
-                <p className="text-xs sm:text-sm font-light text-nexus-muted line-clamp-1 mb-1">{story.author}</p>
-                <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-medium text-white/50 uppercase tracking-wider">
-                  <span className="px-1.5 py-0.5 rounded-sm bg-transparent border border-white/20 text-[9px]">{story.rating}</span>
-                  <span className="text-[9px] sm:text-[10px]">{Math.round((story.wordCount || 0) / 1000)}k</span>
-                </div>
-              </div>
-            </motion.div>
+              story={story}
+              index={i}
+              onClick={handleStoryClick}
+            />
           ))}
         </div>
       </section>

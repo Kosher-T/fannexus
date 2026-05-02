@@ -7,12 +7,15 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { StoryMetadata } from '../types/scraper';
 import { getSeededImage } from '../lib/defaultImages';
+import { useReadingHistory } from '../hooks/useReadingHistory';
 
 export default function StoryPage() {
   const { id } = useParams<{ id: string }>();
   const [story, setStory] = useState<StoryMetadata | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  const { addToHistory } = useReadingHistory();
 
   useEffect(() => {
     const fetchStory = async () => {
@@ -60,6 +63,12 @@ export default function StoryPage() {
 
   const sourceSitePlatform = story.sourceSite === 'FFN' ? 'FFnet' : story.sourceSite;
 
+  const handleReadClick = () => {
+    if (story && story.ao3Id) {
+      addToHistory(story.ao3Id, sourceSitePlatform);
+    }
+  };
+
   return (
     <motion.main
       initial={{ opacity: 0 }}
@@ -102,6 +111,7 @@ export default function StoryPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between group"
+                  onClick={handleReadClick}
                 >
                   <div className="flex items-center gap-3">
                     <PlatformIcon platform={sourceSitePlatform as any} className="w-7 h-7 text-[10px]" />

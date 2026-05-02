@@ -3,15 +3,17 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { Search, Compass, BookOpen, Settings, Link as LinkIcon, Menu, X, LogIn, LogOut } from 'lucide-react';
-import HomePage from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
-import StoryPage from './pages/StoryPage';
 import { auth, signInWithGoogle, signOut } from './lib/firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
+import Loader from './components/Loader';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const SearchPage = lazy(() => import('./pages/SearchPage'));
+const StoryPage = lazy(() => import('./pages/StoryPage'));
 
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -309,11 +311,13 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <div key={location.pathname}>
-        <Routes location={location}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/search" element={<SearchPage />} />
-          <Route path="/story/:id" element={<StoryPage />} />
-        </Routes>
+        <Suspense fallback={<div className="h-[80vh] w-full flex justify-center items-center"><Loader /></div>}>
+          <Routes location={location}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/story/:id" element={<StoryPage />} />
+          </Routes>
+        </Suspense>
       </div>
     </AnimatePresence>
   );

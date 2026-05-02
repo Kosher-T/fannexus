@@ -27,7 +27,7 @@ service cloud.firestore {
     }
 
     function isValidId(id) {
-      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+      return id is string && id.size() > 0 && id.size() <= 128; // Temporarily removed regex string matching to avoid any Google auth uid issues
     }
 
     function isValidUserCreate(data) {
@@ -46,12 +46,10 @@ service cloud.firestore {
       // email and createdAt cannot change
     }
 
-    // Allows the client connection tests to pass cleanly
     match /test/connection {
       allow read: if true;
     }
 
-    // Allows the UI search, list, and single fetches to access the scraped data
     match /stories/{storyId} {
       allow read: if true;
       allow write: if false; 
@@ -84,6 +82,25 @@ service cloud.firestore {
         allow create: if isValidId(userId) && isValidId(libraryId) && isOwner(userId) && isValidLibraryItemCreate(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
         allow update: if isValidId(userId) && isValidId(libraryId) && isOwner(userId) && isValidLibraryItemUpdate(incoming()) && incoming().storyId == existing().storyId && incoming().addedAt == existing().addedAt && incoming().diff(existing()).affectedKeys().hasOnly(['status']);
         allow delete: if isValidId(userId) && isValidId(libraryId) && isOwner(userId);
+      }
+
+      match /readingHistory/{historyId} {
+        allow get: if isValidId(userId) && isValidId(historyId) && isOwner(userId);
+        allow list: if isValidId(userId) && isOwner(userId);
+
+        function isValidHistoryItem(data) {
+          return data.keys().hasAll(["storyId", "platformId", "timestamp"])
+            && data.keys().size() == 3
+            && data.storyId is string
+            && data.storyId.size() <= 128
+            && data.platformId is string
+            && data.platformId.size() <= 128
+            && data.timestamp == request.time;
+        }
+
+        allow create: if isValidId(userId) && isValidId(historyId) && isOwner(userId) && isValidHistoryItem(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
+        allow update: if isValidId(userId) && isValidId(historyId) && isOwner(userId) && isValidHistoryItem(incoming()) && incoming().storyId == existing().storyId && incoming().diff(existing()).affectedKeys().hasOnly(['platformId', 'timestamp']);
+        allow delete: if isValidId(userId) && isValidId(historyId) && isOwner(userId);
       }
     }
   }
