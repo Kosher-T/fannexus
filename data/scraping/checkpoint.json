@@ -62,12 +62,13 @@
     "https://archiveofourown.org/tags/%EF%B9%89/works",
     "https://archiveofourown.org/tags/%E2%80%AA%E3%83%A0%E3%83%AD%E3%83%9E%E3%82%AD%20%7C%20Muromaki/works",
     "https://archiveofourown.org/tags/%E2%80%AA%E2%80%AB%E2%80%AC%E2%80%AE%20%E2%81%AA%E2%81%AB%E2%81%AD%E2%81%AE%E2%81%AF%20-%20Fandom/works",
-    "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works"
+    "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works",
+    "https://archiveofourown.org/tags/Twisted-Wonderland%20(Video%20Game)/works"
   ],
   "stats": {
-    "totalScraped": 11836,
+    "totalScraped": 11845,
     "totalFailed": 22,
-    "totalPages": 717,
-    "sessionScraped": 200
+    "totalPages": 718,
+    "sessionScraped": 209
   }
 }
