@@ -1,17 +1,8 @@
 {
-  "runnerId": "github-actions",
-  "startedAt": "2026-05-04T10:49:12.958Z",
-  "lastActivity": "2026-05-04T14:01:58.343Z",
-  "activeFandom": {
-    "name": "僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia (Anime & Manga)",
-    "url": "https://archiveofourown.org/tags/%E5%83%95%E3%81%AE%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%82%A2%20%7C%20Boku%20no%20Hero%20Academia%20%7C%20My%20Hero%20Academia%20(Anime%20*a*%20Manga)/works",
-    "category": "Anime & Manga",
-    "dateChunk": {
-      "from": "2017-01-01",
-      "to": "2017-12-31"
-    },
-    "lastPage": 223
-  },
+  "runnerId": "local",
+  "startedAt": "2026-05-04T10:59:30.972Z",
+  "lastActivity": "2026-05-04T16:28:18.000Z",
+  "activeFandom": null,
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
     "https://archiveofourown.org/tags/%EF%BC%82%D0%A7%D0%B8%D0%BD%D0%B3%D0%B8%D1%81%20%D0%A5%D0%B0%D0%B0%D0%BD%EF%BC%82%20-%20Mongolian%20Version%20of%20%EF%BC%82Dschinghis%20Khan%EF%BC%82%20(song)/works",
@@ -66,7 +57,7 @@
     "https://archiveofourown.org/tags/Twisted-Wonderland%20(Video%20Game)/works"
   ],
   "stats": {
-    "totalScraped": 21556,
+    "totalScraped": 21590,
     "totalFailed": 116,
     "totalPages": 1807,
     "sessionScraped": 0

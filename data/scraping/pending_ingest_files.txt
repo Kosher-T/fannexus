@@ -4,3 +4,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/boku_no_hero_academia_my_hero_academia_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/boku_no_hero_academia_my_hero_academia_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/boku_no_hero_academia_my_hero_academia_anime_manga.jsonl
+/home/itorousa/Documents/Code/fannexus/data/scraped/video_games/twisted_wonderland_video_game.jsonl
