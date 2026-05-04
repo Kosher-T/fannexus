@@ -34,6 +34,7 @@ export function useReadingHistory() {
         };
 
         const handleAuthChange = auth.onAuthStateChanged((user) => {
+            unsubscribe(); // Clean up previous listener
             if (user) {
                 // Sync with Firebase
                 const q = query(collection(db, 'users', user.uid, 'readingHistory'));
@@ -56,8 +57,10 @@ export function useReadingHistory() {
                     setIsLoading(false);
                 }, (error) => {
                     console.error("Snapshot error:", error);
-                    // Fallback to local
+                    // Instead of failing the entire app for a single missing permission that could happen when logging out, fallback to local
                     loadLocal();
+                    // Still throw handleFirestoreError for the system to catch if it's a genuine rules issue
+                    handleFirestoreError(error, OperationType.LIST, `users/${user.uid}/readingHistory`);
                 });
             } else {
                 loadLocal();
@@ -108,11 +111,12 @@ export function useReadingHistory() {
     const addToHistory = async (storyId: string, platformId: string) => {
         // Optimistic local update
         const now = Date.now();
-        const updated = historyItems.filter(item => item.storyId !== storyId);
-        updated.unshift({ storyId, platformId, timestamp: now });
-
-        setHistoryItems(updated);
-        localStorage.setItem('reading_now_history', JSON.stringify(updated));
+        setHistoryItems(prev => {
+            const updated = prev.filter(item => item.storyId !== storyId);
+            updated.unshift({ storyId, platformId, timestamp: now });
+            localStorage.setItem('reading_now_history', JSON.stringify(updated));
+            return updated;
+        });
 
         // Firebase update if logged in
         const user = auth.currentUser;
@@ -132,10 +136,11 @@ export function useReadingHistory() {
 
     const removeFromHistory = async (storyId: string) => {
         // Optimistic local update
-        const updated = historyItems.filter(item => item.storyId !== storyId);
-
-        setHistoryItems(updated);
-        localStorage.setItem('reading_now_history', JSON.stringify(updated));
+        setHistoryItems(prev => {
+            const updated = prev.filter(item => item.storyId !== storyId);
+            localStorage.setItem('reading_now_history', JSON.stringify(updated));
+            return updated;
+        });
 
         // Firebase update if logged in
         const user = auth.currentUser;

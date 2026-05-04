@@ -50,6 +50,7 @@ export function StoryCard({
     };
 
     const handleRemove = (e: React.MouseEvent) => {
+        e.preventDefault();
         e.stopPropagation();
         if (onRemove) {
             onRemove(story.ao3Id);
