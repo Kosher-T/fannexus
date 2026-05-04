@@ -45,12 +45,27 @@ function loadIngestedIds(): Set<string> {
 }
 
 function getPendingFiles(): string[] {
-  if (!fs.existsSync(PENDING_INGEST_FILE)) return [];
-  const content = fs.readFileSync(PENDING_INGEST_FILE, 'utf-8');
   const files = new Set<string>();
-  for (const line of content.split('\n')) {
-    const filePath = line.trim();
-    if (filePath && fs.existsSync(filePath)) files.add(filePath);
+  const sources = [PENDING_INGEST_FILE];
+
+  // Also look for other runner files in the directory
+  if (fs.existsSync(SCRAPING_DIR)) {
+    const dirFiles = fs.readdirSync(SCRAPING_DIR);
+    for (const file of dirFiles) {
+      if (file.startsWith('pending_ingest_files_') && file.endsWith('.txt')) {
+        sources.push(path.join(SCRAPING_DIR, file));
+      }
+    }
+  }
+
+  for (const source of sources) {
+    if (fs.existsSync(source)) {
+      const content = fs.readFileSync(source, 'utf-8');
+      for (const line of content.split('\n')) {
+        const filePath = line.trim();
+        if (filePath && fs.existsSync(filePath)) files.add(filePath);
+      }
+    }
   }
   return Array.from(files);
 }

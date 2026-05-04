@@ -51,11 +51,16 @@ const __dirname = path.dirname(__filename);
 const DATA_DIR = path.resolve(__dirname, '../../../../data');
 const SCRAPING_DIR = path.join(DATA_DIR, 'scraping');
 const SCRAPED_DIR = path.join(DATA_DIR, 'scraped');
-const CHECKPOINT_FILE = path.join(SCRAPING_DIR, 'checkpoint.json');
-const SCRAPED_IDS_FILE = path.join(SCRAPING_DIR, 'scraped_ids.txt');
-const FAILED_WORKS_FILE = path.join(SCRAPING_DIR, 'failed_works.jsonl');
-const PENDING_INGEST_FILE = path.join(SCRAPING_DIR, 'pending_ingest_files.txt');
+const SCRAPED_IDS_DIR = SCRAPING_DIR; // Use the same dir for scraped ID files
+const FAILED_WORKS_FILE_PREFIX = 'failed_works_';
+const PENDING_INGEST_FILE_PREFIX = 'pending_ingest_files_';
 const TARGET_FANDOMS_FILE = path.join(DATA_DIR, 'ao3_target_fandoms.json');
+
+// Legacy paths for migration
+const LEGACY_CHECKPOINT_FILE = path.join(SCRAPING_DIR, 'checkpoint.json');
+const LEGACY_FAILED_WORKS_FILE = path.join(SCRAPING_DIR, 'failed_works.jsonl');
+const LEGACY_PENDING_INGEST_FILE = path.join(SCRAPING_DIR, 'pending_ingest_files.txt');
+const LEGACY_SCRAPED_IDS_FILE = path.join(SCRAPING_DIR, 'scraped_ids.txt');
 
 // ============================================================
 // Constants
@@ -69,6 +74,9 @@ const DEFAULT_MAX_DURATION_S = 0;  // 0 = unlimited
 export class ScrapingOrchestrator {
   private scraper: AO3Scraper;
   private runnerId: string;
+  private checkpointPath: string;
+  private failedWorksPath: string;
+  private pendingIngestPath: string;
   private maxDurationMs: number;
   private startTime: number;
   private checkpoint: ScrapingCheckpoint;
@@ -78,6 +86,9 @@ export class ScrapingOrchestrator {
 
   constructor(runnerId: string = 'local', maxDurationSeconds: number = DEFAULT_MAX_DURATION_S) {
     this.runnerId = runnerId;
+    this.checkpointPath = path.join(SCRAPING_DIR, `checkpoint_${this.runnerId}.json`);
+    this.failedWorksPath = path.join(SCRAPING_DIR, `${FAILED_WORKS_FILE_PREFIX}${this.runnerId}.jsonl`);
+    this.pendingIngestPath = path.join(SCRAPING_DIR, `${PENDING_INGEST_FILE_PREFIX}${this.runnerId}.txt`);
     this.maxDurationMs = maxDurationSeconds > 0 ? maxDurationSeconds * 1000 : 0;
     this.startTime = Date.now();
 
@@ -479,9 +490,16 @@ export class ScrapingOrchestrator {
 
     this.ensureDir(SCRAPING_DIR);
 
-    if (fs.existsSync(CHECKPOINT_FILE)) {
+    // Try runner-specific checkpoint first
+    let sourcePath = this.checkpointPath;
+    if (!fs.existsSync(this.checkpointPath) && fs.existsSync(LEGACY_CHECKPOINT_FILE)) {
+      sourcePath = LEGACY_CHECKPOINT_FILE;
+      console.log(`🚛 Migrating from legacy checkpoint: ${LEGACY_CHECKPOINT_FILE}`);
+    }
+
+    if (fs.existsSync(sourcePath)) {
       try {
-        const content = fs.readFileSync(CHECKPOINT_FILE, 'utf-8');
+        const content = fs.readFileSync(sourcePath, 'utf-8');
         const loaded = JSON.parse(content);
         // Reset session counter but preserve cumulative stats
         return {
@@ -494,7 +512,7 @@ export class ScrapingOrchestrator {
           },
         };
       } catch (e) {
-        console.warn('⚠️ Corrupt checkpoint file, starting fresh.');
+        console.warn(`⚠️ Corrupt checkpoint file at ${sourcePath}, starting fresh.`);
       }
     }
 
@@ -503,7 +521,7 @@ export class ScrapingOrchestrator {
 
   private saveCheckpoint(): void {
     this.ensureDir(SCRAPING_DIR);
-    fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify(this.checkpoint, null, 2));
+    fs.writeFileSync(this.checkpointPath, JSON.stringify(this.checkpoint, null, 2));
   }
 
   // ============================================================
@@ -513,14 +531,36 @@ export class ScrapingOrchestrator {
   private loadScrapedIds(): Set<string> {
     const ids = new Set<string>();
 
-    if (fs.existsSync(SCRAPED_IDS_FILE)) {
-      const content = fs.readFileSync(SCRAPED_IDS_FILE, 'utf-8');
-      const lines = content.split('\n');
-      for (const line of lines) {
-        const id = line.trim();
-        if (id) ids.add(id);
+    // Load from all possible sources to maintain global dedup index
+    const sources = [
+      LEGACY_SCRAPED_IDS_FILE,
+      path.join(SCRAPING_DIR, `scraped_ids_${this.runnerId}.txt`)
+    ];
+
+    // Also look for other runner files in the directory
+    if (fs.existsSync(SCRAPING_DIR)) {
+      const files = fs.readdirSync(SCRAPING_DIR);
+      for (const file of files) {
+        if (file.startsWith('scraped_ids_') && file.endsWith('.txt')) {
+          const fullPath = path.join(SCRAPING_DIR, file);
+          if (!sources.includes(fullPath)) sources.push(fullPath);
+        }
       }
-      console.log(`📂 Loaded ${ids.size} scraped IDs from dedup index.`);
+    }
+
+    for (const source of sources) {
+      if (fs.existsSync(source)) {
+        const content = fs.readFileSync(source, 'utf-8');
+        const lines = content.split('\n');
+        for (const line of lines) {
+          const id = line.trim();
+          if (id) ids.add(id);
+        }
+      }
+    }
+
+    if (ids.size > 0) {
+      console.log(`📂 Loaded ${ids.size} scraped IDs from global dedup index.`);
     } else {
       console.log('📂 No dedup index found. Starting fresh.');
     }
@@ -530,7 +570,8 @@ export class ScrapingOrchestrator {
 
   private appendScrapedId(id: string): void {
     this.ensureDir(SCRAPING_DIR);
-    fs.appendFileSync(SCRAPED_IDS_FILE, id + '\n');
+    const runnerScrapedIdsFile = path.join(SCRAPING_DIR, `scraped_ids_${this.runnerId}.txt`);
+    fs.appendFileSync(runnerScrapedIdsFile, id + '\n');
   }
 
   // ============================================================
@@ -539,12 +580,12 @@ export class ScrapingOrchestrator {
 
   private logFailedWork(entry: FailedWork): void {
     this.ensureDir(SCRAPING_DIR);
-    fs.appendFileSync(FAILED_WORKS_FILE, JSON.stringify(entry) + '\n');
+    fs.appendFileSync(this.failedWorksPath, JSON.stringify(entry) + '\n');
   }
 
   private appendPendingIngestFile(filePath: string): void {
     this.ensureDir(SCRAPING_DIR);
-    fs.appendFileSync(PENDING_INGEST_FILE, filePath + '\n');
+    fs.appendFileSync(this.pendingIngestPath, filePath + '\n');
   }
 
   // ============================================================
