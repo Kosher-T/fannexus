@@ -14,6 +14,7 @@
  *   npx tsx src/services/scrapers/ao3/scrapingOrchestrator.ts --runner-id=local
  */
 
+import './node18-polyfill';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';

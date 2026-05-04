@@ -8,6 +8,7 @@
  *        npm run scrape:local -- --max-duration=3600
  */
 
+import './node18-polyfill';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import path from 'path';

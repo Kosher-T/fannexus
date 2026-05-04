@@ -14,6 +14,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+import './node18-polyfill';
 import { AO3Scraper } from './ao3Scraper';
 import { discoverFandoms } from './fandomDiscovery';
 import type { FandomTargetFile, StoryMetadata } from '../../../types/scraper';

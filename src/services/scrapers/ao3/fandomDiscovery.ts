@@ -8,6 +8,7 @@
  * Usage: npx tsx src/services/scrapers/ao3/fandomDiscovery.ts
  */
 
+import './node18-polyfill';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';

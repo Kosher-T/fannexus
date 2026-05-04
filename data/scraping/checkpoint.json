@@ -1,8 +1,14 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-05-04T10:59:30.972Z",
+  "startedAt": "2026-05-04T11:01:54.295Z",
   "lastActivity": "2026-05-04T16:28:18.000Z",
-  "activeFandom": null,
+  "activeFandom": {
+    "name": "Cookie Run (Video Game)",
+    "url": "https://archiveofourown.org/tags/Cookie%20Run%20(Video%20Game)/works",
+    "category": "Video Games",
+    "dateChunk": null,
+    "lastPage": 272
+  },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
     "https://archiveofourown.org/tags/%EF%BC%82%D0%A7%D0%B8%D0%BD%D0%B3%D0%B8%D1%81%20%D0%A5%D0%B0%D0%B0%D0%BD%EF%BC%82%20-%20Mongolian%20Version%20of%20%EF%BC%82Dschinghis%20Khan%EF%BC%82%20(song)/works",
@@ -54,12 +60,13 @@
     "https://archiveofourown.org/tags/%E2%80%AA%E3%83%A0%E3%83%AD%E3%83%9E%E3%82%AD%20%7C%20Muromaki/works",
     "https://archiveofourown.org/tags/%E2%80%AA%E2%80%AB%E2%80%AC%E2%80%AE%20%E2%81%AA%E2%81%AB%E2%81%AD%E2%81%AE%E2%81%AF%20-%20Fandom/works",
     "https://archiveofourown.org/tags/New%20Dangan%20Ronpa%20V3:%20Everyone's%20New%20Semester%20of%20Killing/works",
-    "https://archiveofourown.org/tags/Twisted-Wonderland%20(Video%20Game)/works"
+    "https://archiveofourown.org/tags/Twisted-Wonderland%20(Video%20Game)/works",
+    "https://archiveofourown.org/tags/Kingdom%20Hearts%20(Video%20Games)/works"
   ],
   "stats": {
-    "totalScraped": 21590,
+    "totalScraped": 66073,
     "totalFailed": 116,
-    "totalPages": 1807,
+    "totalPages": 4374,
     "sessionScraped": 0
   }
 }
