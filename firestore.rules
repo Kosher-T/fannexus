@@ -56,15 +56,15 @@ service cloud.firestore {
     }
 
     match /users/{userId} {
-      allow get: if isValidId(userId) && isOwner(userId);
+      allow get: if isOwner(userId);
       allow list: if false; // Users cannot list all basic users
-      allow create: if isValidId(userId) && isOwner(userId) && isValidUserCreate(incoming());
-      allow update: if isValidId(userId) && isOwner(userId) && isValidUserUpdate(incoming()) && incoming().email == existing().email && incoming().createdAt == existing().createdAt && incoming().diff(existing()).affectedKeys().hasOnly(['displayName']);
+      allow create: if isOwner(userId) && isValidUserCreate(incoming());
+      allow update: if isOwner(userId) && isValidUserUpdate(incoming()) && incoming().email == existing().email && incoming().createdAt == existing().createdAt && incoming().diff(existing()).affectedKeys().hasOnly(['displayName']);
       allow delete: if false; // Disallow user deletion directly from client for now
 
       match /library/{libraryId} {
-        allow get: if isValidId(userId) && isValidId(libraryId) && isOwner(userId);
-        allow list: if isValidId(userId) && isOwner(userId);
+        allow get: if isOwner(userId) && isValidId(libraryId);
+        allow list: if isOwner(userId);
         
         function isValidLibraryItemCreate(data) {
           return data.keys().hasAll(["storyId", "status", "addedAt"])
@@ -79,14 +79,14 @@ service cloud.firestore {
           return data.status in ["READING", "BOOKMARKED", "COMPLETED", "DROPPED"];
         }
 
-        allow create: if isValidId(userId) && isValidId(libraryId) && isOwner(userId) && isValidLibraryItemCreate(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
-        allow update: if isValidId(userId) && isValidId(libraryId) && isOwner(userId) && isValidLibraryItemUpdate(incoming()) && incoming().storyId == existing().storyId && incoming().addedAt == existing().addedAt && incoming().diff(existing()).affectedKeys().hasOnly(['status']);
-        allow delete: if isValidId(userId) && isValidId(libraryId) && isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(libraryId) && isValidLibraryItemCreate(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
+        allow update: if isOwner(userId) && isValidId(libraryId) && isValidLibraryItemUpdate(incoming()) && incoming().storyId == existing().storyId && incoming().addedAt == existing().addedAt && incoming().diff(existing()).affectedKeys().hasOnly(['status']);
+        allow delete: if isOwner(userId) && isValidId(libraryId);
       }
 
       match /readingHistory/{historyId} {
-        allow get: if isValidId(userId) && isValidId(historyId) && isOwner(userId);
-        allow list: if isValidId(userId) && isOwner(userId);
+        allow get: if isOwner(userId) && isValidId(historyId);
+        allow list: if isOwner(userId);
 
         function isValidHistoryItem(data) {
           return data.keys().hasAll(["storyId", "platformId", "timestamp"])
@@ -98,9 +98,9 @@ service cloud.firestore {
             && data.timestamp == request.time;
         }
 
-        allow create: if isValidId(userId) && isValidId(historyId) && isOwner(userId) && isValidHistoryItem(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
-        allow update: if isValidId(userId) && isValidId(historyId) && isOwner(userId) && isValidHistoryItem(incoming()) && incoming().storyId == existing().storyId && incoming().diff(existing()).affectedKeys().hasOnly(['platformId', 'timestamp']);
-        allow delete: if isValidId(userId) && isValidId(historyId) && isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(historyId) && isValidHistoryItem(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
+        allow update: if isOwner(userId) && isValidId(historyId) && isValidHistoryItem(incoming()) && incoming().storyId == existing().storyId && incoming().diff(existing()).affectedKeys().hasOnly(['platformId', 'timestamp']);
+        allow delete: if isOwner(userId) && isValidId(historyId);
       }
     }
   }

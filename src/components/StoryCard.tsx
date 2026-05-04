@@ -113,6 +113,11 @@ export function StoryCard({
                             <h4 className="text-white font-serif font-light text-base sm:text-lg lg:text-xl line-clamp-3 mb-2 leading-snug">
                                 {story.title}
                             </h4>
+                            {story.fandoms && story.fandoms.length > 0 && (
+                                <p className="text-accent/90 text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-2 line-clamp-2">
+                                    {story.fandoms.join(', ')}
+                                </p>
+                            )}
                             <p className="text-nexus-muted text-xs sm:text-sm font-light line-clamp-5 leading-relaxed">
                                 {story.summary || "No summary available."}
                             </p>
