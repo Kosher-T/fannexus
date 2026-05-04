@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowLeft, BookOpen, Clock, Tag, ExternalLink, Calendar, Search, Loader2 } from 'lucide-react';
 import { PlatformIcon } from '../components/PlatformIcon';
@@ -11,6 +11,7 @@ import { useReadingHistory } from '../hooks/useReadingHistory';
 
 export default function StoryPage() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [story, setStory] = useState<StoryMetadata | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -24,7 +25,12 @@ export default function StoryPage() {
         const docRef = doc(db, 'stories', id);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-          setStory({ ao3Id: docSnap.id, ...docSnap.data() } as StoryMetadata);
+          const storyData = { ao3Id: docSnap.id, ...docSnap.data() } as StoryMetadata;
+          setStory(storyData);
+
+          // Automatically add to history when viewing a story
+          const sourceSitePlatform = storyData.sourceSite === 'FFN' ? 'FFnet' : storyData.sourceSite;
+          addToHistory(storyData.ao3Id, sourceSitePlatform);
         } else {
           setError("Story not found");
         }
@@ -78,14 +84,21 @@ export default function StoryPage() {
     >
       {/* Sticky Mobile/Desktop Back Button */}
       <div className="sticky top-20 z-40 max-w-7xl mx-auto px-4 sm:px-6 w-full mb-6">
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-white bg-nexus-surface/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 hover:border-white/30 transition-all font-medium text-sm shadow-xl"
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            if (window.history.length > 2) {
+              navigate(-1);
+            } else {
+              navigate('/');
+            }
+          }}
+          className="inline-flex items-center gap-2 text-white bg-nexus-surface/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 hover:border-white/30 transition-all font-medium text-sm shadow-xl cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span className="hidden sm:inline">Back to Discover</span>
+          <span className="hidden sm:inline">Back</span>
           <span className="sm:hidden">Back</span>
-        </Link>
+        </button>
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6">

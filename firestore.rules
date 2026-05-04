@@ -79,8 +79,8 @@ service cloud.firestore {
           return data.status in ["READING", "BOOKMARKED", "COMPLETED", "DROPPED"];
         }
 
-        allow create: if isOwner(userId) && isValidId(libraryId) && isValidLibraryItemCreate(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
-        allow update: if isOwner(userId) && isValidId(libraryId) && isValidLibraryItemUpdate(incoming()) && incoming().storyId == existing().storyId && incoming().addedAt == existing().addedAt && incoming().diff(existing()).affectedKeys().hasOnly(['status']);
+        allow create: if isOwner(userId) && isValidId(libraryId) && isValidLibraryItemCreate(incoming());
+        allow update: if isOwner(userId) && isValidId(libraryId) && isValidLibraryItemUpdate(incoming()) && incoming().storyId == existing().storyId && incoming().addedAt == existing().addedAt && incoming().diff(existing()).affectedKeys().hasOnly(['storyId', 'status']);
         allow delete: if isOwner(userId) && isValidId(libraryId);
       }
 
@@ -98,8 +98,8 @@ service cloud.firestore {
             && data.timestamp == request.time;
         }
 
-        allow create: if isOwner(userId) && isValidId(historyId) && isValidHistoryItem(incoming()) && exists(/databases/$(database)/documents/users/$(userId));
-        allow update: if isOwner(userId) && isValidId(historyId) && isValidHistoryItem(incoming()) && incoming().storyId == existing().storyId && incoming().diff(existing()).affectedKeys().hasOnly(['platformId', 'timestamp']);
+        allow create: if isOwner(userId) && isValidId(historyId) && isValidHistoryItem(incoming());
+        allow update: if isOwner(userId) && isValidId(historyId) && isValidHistoryItem(incoming()) && incoming().storyId == existing().storyId && incoming().diff(existing()).affectedKeys().hasOnly(['storyId', 'platformId', 'timestamp']);
         allow delete: if isOwner(userId) && isValidId(historyId);
       }
     }

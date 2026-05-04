@@ -16,7 +16,7 @@ export default function HomePage() {
   const [isStoriesLoading, setIsStoriesLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const { readingNowStories, historyItems, isLoading: isHistoryLoading, removeFromHistory } = useReadingHistory();
+  const { readingNowStories, historyItems, isLoading: isHistoryLoading, removeFromHistory, addToHistory } = useReadingHistory();
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -40,22 +40,22 @@ export default function HomePage() {
 
   // Scroll Restoration Logic
   useEffect(() => {
-    // Restore scroll position when component mounts
-    const savedScroll = sessionStorage.getItem('homeScrollPos');
-    if (savedScroll) {
-      // Delaying slightly to allow rendering, especially with AnimatePresence
-      requestAnimationFrame(() => {
-        window.scrollTo(0, parseInt(savedScroll, 10));
-      });
+    if (!isStoriesLoading && !isHistoryLoading && stories.length > 0) {
+      const savedScroll = sessionStorage.getItem('homeScrollPos');
+      if (savedScroll) {
+        // give browser a tiny beat to actually paint the DOM
+        setTimeout(() => {
+          window.scrollTo({
+            top: parseInt(savedScroll, 10),
+            behavior: 'auto'
+          });
+        }, 100);
+      }
     }
-
-    // Save scroll position when component unmounts (navigating away)
-    return () => {
-      sessionStorage.setItem('homeScrollPos', window.scrollY.toString());
-    };
-  }, []);
+  }, [isStoriesLoading, isHistoryLoading, stories.length]);
 
   const handleStoryClick = (id: string) => {
+    sessionStorage.setItem('homeScrollPos', window.scrollY.toString());
     navigate(`/story/${id}`);
   };
 

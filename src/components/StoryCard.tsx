@@ -28,7 +28,23 @@ export function StoryCard({
     platform
 }: StoryCardProps) {
     const [isHovered, setIsHovered] = React.useState(false);
+    const cardRef = React.useRef<HTMLDivElement>(null);
     const displayPlatform = platform || story.sourceSite;
+
+    // Fix for when a story is removed and the next one slides under the stationary cursor
+    React.useEffect(() => {
+        const timer = setTimeout(() => {
+            if (cardRef.current) {
+                const actuallyHovered = cardRef.current.matches(':hover');
+                if (actuallyHovered && !isHovered) {
+                    setIsHovered(true);
+                } else if (!actuallyHovered && isHovered) {
+                    setIsHovered(false);
+                }
+            }
+        }, 50);
+        return () => clearTimeout(timer);
+    }, [index, story.ao3Id]);
 
     const handleCardClick = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -59,6 +75,7 @@ export function StoryCard({
 
     return (
         <motion.div
+            ref={cardRef}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 * index }}
@@ -89,6 +106,7 @@ export function StoryCard({
                     <AnimatePresence>
                         {isHovered && (
                             <motion.button
+                                type="button"
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.8 }}
@@ -126,6 +144,7 @@ export function StoryCard({
                             {isReadingNow && (
                                 <div className="mt-auto pt-4 flex justify-center w-full">
                                     <button
+                                        type="button"
                                         onClick={handleShowMeta}
                                         className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1.5 rounded-full backdrop-blur-sm transition-colors"
                                     >
