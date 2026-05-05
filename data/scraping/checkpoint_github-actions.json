@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-05-04T17:36:05.650Z",
-  "lastActivity": "2026-05-04T17:37:30.802Z",
+  "startedAt": "2026-05-04T23:15:11.328Z",
+  "lastActivity": "2026-05-05T04:05:15.454Z",
   "activeFandom": {
     "name": "僕のヒーローアカデミア | Boku no Hero Academia | My Hero Academia (Anime & Manga)",
     "url": "https://archiveofourown.org/tags/%E5%83%95%E3%81%AE%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%82%A2%20%7C%20Boku%20no%20Hero%20Academia%20%7C%20My%20Hero%20Academia%20(Anime%20*a*%20Manga)/works",
     "category": "Anime & Manga",
     "dateChunk": {
-      "from": "2012-01-01",
-      "to": "2012-12-31"
+      "from": "2019-01-01",
+      "to": "2019-12-31"
     },
-    "lastPage": 1
+    "lastPage": 748
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -31,9 +31,9 @@
     "https://archiveofourown.org/tags/%22%D0%9D%D0%BE%D1%87%D0%BD%D0%B0%D1%8F%20%101%D1%82%D1%80%D0%B0%D0%B6%D0%B0%22%20-%20%D0%A2%D0%B5%D1%80%D1%80%D0%B8%20%D0%9F%D1%80%D0%B0%D1%82%D1%87%D0%B5%D1%82%D1%82;%20%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%91%D0%B0%D0%BA%D1%83%D0%BC%D0%B0%D1%86%D1%83%20%D0%B8%20%D0%9C%D1%8D%D0%B9%D0%B4%D0%B7%D0%B8/works"
   ],
   "stats": {
-    "totalScraped": 21556,
-    "totalFailed": 105,
-    "totalPages": 1585,
-    "sessionScraped": 0
+    "totalScraped": 27780,
+    "totalFailed": 122,
+    "totalPages": 2333,
+    "sessionScraped": 6224
   }
 }
