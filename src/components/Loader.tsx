@@ -1,98 +1,34 @@
 import React from 'react';
-import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { BookOpen } from 'lucide-react';
 
 const Loader = () => {
   return (
-    <StyledWrapper>
-      <div className="spinner">
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
-    </StyledWrapper>
+    <div className="flex flex-col items-center justify-center p-8">
+      <motion.div
+        animate={{
+          scale: [1, 1.1, 1],
+          opacity: [0.5, 1, 0.5],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center shadow-[0_0_30px_rgba(245,158,11,0.2)]"
+      >
+        <BookOpen className="w-8 h-8 text-accent drop-shadow-md" />
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="mt-6 text-sm font-medium tracking-[0.2em] text-white/50 uppercase"
+      >
+        Loading
+      </motion.p>
+    </div>
   );
-}
-
-const StyledWrapper = styled.div`
-  .spinner {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-left: -75px;
-  }
-
-  .spinner span {
-    position: absolute;
-    top: 50%;
-    left: var(--left);
-    width: 35px;
-    height: 7px;
-    background: #ffff;
-    animation: dominos 1s ease infinite;
-    box-shadow: 2px 2px 3px 0px black;
-  }
-
-  .spinner span:nth-child(1) {
-    --left: 80px;
-    animation-delay: 0.125s;
-  }
-
-  .spinner span:nth-child(2) {
-    --left: 70px;
-    animation-delay: 0.3s;
-  }
-
-  .spinner span:nth-child(3) {
-    left: 60px;
-    animation-delay: 0.425s;
-  }
-
-  .spinner span:nth-child(4) {
-    animation-delay: 0.54s;
-    left: 50px;
-  }
-
-  .spinner span:nth-child(5) {
-    animation-delay: 0.665s;
-    left: 40px;
-  }
-
-  .spinner span:nth-child(6) {
-    animation-delay: 0.79s;
-    left: 30px;
-  }
-
-  .spinner span:nth-child(7) {
-    animation-delay: 0.915s;
-    left: 20px;
-  }
-
-  .spinner span:nth-child(8) {
-    left: 10px;
-  }
-
-  @keyframes dominos {
-    50% {
-      opacity: 0.7;
-    }
-
-    75% {
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-    }
-
-    80% {
-      opacity: 1;
-    }
-  }`;
+};
 
 export default Loader;
