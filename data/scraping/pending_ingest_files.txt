@@ -1,2 +1,2 @@
-/home/itorousa/Documents/Code/fannexus/data/scraped/video_games/twisted_wonderland_video_game.jsonl
 /home/itorousa/Documents/Code/fannexus/data/scraped/video_games/kingdom_hearts_video_games.jsonl
+/home/itorousa/Documents/Code/fannexus/data/scraped/video_games/twisted_wonderland_video_game.jsonl
