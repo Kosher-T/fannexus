@@ -173,6 +173,7 @@ export default function HomePage() {
                     onShowMeta={handleStoryClick}
                     onRead={addToHistory}
                     platform={historyItem?.platformId}
+                    layoutDependency={readingNowStories.length}
                   />
                 </div>
               );
@@ -200,6 +201,7 @@ export default function HomePage() {
               story={story}
               index={i}
               onClick={handleStoryClick}
+              layoutDependency={readingNowStories.length}
             />
           ))}
         </div>

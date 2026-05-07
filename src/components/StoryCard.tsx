@@ -15,6 +15,7 @@ interface StoryCardProps {
     onShowMeta?: (storyId: string) => void;
     onRead?: (storyId: string, platform: string) => void;
     platform?: string; // the platform to show/use
+    layoutDependency?: any; // To trigger hover state re-check upon layout shifts
 }
 
 export function StoryCard({
@@ -25,7 +26,8 @@ export function StoryCard({
     onRemove,
     onShowMeta,
     onRead,
-    platform
+    platform,
+    layoutDependency
 }: StoryCardProps) {
     const [isHovered, setIsHovered] = React.useState(false);
     const cardRef = React.useRef<HTMLDivElement>(null);
@@ -44,7 +46,7 @@ export function StoryCard({
             }
         }, 50);
         return () => clearTimeout(timer);
-    }, [index, story.ao3Id]);
+    }, [index, story.ao3Id, layoutDependency]);
 
     const handleCardClick = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -85,7 +87,7 @@ export function StoryCard({
             className="group cursor-pointer flex flex-col gap-3 relative"
         >
             {/* Card Container */}
-            <div className="w-full aspect-[2/3] rounded-xl md:rounded-2xl bg-nexus-surface border border-white/10 relative overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-accent/5 group-hover:border-accent/40">
+            <div className="w-full aspect-[2/3] rounded-xl md:rounded-2xl bg-nexus-surface border border-white/10 relative overflow-hidden flex items-center justify-center transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/5 group-hover:border-accent/40">
                 {story.coverImageUrl ? (
                     <img src={story.coverImageUrl} alt={story.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-20 transition-opacity duration-500 will-change-transform group-hover:scale-105" />
                 ) : (
