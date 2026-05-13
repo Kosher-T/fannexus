@@ -271,7 +271,7 @@ function Navigation() {
                        <span className="block text-[11px] text-nexus-muted mt-0.5">Sophisticated Dark, Typography</span>
                      </span>
                    </button>
-<button onClick={() => setIsFandomsDrawerOpen(true)} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
+<button onClick={() => { setIsFandomsDrawerOpen(true); setIsUserMenuOpen(false); }} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
                       <BookOpen className="w-5 h-5 text-accent/70 shrink-0" />
                       <span>
                         <span className="block font-medium">Preferred Fandoms</span>

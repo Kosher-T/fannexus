@@ -1,12 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import { collection, getDocs, query, limit, startAfter } from 'firebase/firestore';
 import { db } from '../lib/firebase';
-import type { StoryMetadata } from '../types/scraper';
 
 const CACHE_KEY = 'fandom_cache';
 const CACHE_TTL = 1000 * 60 * 30;
 const BATCH_SIZE = 500;
-const MAX_BATCHES = 4;
 
 interface FandomCache {
   fandoms: string[];
@@ -17,7 +15,7 @@ async function fetchFandomsFromStories(): Promise<string[]> {
   const fandomSet = new Set<string>();
   let lastDoc: any = null;
 
-  for (let batch = 0; batch < MAX_BATCHES; batch++) {
+  while (true) {
     let q = query(collection(db, 'stories'), limit(BATCH_SIZE));
     if (lastDoc) {
       q = query(q, startAfter(lastDoc));
@@ -69,7 +67,7 @@ function setCachedFandoms(fandoms: string[]): void {
 
 export function useFandomCache() {
   const [fandoms, setFandoms] = useState<string[]>(() => getCachedFandoms() || []);
-  const [loading, setLoading] = useState(!getCachedFandoms());
+  const [loading, setLoading] = useState(true);
 
   const refreshCache = useCallback(async () => {
     setLoading(true);
@@ -89,8 +87,9 @@ export function useFandomCache() {
     if (cached) {
       setFandoms(cached);
       setLoading(false);
+    } else {
+      refreshCache();
     }
-    refreshCache();
   }, [refreshCache]);
 
   const searchFandoms = useCallback(

@@ -229,8 +229,8 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* Trending in Your Fandoms - Only show if user has favorite fandoms */}
-      {preferences.favoriteFandoms.length > 0 && trendingInFandoms.length > 0 && (
+      {/* Trending in Your Fandoms */}
+      {preferences.favoriteFandoms.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 mt-12 md:mt-16 relative z-20">
           <div className="flex items-end justify-between mb-6">
             <h2 className="text-2xl font-serif text-white tracking-tight font-light flex items-center gap-3">
@@ -241,17 +241,38 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-            {trendingInFandoms.slice(0, 5).map((story, i) => (
-              <StoryCard
-                key={story.ao3Id}
-                story={story}
-                index={i}
-                onClick={handleStoryClick}
-                layoutDependency={readingNowStories.length + trendingInFandoms.length}
-              />
-            ))}
-          </div>
+          {isTrendingLoading ? (
+            <div className="flex overflow-x-auto gap-4 md:gap-6 pb-6 snap-x snap-mandatory hide-scrollbar">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div key={i} className="shrink-0 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] snap-start">
+                  <div className="aspect-[2/3] bg-white/5 rounded-xl animate-pulse" />
+                  <div className="mt-3 space-y-2">
+                    <div className="h-3 bg-white/5 rounded animate-pulse w-3/4" />
+                    <div className="h-2 bg-white/5 rounded animate-pulse w-1/2" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : trendingInFandoms.length === 0 ? (
+            <div className="text-center py-12 bg-white/[0.02] rounded-2xl border border-white/5">
+              <p className="text-nexus-muted text-sm">
+                No trending stories found in your fandoms yet.
+              </p>
+            </div>
+          ) : (
+            <div className="flex overflow-x-auto gap-4 md:gap-6 pb-6 snap-x snap-mandatory hide-scrollbar">
+              {trendingInFandoms.map((story, i) => (
+                <div key={`trending-${story.ao3Id}`} className="shrink-0 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] snap-start">
+                  <StoryCard
+                    story={story}
+                    index={i}
+                    onClick={handleStoryClick}
+                    layoutDependency={readingNowStories.length + trendingInFandoms.length}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </section>
       )}
 

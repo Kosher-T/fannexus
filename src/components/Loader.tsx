@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { BookOpen } from 'lucide-react';
 
 const Loader = () => {

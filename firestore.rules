@@ -64,7 +64,7 @@ service cloud.firestore {
       allow get: if isOwner(userId);
       allow list: if false; // Users cannot list all basic users
       allow create: if isOwner(userId) && isValidUserCreate(incoming());
-      allow update: if isOwner(userId) && isValidUserUpdate(incoming()) && incoming().email == existing().email && incoming().createdAt == existing().createdAt && incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'favoriteFandoms', 'preferredSources', 'theme']);
+      allow update: if isOwner(userId) && isValidUserUpdate(incoming()) && incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'favoriteFandoms', 'preferredSources', 'theme']);
       allow delete: if false; // Disallow user deletion directly from client for now
 
       match /library/{libraryId} {

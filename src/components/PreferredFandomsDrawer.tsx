@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Search, Plus, XCircle } from 'lucide-react';
+import { X, Search, Plus, XCircle, BookOpen } from 'lucide-react';
 import { useUserPreferences } from '../hooks/useUserPreferences';
 import { useFandomCache } from '../hooks/useFandomCache';
 
@@ -11,16 +11,19 @@ interface PreferredFandomsDrawerProps {
 
 export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFandomsDrawerProps) {
   const { preferences, addFavoriteFandom, removeFavoriteFandom } = useUserPreferences();
-  const { searchFandoms, loading: fandomLoading } = useFandomCache();
-  
+  const { fandoms, searchFandoms, loading: fandomLoading } = useFandomCache();
+
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState<string[]>([]);
   const [isSearching, setIsSearching] = useState(false);
-  const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [highlightedIndex, setHighlightedIndex] = useState(-1);
+  const searchTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (!searchTerm.trim()) {
       setSearchResults([]);
+      setHighlightedIndex(-1);
       return;
     }
 
@@ -32,6 +35,7 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
     searchTimeoutRef.current = setTimeout(() => {
       const results = searchFandoms(searchTerm);
       setSearchResults(results.filter(r => !preferences.favoriteFandoms.includes(r)));
+      setHighlightedIndex(-1);
       setIsSearching(false);
     }, 300);
 
@@ -46,11 +50,49 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
     addFavoriteFandom(fandom);
     setSearchTerm('');
     setSearchResults([]);
+    setHighlightedIndex(-1);
+    inputRef.current?.focus();
   }, [addFavoriteFandom]);
 
   const handleRemoveFandom = useCallback((fandom: string) => {
     removeFavoriteFandom(fandom);
   }, [removeFavoriteFandom]);
+
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (searchResults.length === 0) return;
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        setHighlightedIndex(prev =>
+          prev < searchResults.length - 1 ? prev + 1 : 0
+        );
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        setHighlightedIndex(prev =>
+          prev > 0 ? prev - 1 : searchResults.length - 1
+        );
+        break;
+      case 'Enter':
+        e.preventDefault();
+        if (highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
+          handleAddFandom(searchResults[highlightedIndex]);
+        }
+        break;
+      case 'Escape':
+        setSearchResults([]);
+        setHighlightedIndex(-1);
+        inputRef.current?.blur();
+        break;
+    }
+  }, [searchResults, highlightedIndex, handleAddFandom]);
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => inputRef.current?.focus(), 100);
+    }
+  }, [isOpen]);
 
   return (
     <AnimatePresence>
@@ -89,29 +131,53 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
                   <label className="text-xs font-semibold text-nexus-muted uppercase tracking-widest mb-3 block">
                     Add Fandoms
                   </label>
-                  <div className="relative">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-nexus-muted" />
-                    <input
-                      type="text"
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      placeholder="Start typing to search..."
-                      className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-nexus-muted focus:outline-none focus:border-accent/50 transition-colors text-sm"
-                    />
-                    {isSearching && (
-                      <div className="absolute right-3 top-1/2 -translate-y-1/2">
-                        <div className="w-4 h-4 border-2 border-accent/30 border-t-accent rounded-full animate-spin" />
+                  {fandomLoading ? (
+                    <div className="space-y-2">
+                      <div className="h-12 bg-white/5 rounded-xl animate-pulse" />
+                      <div className="flex gap-2">
+                        <div className="h-6 bg-white/5 rounded-full animate-pulse w-20" />
+                        <div className="h-6 bg-white/5 rounded-full animate-pulse w-32" />
+                        <div className="h-6 bg-white/5 rounded-full animate-pulse w-24" />
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="relative">
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-nexus-muted" />
+                        <input
+                          ref={inputRef}
+                          type="text"
+                          value={searchTerm}
+                          onChange={(e) => setSearchTerm(e.target.value)}
+                          onKeyDown={handleKeyDown}
+                          placeholder="Start typing to search..."
+                          className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-nexus-muted focus:outline-none focus:border-accent/50 transition-colors text-sm"
+                        />
+                        {isSearching && (
+                          <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                            <div className="w-4 h-4 border-2 border-accent/30 border-t-accent rounded-full animate-spin" />
+                          </div>
+                        )}
+                      </div>
+
+                      <p className="text-[11px] text-nexus-muted mt-2 flex items-center gap-1.5">
+                        <BookOpen className="w-3 h-3" />
+                        {fandoms.length.toLocaleString()} fandoms available
+                      </p>
+                    </>
+                  )}
 
                   {searchResults.length > 0 && (
                     <div className="mt-2 bg-white/5 border border-white/10 rounded-xl overflow-hidden">
-                      {searchResults.map((fandom) => (
+                      {searchResults.map((fandom, idx) => (
                         <button
                           key={fandom}
                           onClick={() => handleAddFandom(fandom)}
-                          className="w-full px-4 py-3 text-left text-sm text-white/80 hover:bg-white/5 hover:text-white flex items-center gap-2 transition-colors border-b border-white/5 last:border-0"
+                          className={`w-full px-4 py-3 text-left text-sm flex items-center gap-2 transition-colors border-b border-white/5 last:border-0 ${
+                            idx === highlightedIndex
+                              ? 'bg-white/10 text-white'
+                              : 'text-white/80 hover:bg-white/5 hover:text-white'
+                          }`}
                         >
                           <Plus className="w-4 h-4 text-accent/70 shrink-0" />
                           <span className="truncate">{fandom}</span>
