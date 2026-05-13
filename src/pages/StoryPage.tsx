@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, BookOpen, Clock, Tag, ExternalLink, Calendar, Search, Loader2 } from 'lucide-react';
+import { ArrowLeft, BookOpen, Clock, Tag, ExternalLink, Calendar, Search } from 'lucide-react';
 import { PlatformIcon } from '../components/PlatformIcon';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { StoryMetadata } from '../types/scraper';
 import { getSeededImage } from '../lib/defaultImages';
 import { useReadingHistory } from '../hooks/useReadingHistory';
+import Loader from '../components/Loader';
 
 export default function StoryPage() {
   const { id } = useParams<{ id: string }>();
@@ -47,7 +48,7 @@ export default function StoryPage() {
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-nexus-dark">
-        <Loader2 className="w-8 h-8 text-accent animate-spin" />
+        <Loader />
       </div>
     );
   }

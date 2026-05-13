@@ -32,18 +32,23 @@ service cloud.firestore {
 
     function isValidUserCreate(data) {
       return data.keys().hasAll(["email", "createdAt"])
-        && data.keys().size() <= 3
+        && data.keys().size() <= 6
         && data.email is string
         && data.email.size() <= 200
         && data.createdAt == request.time
         && data.get("displayName", "") is string
-        && data.get("displayName", "").size() <= 100;
+        && data.get("displayName", "").size() <= 100
+        && data.get("favoriteFandoms", []) is list
+        && data.get("preferredSources", []) is list
+        && data.get("theme", "dark") in ["dark", "light"];
     }
 
     function isValidUserUpdate(data) {
       return data.get("displayName", "") is string
-        && data.get("displayName", "").size() <= 100;
-      // email and createdAt cannot change
+        && data.get("displayName", "").size() <= 100
+        && data.get("favoriteFandoms", []) is list
+        && data.get("preferredSources", []) is list
+        && data.get("theme", "dark") in ["dark", "light"];
     }
 
     match /test/connection {
@@ -59,7 +64,7 @@ service cloud.firestore {
       allow get: if isOwner(userId);
       allow list: if false; // Users cannot list all basic users
       allow create: if isOwner(userId) && isValidUserCreate(incoming());
-      allow update: if isOwner(userId) && isValidUserUpdate(incoming()) && incoming().email == existing().email && incoming().createdAt == existing().createdAt && incoming().diff(existing()).affectedKeys().hasOnly(['displayName']);
+      allow update: if isOwner(userId) && isValidUserUpdate(incoming()) && incoming().email == existing().email && incoming().createdAt == existing().createdAt && incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'favoriteFandoms', 'preferredSources', 'theme']);
       allow delete: if false; // Disallow user deletion directly from client for now
 
       match /library/{libraryId} {

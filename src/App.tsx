@@ -10,6 +10,8 @@ import { Search, Compass, BookOpen, Settings, Link as LinkIcon, Menu, X, LogIn, 
 import { auth, signInWithGoogle, signOut } from './lib/firebase';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import Loader from './components/Loader';
+import { ContextMenuProvider } from './components/ContextMenu';
+import PreferredFandomsDrawer from './components/PreferredFandomsDrawer';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const SearchPage = lazy(() => import('./pages/SearchPage'));
@@ -19,6 +21,7 @@ function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [isFandomsDrawerOpen, setIsFandomsDrawerOpen] = useState(false);
   const [linkInput, setLinkInput] = useState('');
   const [user, setUser] = useState<User | null>(null);
   const navigate = useNavigate();
@@ -268,13 +271,13 @@ function Navigation() {
                        <span className="block text-[11px] text-nexus-muted mt-0.5">Sophisticated Dark, Typography</span>
                      </span>
                    </button>
-                   <button className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
-                     <BookOpen className="w-5 h-5 text-accent/70 shrink-0" />
-                     <span>
-                       <span className="block font-medium">Preferred Fandoms</span>
-                       <span className="block text-[11px] text-nexus-muted mt-0.5">Prioritize in recommendations</span>
-                     </span>
-                   </button>
+<button onClick={() => setIsFandomsDrawerOpen(true)} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
+                      <BookOpen className="w-5 h-5 text-accent/70 shrink-0" />
+                      <span>
+                        <span className="block font-medium">Preferred Fandoms</span>
+                        <span className="block text-[11px] text-nexus-muted mt-0.5">Prioritize in recommendations</span>
+                      </span>
+                    </button>
                    <button className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
                      <Compass className="w-5 h-5 text-accent/70 shrink-0" />
                      <span>
@@ -301,6 +304,11 @@ function Navigation() {
           </div>
         )}
       </AnimatePresence>
+
+      <PreferredFandomsDrawer 
+        isOpen={isFandomsDrawerOpen} 
+        onClose={() => setIsFandomsDrawerOpen(false)} 
+      />
     </>
   );
 }
@@ -326,10 +334,12 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-nexus-dark text-nexus-text selection:bg-accent/30 selection:text-accent">
-        <Navigation />
-        <AnimatedRoutes />
-      </div>
+      <ContextMenuProvider>
+        <div className="min-h-screen bg-nexus-dark text-nexus-text selection:bg-accent/30 selection:text-accent">
+          <Navigation />
+          <AnimatedRoutes />
+        </div>
+      </ContextMenuProvider>
     </BrowserRouter>
   );
 }

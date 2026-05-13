@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { Share, RefreshCw, ChevronLeft, ChevronRight, Settings, Maximize, Copy, Link as LinkIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -14,13 +14,15 @@ export function ContextMenuProvider({ children }: ContextMenuProps) {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => {
+    let touchTimer: number | null = null;
+
+    const handleContextMenu = (e: MouseEvent | TouchEvent) => {
       // Allow default context menu on inputs and textareas
+      const target = e.target as HTMLElement;
       if (
-        e.target instanceof HTMLInputElement ||
-        e.target instanceof HTMLTextAreaElement ||
-        (e.target as HTMLElement).isContentEditable ||
-        // Check if there is selected text. If so, let normal context menu appear.
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLTextAreaElement ||
+        target.isContentEditable ||
         window.getSelection()?.toString().length
       ) {
          return;
@@ -28,8 +30,14 @@ export function ContextMenuProvider({ children }: ContextMenuProps) {
 
       e.preventDefault();
       
-      let x = e.clientX;
-      let y = e.clientY;
+      let x, y;
+      if ('clientX' in e) {
+        x = e.clientX;
+        y = e.clientY;
+      } else {
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+      }
       
       // Default menu size approximation, to adjust if near borders
       const menuWidth = 220;
@@ -46,6 +54,20 @@ export function ContextMenuProvider({ children }: ContextMenuProps) {
       setIsOpen(true);
     };
 
+    const handleTouchStart = (e: TouchEvent) => {
+      if (touchTimer) window.clearTimeout(touchTimer);
+      touchTimer = window.setTimeout(() => {
+        handleContextMenu(e);
+      }, 500); // 500ms for long press
+    };
+
+    const handleTouchEnd = () => {
+      if (touchTimer) {
+        window.clearTimeout(touchTimer);
+        touchTimer = null;
+      }
+    };
+
     const handleClick = (e: MouseEvent) => {
       if (isOpen && menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setIsOpen(false);
@@ -60,13 +82,20 @@ export function ContextMenuProvider({ children }: ContextMenuProps) {
     };
 
     window.addEventListener('contextmenu', handleContextMenu);
+    window.addEventListener('touchstart', handleTouchStart, { passive: false });
+    window.addEventListener('touchend', handleTouchEnd);
+    window.addEventListener('touchmove', handleTouchEnd); // Cancel on move
     window.addEventListener('click', handleClick);
     window.addEventListener('scroll', handleScroll, true);
 
     return () => {
       window.removeEventListener('contextmenu', handleContextMenu);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchend', handleTouchEnd);
+      window.removeEventListener('touchmove', handleTouchEnd);
       window.removeEventListener('click', handleClick);
       window.removeEventListener('scroll', handleScroll, true);
+      if (touchTimer) window.clearTimeout(touchTimer);
     };
   }, [isOpen]);
 

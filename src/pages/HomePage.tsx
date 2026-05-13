@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { Info, Star, ChevronRight, Loader2 } from 'lucide-react';
+import { Info, Star, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { PlatformIcon } from '../components/PlatformIcon';
-import { collection, query, limit, getDocs } from 'firebase/firestore';
+import { collection, query, limit, getDocs, where } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { StoryMetadata } from '../types/scraper';
 import { getSeededImage } from '../lib/defaultImages';
 import { useReadingHistory } from '../hooks/useReadingHistory';
+import { useUserPreferences } from '../hooks/useUserPreferences';
 import { StoryCard } from '../components/StoryCard';
+import Loader from '../components/Loader';
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -17,6 +19,51 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
 
   const { readingNowStories, historyItems, isLoading: isHistoryLoading, removeFromHistory, addToHistory } = useReadingHistory();
+  const { preferences } = useUserPreferences();
+  const [trendingInFandoms, setTrendingInFandoms] = useState<StoryMetadata[]>([]);
+  const [isTrendingLoading, setIsTrendingLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchTrendingInFandoms = async () => {
+      const fandoms = preferences.favoriteFandoms;
+      if (fandoms.length === 0) {
+        setTrendingInFandoms([]);
+        return;
+      }
+
+      setIsTrendingLoading(true);
+      try {
+        const seen = new Set<string>();
+        const results: StoryMetadata[] = [];
+        const CHUNK_SIZE = 10;
+
+        for (let i = 0; i < fandoms.length; i += CHUNK_SIZE) {
+          const chunk = fandoms.slice(i, i + CHUNK_SIZE);
+          const q = query(
+            collection(db, 'stories'),
+            where('fandoms', 'array-contains-any', chunk),
+            limit(50)
+          );
+          const snapshot = await getDocs(q);
+          snapshot.forEach((doc) => {
+            if (!seen.has(doc.id)) {
+              seen.add(doc.id);
+              results.push({ ao3Id: doc.id, ...doc.data() } as StoryMetadata);
+            }
+          });
+        }
+
+        results.sort((a, b) => (b.stats?.kudos || 0) - (a.stats?.kudos || 0));
+        setTrendingInFandoms(results.slice(0, 10));
+      } catch (err) {
+        console.error("Error fetching trending in fandoms:", err);
+      } finally {
+        setIsTrendingLoading(false);
+      }
+    };
+
+    fetchTrendingInFandoms();
+  }, [preferences.favoriteFandoms]);
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -62,7 +109,7 @@ export default function HomePage() {
   if (isStoriesLoading || isHistoryLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-nexus-dark">
-        <Loader2 className="w-8 h-8 text-accent animate-spin" />
+        <Loader />
       </div>
     );
   }
@@ -178,6 +225,32 @@ export default function HomePage() {
                 </div>
               );
             })}
+          </div>
+        </section>
+      )}
+
+      {/* Trending in Your Fandoms - Only show if user has favorite fandoms */}
+      {preferences.favoriteFandoms.length > 0 && trendingInFandoms.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 mt-12 md:mt-16 relative z-20">
+          <div className="flex items-end justify-between mb-6">
+            <h2 className="text-2xl font-serif text-white tracking-tight font-light flex items-center gap-3">
+              Trending in Your Fandoms
+              <span className="text-xs font-sans tracking-widest text-accent/70 uppercase border border-accent/20 px-2 py-1 rounded-sm">
+                {preferences.favoriteFandoms.length} favorites
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+            {trendingInFandoms.slice(0, 5).map((story, i) => (
+              <StoryCard
+                key={story.ao3Id}
+                story={story}
+                index={i}
+                onClick={handleStoryClick}
+                layoutDependency={readingNowStories.length + trendingInFandoms.length}
+              />
+            ))}
           </div>
         </section>
       )}
