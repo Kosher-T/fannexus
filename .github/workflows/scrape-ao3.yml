@@ -1,6 +1,6 @@
 name: AO3 Scraper
 
-on:
+#on:
   schedule:
     # 3-4 sessions per day at staggered times (UTC)
     - cron: '15 1 * * *'    # ~1:15 AM UTC
