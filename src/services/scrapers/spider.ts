@@ -130,7 +130,7 @@ export class AO3Spider {
         let consecutiveErrors = 0;
 
         while (hasMorePages) {
-          await new Promise(r => setTimeout(r, 2000)); // Polite crawl rate
+          await new Promise(r => setTimeout(r, 4000)); // Polite crawl rate
 
           process.stdout.write(`   ↳ Scraping page ${page}... `);
 
