@@ -10,7 +10,7 @@ interface PreferredFandomsDrawerProps {
 }
 
 export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFandomsDrawerProps) {
-  const { preferences, addFavoriteFandom, removeFavoriteFandom } = useUserPreferences();
+  const { preferences, addFavoriteFandom, removeFavoriteFandom, setExcludeCrossovers } = useUserPreferences();
   const { fandoms, searchFandoms, loading: fandomLoading } = useFandomCache();
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -59,25 +59,29 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
   }, [removeFavoriteFandom]);
 
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
-    if (searchResults.length === 0) return;
-
     switch (e.key) {
       case 'ArrowDown':
-        e.preventDefault();
-        setHighlightedIndex(prev =>
-          prev < searchResults.length - 1 ? prev + 1 : 0
-        );
+        if (searchResults.length > 0) {
+          e.preventDefault();
+          setHighlightedIndex(prev =>
+            prev < searchResults.length - 1 ? prev + 1 : 0
+          );
+        }
         break;
       case 'ArrowUp':
-        e.preventDefault();
-        setHighlightedIndex(prev =>
-          prev > 0 ? prev - 1 : searchResults.length - 1
-        );
+        if (searchResults.length > 0) {
+          e.preventDefault();
+          setHighlightedIndex(prev =>
+            prev > 0 ? prev - 1 : searchResults.length - 1
+          );
+        }
         break;
       case 'Enter':
         e.preventDefault();
-        if (highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
+        if (searchResults.length > 0 && highlightedIndex >= 0 && highlightedIndex < searchResults.length) {
           handleAddFandom(searchResults[highlightedIndex]);
+        } else if (searchTerm.trim() && !preferences.favoriteFandoms.includes(searchTerm.trim())) {
+          handleAddFandom(searchTerm.trim());
         }
         break;
       case 'Escape':
@@ -86,7 +90,7 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
         inputRef.current?.blur();
         break;
     }
-  }, [searchResults, highlightedIndex, handleAddFandom]);
+  }, [searchResults, highlightedIndex, handleAddFandom, searchTerm, preferences.favoriteFandoms]);
 
   useEffect(() => {
     if (isOpen) {
@@ -118,6 +122,7 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
                 <p className="text-xs text-nexus-muted mt-1">Prioritize in recommendations</p>
               </div>
               <button
+                type="button"
                 onClick={onClose}
                 className="p-2 rounded-full hover:bg-white/5 text-nexus-muted hover:text-white transition-colors"
               >
@@ -131,41 +136,28 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
                   <label className="text-xs font-semibold text-nexus-muted uppercase tracking-widest mb-3 block">
                     Add Fandoms
                   </label>
-                  {fandomLoading ? (
-                    <div className="space-y-2">
-                      <div className="h-12 bg-white/5 rounded-xl animate-pulse" />
-                      <div className="flex gap-2">
-                        <div className="h-6 bg-white/5 rounded-full animate-pulse w-20" />
-                        <div className="h-6 bg-white/5 rounded-full animate-pulse w-32" />
-                        <div className="h-6 bg-white/5 rounded-full animate-pulse w-24" />
+                  <div className="relative">
+                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-nexus-muted" />
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      onKeyDown={handleKeyDown}
+                      placeholder="Type to search or add a fandom..."
+                      className="w-full pl-10 pr-10 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-nexus-muted focus:outline-none focus:border-accent/50 transition-colors text-sm"
+                    />
+                    {(isSearching || fandomLoading) && (
+                      <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                        <div className="w-4 h-4 border-2 border-accent/30 border-t-accent rounded-full animate-spin" />
                       </div>
-                    </div>
-                  ) : (
-                    <>
-                      <div className="relative">
-                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-nexus-muted" />
-                        <input
-                          ref={inputRef}
-                          type="text"
-                          value={searchTerm}
-                          onChange={(e) => setSearchTerm(e.target.value)}
-                          onKeyDown={handleKeyDown}
-                          placeholder="Start typing to search..."
-                          className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-nexus-muted focus:outline-none focus:border-accent/50 transition-colors text-sm"
-                        />
-                        {isSearching && (
-                          <div className="absolute right-3 top-1/2 -translate-y-1/2">
-                            <div className="w-4 h-4 border-2 border-accent/30 border-t-accent rounded-full animate-spin" />
-                          </div>
-                        )}
-                      </div>
+                    )}
+                  </div>
 
-                      <p className="text-[11px] text-nexus-muted mt-2 flex items-center gap-1.5">
-                        <BookOpen className="w-3 h-3" />
-                        {fandoms.length.toLocaleString()} fandoms available
-                      </p>
-                    </>
-                  )}
+                  <p className="text-[11px] text-nexus-muted mt-2 flex items-center gap-1.5">
+                    <BookOpen className="w-3 h-3" />
+                    {fandomLoading ? 'Loading fandoms...' : `${fandoms.length.toLocaleString()} fandoms available`}
+                  </p>
 
                   {searchResults.length > 0 && (
                     <div className="mt-2 bg-white/5 border border-white/10 rounded-xl overflow-hidden">
@@ -173,11 +165,10 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
                         <button
                           key={fandom}
                           onClick={() => handleAddFandom(fandom)}
-                          className={`w-full px-4 py-3 text-left text-sm flex items-center gap-2 transition-colors border-b border-white/5 last:border-0 ${
-                            idx === highlightedIndex
+                          className={`w-full px-4 py-3 text-left text-sm flex items-center gap-2 transition-colors border-b border-white/5 last:border-0 ${idx === highlightedIndex
                               ? 'bg-white/10 text-white'
                               : 'text-white/80 hover:bg-white/5 hover:text-white'
-                          }`}
+                            }`}
                         >
                           <Plus className="w-4 h-4 text-accent/70 shrink-0" />
                           <span className="truncate">{fandom}</span>
@@ -218,6 +209,25 @@ export default function PreferredFandomsDrawer({ isOpen, onClose }: PreferredFan
                     </p>
                   </div>
                 )}
+
+                <div className="mt-8 pt-6 border-t border-white/5">
+                  <label className="flex items-center justify-between cursor-pointer group">
+                    <div>
+                      <h3 className="text-sm font-medium text-white group-hover:text-accent transition-colors">Exclude Crossovers</h3>
+                      <p className="text-xs text-nexus-muted mt-1">Hide stories with multiple fandoms from recommendations</p>
+                    </div>
+                    <div className="relative">
+                      <input
+                        type="checkbox"
+                        className="sr-only"
+                        checked={preferences.excludeCrossovers}
+                        onChange={(e) => setExcludeCrossovers(e.target.checked)}
+                      />
+                      <div className={`block w-10 h-6 rounded-full transition-colors ${preferences.excludeCrossovers ? 'bg-accent' : 'bg-white/10'}`}></div>
+                      <div className={`absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform ${preferences.excludeCrossovers ? 'translate-x-4' : ''}`}></div>
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
 

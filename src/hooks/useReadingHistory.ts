@@ -92,7 +92,7 @@ export function useReadingHistory() {
                         items.push({
                             storyId: data.storyId,
                             platformId: data.platformId,
-                            timestamp: data.timestamp?.toMillis() || Date.now()
+                            timestamp: typeof data.timestamp === 'number' ? data.timestamp : (data.timestamp?.toMillis?.() || Date.now())
                         });
                     });
 
