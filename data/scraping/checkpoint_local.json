@@ -1,13 +1,13 @@
 {
   "runnerId": "local",
-  "startedAt": "2026-05-04T11:01:54.295Z",
-  "lastActivity": "2026-05-04T16:28:18.000Z",
+  "startedAt": "2026-05-27T13:30:18.550Z",
+  "lastActivity": "2026-05-27T13:30:44.739Z",
   "activeFandom": {
     "name": "Cookie Run (Video Game)",
     "url": "https://archiveofourown.org/tags/Cookie%20Run%20(Video%20Game)/works",
     "category": "Video Games",
     "dateChunk": null,
-    "lastPage": 272
+    "lastPage": 1
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -64,9 +64,9 @@
     "https://archiveofourown.org/tags/Kingdom%20Hearts%20(Video%20Games)/works"
   ],
   "stats": {
-    "totalScraped": 66073,
+    "totalScraped": 66084,
     "totalFailed": 116,
-    "totalPages": 4374,
-    "sessionScraped": 0
+    "totalPages": 4375,
+    "sessionScraped": 11
   }
 }
