@@ -31,6 +31,18 @@ export default function HomePage() {
         return;
       }
 
+      const cacheKey = `trending_${fandoms.join('_')}_${preferences.excludeCrossovers}`;
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) {
+        try {
+          const parsed = JSON.parse(cached);
+          setTrendingInFandoms(parsed);
+          return;
+        } catch (e) {
+          console.error("Failed to parse cached trending stories", e);
+        }
+      }
+
       setIsTrendingLoading(true);
       try {
         const seen = new Set<string>();
@@ -48,13 +60,22 @@ export default function HomePage() {
           snapshot.forEach((doc) => {
             if (!seen.has(doc.id)) {
               seen.add(doc.id);
-              results.push({ ao3Id: doc.id, ...doc.data() } as StoryMetadata);
+              const data = doc.data() as StoryMetadata;
+
+              if (preferences.excludeCrossovers && data.fandoms && data.fandoms.length > 1) {
+                return;
+              }
+
+              results.push({ ao3Id: doc.id, ...data });
             }
           });
         }
 
         results.sort((a, b) => (b.stats?.kudos || 0) - (a.stats?.kudos || 0));
-        setTrendingInFandoms(results.slice(0, 10));
+        const finalResults = results.slice(0, 10);
+
+        sessionStorage.setItem(cacheKey, JSON.stringify(finalResults));
+        setTrendingInFandoms(finalResults);
       } catch (err) {
         console.error("Error fetching trending in fandoms:", err);
       } finally {
@@ -63,18 +84,28 @@ export default function HomePage() {
     };
 
     fetchTrendingInFandoms();
-  }, [preferences.favoriteFandoms]);
+  }, [preferences.favoriteFandoms, preferences.excludeCrossovers]);
 
   useEffect(() => {
     const fetchStories = async () => {
       try {
-        const q = query(collection(db, 'stories'), limit(16));
+        const q = query(collection(db, 'stories'), limit(50));
         const querySnapshot = await getDocs(q);
         const fetchedStories: StoryMetadata[] = [];
         querySnapshot.forEach((doc) => {
-          fetchedStories.push({ ao3Id: doc.id, ...doc.data() } as StoryMetadata);
+          const data = doc.data() as StoryMetadata;
+          if (preferences.excludeCrossovers && data.fandoms && data.fandoms.length > 1) {
+            return;
+          }
+          if (preferences.preferredSources && preferences.preferredSources.length > 0) {
+            const domain = data.url ? new URL(data.url).hostname.replace('www.', '') : null;
+            if (domain && !preferences.preferredSources.includes(domain)) {
+              return;
+            }
+          }
+          fetchedStories.push({ ao3Id: doc.id, ...data });
         });
-        setStories(fetchedStories);
+        setStories(fetchedStories.slice(0, 16));
       } catch (err) {
         console.error("Error fetching stories:", err);
         setError("Failed to load stories.");
@@ -83,7 +114,7 @@ export default function HomePage() {
       }
     };
     fetchStories();
-  }, []);
+  }, [preferences.excludeCrossovers, preferences.preferredSources]);
 
   // Scroll Restoration Logic
   useEffect(() => {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { collection, getDocs, query, limit, startAfter } from 'firebase/firestore';
+import { collection, getDocs, query, limit, startAfter, orderBy } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 
 const CACHE_KEY = 'fandom_cache';
@@ -16,9 +16,9 @@ async function fetchFandomsFromStories(): Promise<string[]> {
   let lastDoc: any = null;
 
   while (true) {
-    let q = query(collection(db, 'stories'), limit(BATCH_SIZE));
+    let q = query(collection(db, 'stories'), orderBy('__name__'), limit(BATCH_SIZE));
     if (lastDoc) {
-      q = query(q, startAfter(lastDoc));
+      q = query(collection(db, 'stories'), orderBy('__name__'), startAfter(lastDoc), limit(BATCH_SIZE));
     }
 
     const snapshot = await getDocs(q);
