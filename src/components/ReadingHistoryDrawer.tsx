@@ -75,9 +75,9 @@ export default function ReadingHistoryDrawer({ isOpen, onClose }: ReadingHistory
                                                             >
                                                                 <X className="w-4 h-4" />
                                                             </button>
-                                                            {item.url && (
+                                                            {item.link && (
                                                                 <a
-                                                                    href={item.url}
+                                                                    href={item.link}
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     className="p-2 -mr-2 text-accent/70 hover:text-accent hover:bg-accent/10 rounded-lg transition-colors shrink-0"

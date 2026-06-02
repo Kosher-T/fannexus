@@ -98,7 +98,7 @@ export default function HomePage() {
             return;
           }
           if (preferences.preferredSources && preferences.preferredSources.length > 0) {
-            const domain = data.url ? new URL(data.url).hostname.replace('www.', '') : null;
+            const domain = data.link ? new URL(data.link).hostname.replace('www.', '') : null;
             if (domain && !preferences.preferredSources.includes(domain)) {
               return;
             }
