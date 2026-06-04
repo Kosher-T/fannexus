@@ -97,7 +97,7 @@ function Navigation() {
           </Link>
 
           {/* Dynamic Search / Nav Area (Center - Absolute) */}
-          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-full max-w-lg z-0 items-center justify-center">
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-full max-w-lg z-20 items-center justify-center pointer-events-none">
             <AnimatePresence mode="wait">
               {!isScrolled ? (
                 <motion.nav
@@ -105,12 +105,12 @@ function Navigation() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.9 }}
-                  className="flex items-center gap-8 text-sm font-medium"
+                  className="flex items-center gap-8 text-sm font-medium pointer-events-auto"
                 >
-                  <Link to="/" className="text-nexus-muted hover:text-accent transition-colors flex items-center gap-2">
+                  <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-nexus-muted hover:text-accent transition-colors flex items-center gap-2">
                     <Compass className="w-4 h-4" /> Discover
                   </Link>
-                  <Link to="/search" className="text-nexus-muted hover:text-accent transition-colors flex items-center gap-2">
+                  <Link to="/search" onClick={() => window.scrollTo(0, 0)} className="text-nexus-muted hover:text-accent transition-colors flex items-center gap-2">
                     <Search className="w-4 h-4" /> Advanced Search
                   </Link>
                 </motion.nav>
@@ -122,7 +122,7 @@ function Navigation() {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
                   onSubmit={handleLinkSearch}
-                  className="relative w-full max-w-lg group hidden md:block"
+                  className="relative w-full max-w-lg group hidden md:block pointer-events-auto"
                 >
                   <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                     <LinkIcon className="w-4 h-4 text-nexus-muted group-focus-within:text-accent transition-colors" />
@@ -227,14 +227,14 @@ function Navigation() {
 
                 <div className="space-y-2">
                   <p className="text-xs font-semibold text-nexus-muted uppercase tracking-widest mb-4">Navigation</p>
-                  <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
+                  <Link to="/" onClick={() => { setIsMobileMenuOpen(false); window.scrollTo(0, 0); }} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
                     <Compass className="w-5 h-5 text-accent/70 shrink-0" />
                     <span>
                       <span className="block font-medium">Discover</span>
                       <span className="block text-[11px] text-nexus-muted mt-0.5">Explore stories within the Nexus</span>
                     </span>
                   </Link>
-                  <Link to="/search" onClick={() => setIsMobileMenuOpen(false)} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
+                  <Link to="/search" onClick={() => { setIsMobileMenuOpen(false); window.scrollTo(0, 0); }} className="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 text-white/80 hover:text-white transition-colors text-sm text-left">
                     <Search className="w-5 h-5 text-accent/70 shrink-0" />
                     <span>
                       <span className="block font-medium">Advanced Search</span>
