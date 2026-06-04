@@ -12,3 +12,4 @@ firebase-applet-config.json
 
 # Scraper — test output excluded, but scraped data is tracked
 data/test_output.json
+dev-dist/
