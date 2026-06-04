@@ -51,7 +51,9 @@ jobs:
             --max-duration=17400
         # 17400s = 4h50m — leaves ~40min for git operations + jitter
 
-      - name: Commit scraped data
+      - name: Commit and push scraped data
+        env:
+          GIT_EDITOR: "true"
         run: |
           git config user.name "FanNexus Bot"
           git config user.email "bot@fannexus.local"
@@ -62,13 +64,87 @@ jobs:
           # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "No new data to commit."
-          else
-            STORIES=$(wc -l < data/scraping/scraped_ids.txt 2>/dev/null || echo "0")
-            git commit -m "🤖 Scraping session $(date -u +%Y-%m-%dT%H:%M:%SZ) — ${STORIES} total stories"
-            
-            # Pull with rebase to handle concurrent pushes from local scraper
-            git pull --rebase origin main || git pull --rebase origin master || true
-            git push
-            
-            echo "✅ Scraped data committed and pushed."
+            exit 0
           fi
+          
+          STORIES=$(wc -l < data/scraping/scraped_ids_github-actions.txt 2>/dev/null || echo "0")
+          git commit -m "🤖 Scraping session $(date -u +%Y-%m-%dT%H:%M:%SZ) — ${STORIES} total stories"
+          
+          # Pull with rebase, with conflict resolution for concurrent pushes
+          # During a rebase conflict: stage 2 = upstream (what we rebase onto), stage 3 = our commit
+          MAX_RETRIES=3
+          for ATTEMPT in $(seq 1 $MAX_RETRIES); do
+            echo "=== Push attempt ${ATTEMPT}/${MAX_RETRIES} ==="
+            
+            if git pull --rebase origin main; then
+              echo "Rebase succeeded (no conflicts)."
+              git push
+              echo "✅ Scraped data committed and pushed."
+              exit 0
+            fi
+            
+            # Rebase failed — check if it's conflicts (recoverable) or something else (fatal)
+            if [ ! -d ".git/rebase-merge" ] && [ ! -d ".git/rebase-apply" ]; then
+              echo "❌ Rebase failed for non-conflict reason. Aborting."
+              git rebase --abort 2>/dev/null || true
+              exit 1
+            fi
+            
+            echo "Rebase has conflicts — resolving automatically..."
+            
+            # Resolve checkpoint JSON files: keep theirs (our local version, stage 3)
+            # In a rebase, "theirs" = our commit being replayed = the most recent local state
+            for CONFLICTED in $(git diff --name-only --diff-filter=U 2>/dev/null | grep 'checkpoint_.*\.json$'); do
+              echo "  Resolving checkpoint: ${CONFLICTED} (keeping local version)"
+              git show ":3:${CONFLICTED}" > "${CONFLICTED}" 2>/dev/null || git checkout --theirs -- "${CONFLICTED}"
+              git add "${CONFLICTED}"
+            done
+            
+            # Resolve append-only files: concatenate both versions
+            for CONFLICTED in $(git diff --name-only --diff-filter=U 2>/dev/null | grep -E '\.(jsonl|txt)$'); do
+              echo "  Resolving append-only: ${CONFLICTED} (concatenating)"
+              
+              # Concatenate upstream + local, remove empty lines
+              { git show ":2:${CONFLICTED}" 2>/dev/null; git show ":3:${CONFLICTED}" 2>/dev/null; } \
+                | grep -v '^$' > "${CONFLICTED}.resolved"
+              
+              # Dedup only for ID/path tracking files (not event logs like failed_works)
+              if echo "${CONFLICTED}" | grep -qE '(scraped_ids_|pending_ingest_files_)'; then
+                awk '!seen[$0]++' "${CONFLICTED}.resolved" > "${CONFLICTED}"
+              else
+                mv "${CONFLICTED}.resolved" "${CONFLICTED}"
+              fi
+              rm -f "${CONFLICTED}.resolved"
+              
+              git add "${CONFLICTED}"
+            done
+            
+            # Handle any remaining unresolved conflicts (unknown file types)
+            REMAINING=$(git diff --name-only --diff-filter=U 2>/dev/null)
+            if [ -n "$REMAINING" ]; then
+              echo "⚠️  Unresolvable conflicts in unknown file types:"
+              echo "$REMAINING"
+              echo "Aborting rebase to preserve data."
+              git rebase --abort
+              exit 1
+            fi
+            
+            # Continue the rebase after resolving all conflicts
+            if ! git rebase --continue; then
+              echo "❌ Rebase --continue failed after resolving conflicts."
+              git rebase --abort 2>/dev/null || true
+              exit 1
+            fi
+            
+            # Try to push after resolving this round of conflicts
+            if git push; then
+              echo "✅ Scraped data committed and pushed (resolved on attempt ${ATTEMPT})."
+              exit 0
+            fi
+            
+            echo "Push failed after resolving conflicts. Retrying..."
+            git rebase --abort 2>/dev/null || true
+          done
+            
+          echo "❌ Failed to push after ${MAX_RETRIES} attempts."
+          exit 1

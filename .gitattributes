@@ -1,0 +1,7 @@
+# Auto-resolve merge conflicts for append-only data files
+# Both runners (GitHub Actions + local scraper) append unique entries,
+# so concatenating both sides is always correct.
+data/scraped/**/*.jsonl merge=union
+data/scraping/failed_works_*.jsonl merge=union
+data/scraping/scraped_ids_*.txt merge=union
+data/scraping/pending_ingest_files_*.txt merge=union
