@@ -111,7 +111,7 @@ function Navigation() {
                     <Compass className="w-4 h-4" /> Discover
                   </Link>
                   <Link to="/search" className="text-nexus-muted hover:text-accent transition-colors flex items-center gap-2">
-                    <Search className="w-4 h-4" /> Find Similar
+                    <Search className="w-4 h-4" /> Advanced Search
                   </Link>
                 </motion.nav>
               ) : (
