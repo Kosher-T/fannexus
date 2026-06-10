@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-10T12:00:52.445Z",
-  "lastActivity": "2026-06-10T15:45:50.237Z",
+  "startedAt": "2026-06-10T18:42:34.878Z",
+  "lastActivity": "2026-06-10T23:32:52.948Z",
   "activeFandom": {
     "name": "Naruto (Anime & Manga)",
     "url": "https://archiveofourown.org/tags/Naruto%20(Anime%20*a*%20Manga)/works",
     "category": "Anime & Manga",
     "dateChunk": {
-      "from": "2018-01-01",
-      "to": "2018-12-31"
+      "from": "2019-01-01",
+      "to": "2019-12-31"
     },
-    "lastPage": 216
+    "lastPage": 458
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -33,9 +33,9 @@
     "https://archiveofourown.org/tags/Sherlock%20Holmes%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 137925,
-    "totalFailed": 532,
-    "totalPages": 78533,
-    "sessionScraped": 31023
+    "totalScraped": 142726,
+    "totalFailed": 533,
+    "totalPages": 78991,
+    "sessionScraped": 4801
   }
 }
