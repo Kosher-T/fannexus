@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-09T23:21:36.648Z",
-  "lastActivity": "2026-06-10T04:12:07.006Z",
+  "startedAt": "2026-06-10T06:18:01.244Z",
+  "lastActivity": "2026-06-10T11:09:10.797Z",
   "activeFandom": {
     "name": "Haikyuu!!",
     "url": "https://archiveofourown.org/tags/Haikyuu!!/works",
     "category": "Anime & Manga",
     "dateChunk": {
-      "from": "2020-01-01",
-      "to": "2020-12-31"
+      "from": "2016-01-01",
+      "to": "2016-12-31"
     },
-    "lastPage": 1056
+    "lastPage": 543
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -33,7 +33,7 @@
   "stats": {
     "totalScraped": 106902,
     "totalFailed": 523,
-    "totalPages": 75274,
+    "totalPages": 75817,
     "sessionScraped": 0
   }
 }
