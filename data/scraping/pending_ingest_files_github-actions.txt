@@ -22,3 +22,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/sherlock_holmes_related_fandoms.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
