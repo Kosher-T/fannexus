@@ -25,3 +25,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
