@@ -26,3 +26,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/anime_manga/naruto_anime_manga.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/anime_manga/bungou_stray_dogs.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/a_song_of_ice_and_fire_related_fandoms.jsonl

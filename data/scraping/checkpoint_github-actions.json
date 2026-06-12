@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-12T12:23:10.384Z",
-  "lastActivity": "2026-06-12T16:46:18.532Z",
+  "startedAt": "2026-06-12T17:55:49.752Z",
+  "lastActivity": "2026-06-12T22:45:54.326Z",
   "activeFandom": {
-    "name": "文豪ストレイドッグス | Bungou Stray Dogs",
-    "url": "https://archiveofourown.org/tags/%E6%96%87%E8%B1%AA%E3%82%B9%E3%83%88%E3%83%AC%E3%82%A4%E3%83%89%E3%83%83%E3%82%B0%E3%82%B9%20%7C%20Bungou%20Stray%20Dogs/works",
-    "category": "Anime & Manga",
+    "name": "A Song of Ice and Fire & Related Fandoms",
+    "url": "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20*a*%20Related%20Fandoms/works",
+    "category": "Books & Literature",
     "dateChunk": {
-      "from": "2009-01-01",
-      "to": "2009-12-31"
+      "from": "2019-01-01",
+      "to": "2019-12-31"
     },
-    "lastPage": 0
+    "lastPage": 333
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -32,12 +32,58 @@
     "https://archiveofourown.org/tags/Haikyuu!!/works",
     "https://archiveofourown.org/tags/Sherlock%20Holmes%20*a*%20Related%20Fandoms/works",
     "https://archiveofourown.org/tags/Naruto%20(Anime%20*a*%20Manga)/works",
-    "https://archiveofourown.org/tags/%E5%91%AA%E8%A1%93%E5%BB%BB%E6%88%A6%20%7C%20Jujutsu%20Kaisen%20(Anime%20*a*%20Manga)/works"
+    "https://archiveofourown.org/tags/%E5%91%AA%E8%A1%93%E5%BB%BB%E6%88%A6%20%7C%20Jujutsu%20Kaisen%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/%E6%96%87%E8%B1%AA%E3%82%B9%E3%83%88%E3%83%AC%E3%82%A4%E3%83%89%E3%83%83%E3%82%B0%E3%82%B9%20%7C%20Bungou%20Stray%20Dogs/works",
+    "https://archiveofourown.org/tags/One%20Piece%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/One%20Piece%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/Shingeki%20no%20Kyojin%20%7C%20Attack%20on%20Titan/works",
+    "https://archiveofourown.org/tags/Pocket%20Monsters%20%7C%20Pokemon%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Dangan%20Ronpa%20Series/works",
+    "https://archiveofourown.org/tags/%E3%82%B8%E3%83%A7%E3%82%B8%E3%83%A7%E3%81%AE%E5%A5%87%E5%A6%99%E3%81%AA%E5%86%92%E9%99%BA%20%7C%20JoJo%20no%20Kimyou%20na%20Bouken%20%7C%20JoJo's%20Bizarre%20Adventure/works",
+    "https://archiveofourown.org/tags/Hetalia%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/%E9%AC%BC%E6%BB%85%E3%81%AE%E5%88%83%20%7C%20Demon%20Slayer:%20Kimetsu%20no%20Yaiba%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/The%20Legend%20of%20Zelda%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/Sonic%20the%20Hedgehog%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/%E9%80%86%E8%BB%A2%E8%A3%81%E5%88%A4%20%7C%20Gyakuten%20Saiban%20%7C%20Ace%20Attorney/works",
+    "https://archiveofourown.org/tags/Yuri!!!%20on%20Ice%20(Anime)/works",
+    "https://archiveofourown.org/tags/Yu-Gi-Oh!%20Series/works",
+    "https://archiveofourown.org/tags/Blue%20Lock%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Blue%20Lock%20(Manga)/works",
+    "https://archiveofourown.org/tags/Bleach%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/Fullmetal%20Alchemist%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Kuroko%20no%20Basuke%20%7C%20Kuroko's%20Basketball/works",
+    "https://archiveofourown.org/tags/Fairy%20Tail/works",
+    "https://archiveofourown.org/tags/Fate*s*stay%20night%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/Blue%20Lock%20(Anime)/works",
+    "https://archiveofourown.org/tags/Hunter%20X%20Hunter/works",
+    "https://archiveofourown.org/tags/%E6%9D%B1%E4%BA%AC%E5%8D%8D%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%BA%20%7C%20Tokyo%20Revengers%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Dragon%20Ball/works",
+    "https://archiveofourown.org/tags/Super%20Dangan%20Ronpa%202/works",
+    "https://archiveofourown.org/tags/%E6%9D%B1%E4%BA%AC%E5%8D%8D%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%BA%20%7C%20Tokyo%20Revengers%20(Manga)/works",
+    "https://archiveofourown.org/tags/Devil%20May%20Cry%20(Gameverse)/works",
+    "https://archiveofourown.org/tags/Kamen%20Rider%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/%E5%90%8D%E6%8E%A2%E5%81%B5%E3%82%B3%E3%83%8A%E3%83%B3%20%7C%20Detective%20Conan%20%7C%20Case%20Closed/works",
+    "https://archiveofourown.org/tags/Yu-Gi-Oh!%20Duel%20Monsters%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/Katekyou%20Hitman%20Reborn!/works",
+    "https://archiveofourown.org/tags/Death%20Note%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/Free!/works",
+    "https://archiveofourown.org/tags/Gundam%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/SK8%20the%20Infinity%20(Anime)/works",
+    "https://archiveofourown.org/tags/Dangan%20Ronpa:%20Trigger%20Happy%20Havoc/works",
+    "https://archiveofourown.org/tags/InuYasha%20-%20A%20Feudal%20Fairy%20Tale/works",
+    "https://archiveofourown.org/tags/Slam%20Dunk%20(Anime%20*a*%20Manga)/works",
+    "https://archiveofourown.org/tags/%E6%9D%B1%E4%BA%AC%E5%8D%8D%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%BA%20%7C%20Tokyo%20Revengers%20(Anime)/works",
+    "https://archiveofourown.org/tags/Fullmetal%20Alchemist:%20Brotherhood%20*a*%20Manga/works",
+    "https://archiveofourown.org/tags/Fate*s*Grand%20Order/works",
+    "https://archiveofourown.org/tags/Kuroshitsuji%20%7C%20Black%20Butler/works",
+    "https://archiveofourown.org/tags/Pocket%20Monsters%20%7C%20Pokemon%20(Anime%201997-2023)/works",
+    "https://archiveofourown.org/tags/Harry%20Potter%20-%20J*d*%20K*d*%20Rowling/works",
+    "https://archiveofourown.org/tags/Star%20Wars%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 148328,
-    "totalFailed": 646,
-    "totalPages": 81140,
-    "sessionScraped": 1592
+    "totalScraped": 155246,
+    "totalFailed": 1109,
+    "totalPages": 81488,
+    "sessionScraped": 6918
   }
 }
