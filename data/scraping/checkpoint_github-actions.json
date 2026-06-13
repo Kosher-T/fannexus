@@ -1,7 +1,7 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-13T11:14:23.355Z",
-  "lastActivity": "2026-06-13T16:04:43.747Z",
+  "startedAt": "2026-06-13T17:27:40.613Z",
+  "lastActivity": "2026-06-13T22:18:37.833Z",
   "activeFandom": {
     "name": "Dragon Age - All Media Types",
     "url": "https://archiveofourown.org/tags/Dragon%20Age%20-%20All%20Media%20Types/works",
@@ -10,7 +10,7 @@
       "from": "2015-01-01",
       "to": "2015-12-31"
     },
-    "lastPage": 681
+    "lastPage": 715
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -82,9 +82,9 @@
     "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 180124,
+    "totalScraped": 180795,
     "totalFailed": 1109,
-    "totalPages": 82898,
-    "sessionScraped": 13561
+    "totalPages": 83613,
+    "sessionScraped": 671
   }
 }
