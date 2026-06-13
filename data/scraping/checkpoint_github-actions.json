@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-12T23:31:39.329Z",
-  "lastActivity": "2026-06-13T04:23:13.162Z",
+  "startedAt": "2026-06-13T06:16:00.016Z",
+  "lastActivity": "2026-06-13T11:06:42.627Z",
   "activeFandom": {
-    "name": "J. R. R. Tolkien's Middle-earth Legendarium & Related Fandoms",
-    "url": "https://archiveofourown.org/tags/J*d*%20R*d*%20R*d*%20Tolkien's%20Middle-earth%20Legendarium%20*a*%20Related%20Fandoms/works",
+    "name": "Dragon Age - All Media Types",
+    "url": "https://archiveofourown.org/tags/Dragon%20Age%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": {
-      "from": "2008-01-01",
-      "to": "2008-12-31"
+      "from": "2011-01-01",
+      "to": "2011-12-31"
     },
-    "lastPage": 7
+    "lastPage": 22
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -79,12 +79,13 @@
     "https://archiveofourown.org/tags/Pocket%20Monsters%20%7C%20Pokemon%20(Anime%201997-2023)/works",
     "https://archiveofourown.org/tags/Harry%20Potter%20-%20J*d*%20K*d*%20Rowling/works",
     "https://archiveofourown.org/tags/Star%20Wars%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20*a*%20Related%20Fandoms/works"
+    "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/J*d*%20R*d*%20R*d*%20Tolkien's%20Middle-earth%20Legendarium%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 166563,
+    "totalScraped": 177459,
     "totalFailed": 1109,
-    "totalPages": 82217,
-    "sessionScraped": 11317
+    "totalPages": 82775,
+    "sessionScraped": 10896
   }
 }
