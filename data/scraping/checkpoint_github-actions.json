@@ -1,7 +1,7 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-14T06:29:56.717Z",
-  "lastActivity": "2026-06-14T11:20:28.204Z",
+  "startedAt": "2026-06-14T11:21:13.464Z",
+  "lastActivity": "2026-06-14T16:11:18.872Z",
   "activeFandom": {
     "name": "魔道祖师 - 墨香铜臭 | Modao Zushi - Moxiang Tongxiu & Related Fandoms",
     "url": "https://archiveofourown.org/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20Modao%20Zushi%20-%20Moxiang%20Tongxiu%20*a*%20Related%20Fandoms/works",
@@ -10,7 +10,7 @@
       "from": "2020-01-01",
       "to": "2020-12-31"
     },
-    "lastPage": 571
+    "lastPage": 514
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -83,9 +83,9 @@
     "https://archiveofourown.org/tags/Dragon%20Age%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 192640,
-    "totalFailed": 1114,
-    "totalPages": 85184,
-    "sessionScraped": 6178
+    "totalScraped": 191189,
+    "totalFailed": 1113,
+    "totalPages": 85127,
+    "sessionScraped": 4727
   }
 }
