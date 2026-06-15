@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-15T06:44:57.036Z",
-  "lastActivity": "2026-06-15T11:34:59.382Z",
+  "startedAt": "2026-06-15T14:45:11.598Z",
+  "lastActivity": "2026-06-15T19:35:22.109Z",
   "activeFandom": {
     "name": "Good Omens - All Media Types",
     "url": "https://archiveofourown.org/tags/Good%20Omens%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 1090
+    "lastPage": 641
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -82,9 +82,9 @@
     "https://archiveofourown.org/tags/Doctor%20Who/works"
   ],
   "stats": {
-    "totalScraped": 262053,
-    "totalFailed": 1119,
-    "totalPages": 90913,
-    "sessionScraped": 32860
+    "totalScraped": 262063,
+    "totalFailed": 1120,
+    "totalPages": 91554,
+    "sessionScraped": 10
   }
 }
