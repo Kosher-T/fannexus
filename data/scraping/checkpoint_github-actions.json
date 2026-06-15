@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-14T23:13:21.396Z",
-  "lastActivity": "2026-06-15T04:03:22.594Z",
+  "startedAt": "2026-06-15T06:44:57.036Z",
+  "lastActivity": "2026-06-15T11:34:59.382Z",
   "activeFandom": {
-    "name": "Doctor Who",
-    "url": "https://archiveofourown.org/tags/Doctor%20Who/works",
+    "name": "Good Omens - All Media Types",
+    "url": "https://archiveofourown.org/tags/Good%20Omens%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 1451
+    "lastPage": 1090
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -78,12 +78,13 @@
     "https://archiveofourown.org/tags/Star%20Wars%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20*a*%20Related%20Fandoms/works",
     "https://archiveofourown.org/tags/Dragon%20Age%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20Modao%20Zushi%20-%20Moxiang%20Tongxiu%20*a*%20Related%20Fandoms/works"
+    "https://archiveofourown.org/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20Modao%20Zushi%20-%20Moxiang%20Tongxiu%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/Doctor%20Who/works"
   ],
   "stats": {
-    "totalScraped": 229193,
-    "totalFailed": 1115,
-    "totalPages": 87810,
-    "sessionScraped": 24800
+    "totalScraped": 262053,
+    "totalFailed": 1119,
+    "totalPages": 90913,
+    "sessionScraped": 32860
   }
 }

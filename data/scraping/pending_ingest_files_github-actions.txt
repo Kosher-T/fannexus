@@ -39,3 +39,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/modao_zushi_moxiang_tongxiu_related_fandoms.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/doctor_who.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/doctor_who.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/doctor_who.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/good_omens_all_media_types.jsonl
