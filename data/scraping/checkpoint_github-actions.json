@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-16T07:08:17.689Z",
-  "lastActivity": "2026-06-16T11:58:18.225Z",
+  "startedAt": "2026-06-16T13:37:05.511Z",
+  "lastActivity": "2026-06-16T18:28:14.750Z",
   "activeFandom": {
     "name": "Star Wars: Rise of Empire Era - All Media Types",
     "url": "https://archiveofourown.org/tags/Star%20Wars:%20Rise%20of%20Empire%20Era%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 951
+    "lastPage": 746
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -83,9 +83,9 @@
     "https://archiveofourown.org/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20M%C3%B3d%C3%A0o%20Z%C7%94sh%C4%AB%20-%20M%C3%B2xi%C4%81ng%20T%C3%B3ngxi%C3%B9/works"
   ],
   "stats": {
-    "totalScraped": 317460,
-    "totalFailed": 1126,
-    "totalPages": 94785,
-    "sessionScraped": 21554
+    "totalScraped": 317463,
+    "totalFailed": 1127,
+    "totalPages": 95531,
+    "sessionScraped": 3
   }
 }
