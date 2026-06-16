@@ -42,3 +42,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/doctor_who.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/good_omens_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/good_omens_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/m_d_o_z_sh_m_xi_ng_t_ngxi.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/star_wars_rise_of_empire_era_all_media_types.jsonl
