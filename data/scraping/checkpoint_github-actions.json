@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-17T06:41:59.546Z",
-  "lastActivity": "2026-06-17T11:32:03.991Z",
+  "startedAt": "2026-06-17T13:03:52.801Z",
+  "lastActivity": "2026-06-17T17:54:59.975Z",
   "activeFandom": {
     "name": "Percy Jackson and the Olympians & Related Fandoms - All Media Types",
     "url": "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20*a*%20Related%20Fandoms%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 1030
+    "lastPage": 584
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -84,9 +84,9 @@
     "https://archiveofourown.org/tags/Star%20Wars:%20Rise%20of%20Empire%20Era%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 359019,
-    "totalFailed": 1132,
-    "totalPages": 99597,
-    "sessionScraped": 16
+    "totalScraped": 359021,
+    "totalFailed": 1135,
+    "totalPages": 100181,
+    "sessionScraped": 2
   }
 }
