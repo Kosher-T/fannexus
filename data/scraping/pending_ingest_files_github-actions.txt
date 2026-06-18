@@ -54,3 +54,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/dungeons_dragons_roleplaying_game.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/dungeons_dragons_roleplaying_game.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/a_song_of_ice_and_fire_george_r_r_martin.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/a_song_of_ice_and_fire_george_r_r_martin.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/arthurian_mythology_related_fandoms.jsonl

@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-18T06:20:01.473Z",
-  "lastActivity": "2026-06-18T11:10:16.377Z",
+  "startedAt": "2026-06-18T12:31:31.080Z",
+  "lastActivity": "2026-06-18T15:54:07.283Z",
   "activeFandom": {
-    "name": "A Song of Ice and Fire - George R. R. Martin",
-    "url": "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20-%20George%20R*d*%20R*d*%20Martin/works",
+    "name": "Arthurian Mythology & Related Fandoms",
+    "url": "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 656
+    "lastPage": 118
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -83,12 +83,13 @@
     "https://archiveofourown.org/tags/%E9%AD%94%E9%81%93%E7%A5%96%E5%B8%88%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20M%C3%B3d%C3%A0o%20Z%C7%94sh%C4%AB%20-%20M%C3%B2xi%C4%81ng%20T%C3%B3ngxi%C3%B9/works",
     "https://archiveofourown.org/tags/Star%20Wars:%20Rise%20of%20Empire%20Era%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20*a*%20Related%20Fandoms%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/Dungeons%20*a*%20Dragons%20(Roleplaying%20Game)/works"
+    "https://archiveofourown.org/tags/Dungeons%20*a*%20Dragons%20(Roleplaying%20Game)/works",
+    "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20-%20George%20R*d*%20R*d*%20Martin/works"
   ],
   "stats": {
-    "totalScraped": 382089,
-    "totalFailed": 1149,
-    "totalPages": 102496,
-    "sessionScraped": 12934
+    "totalScraped": 384432,
+    "totalFailed": 1156,
+    "totalPages": 102890,
+    "sessionScraped": 2343
   }
 }
