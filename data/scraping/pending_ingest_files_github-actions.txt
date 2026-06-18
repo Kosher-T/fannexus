@@ -50,3 +50,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/percy_jackson_and_the_olympians_related_fandoms_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/percy_jackson_and_the_olympians_related_fandoms_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/percy_jackson_and_the_olympians_related_fandoms_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/percy_jackson_and_the_olympians_related_fandoms_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/dungeons_dragons_roleplaying_game.jsonl
