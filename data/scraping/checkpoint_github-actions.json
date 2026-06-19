@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-19T12:44:50.484Z",
-  "lastActivity": "2026-06-19T17:36:24.794Z",
+  "startedAt": "2026-06-19T17:54:34.815Z",
+  "lastActivity": "2026-06-19T22:44:34.694Z",
   "activeFandom": {
     "name": "Star Wars: The Clone Wars (2008) - All Media Types",
     "url": "https://archiveofourown.org/tags/Star%20Wars:%20The%20Clone%20Wars%20(2008)%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 151
+    "lastPage": 950
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -85,13 +85,12 @@
     "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20*a*%20Related%20Fandoms%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Dungeons%20*a*%20Dragons%20(Roleplaying%20Game)/works",
     "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20-%20George%20R*d*%20R*d*%20Martin/works",
-    "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works",
-    "https://archiveofourown.org/tags/PRATCHETT%20Terry%20-%20Works/works"
+    "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 390949,
-    "totalFailed": 1172,
-    "totalPages": 105536,
-    "sessionScraped": 65
+    "totalScraped": 390948,
+    "totalFailed": 1167,
+    "totalPages": 106017,
+    "sessionScraped": 64
   }
 }
