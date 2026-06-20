@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-20T05:45:19.107Z",
-  "lastActivity": "2026-06-20T10:35:25.622Z",
+  "startedAt": "2026-06-20T17:35:25.497Z",
+  "lastActivity": "2026-06-20T22:25:31.548Z",
   "activeFandom": {
-    "name": "Star Wars: The Clone Wars (2008) - All Media Types",
-    "url": "https://archiveofourown.org/tags/Star%20Wars:%20The%20Clone%20Wars%20(2008)%20-%20All%20Media%20Types/works",
+    "name": "The Lord of the Rings - All Media Types",
+    "url": "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 504
+    "lastPage": 608
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -88,9 +88,9 @@
     "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 390958,
-    "totalFailed": 1169,
-    "totalPages": 107191,
-    "sessionScraped": 6
+    "totalScraped": 402433,
+    "totalFailed": 1182,
+    "totalPages": 107799,
+    "sessionScraped": 11475
   }
 }
