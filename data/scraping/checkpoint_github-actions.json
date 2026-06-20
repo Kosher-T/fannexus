@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-19T23:20:08.053Z",
-  "lastActivity": "2026-06-20T04:10:56.019Z",
+  "startedAt": "2026-06-20T05:45:19.107Z",
+  "lastActivity": "2026-06-20T10:35:25.622Z",
   "activeFandom": {
     "name": "Star Wars: The Clone Wars (2008) - All Media Types",
     "url": "https://archiveofourown.org/tags/Star%20Wars:%20The%20Clone%20Wars%20(2008)%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 670
+    "lastPage": 504
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -88,9 +88,9 @@
     "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 390952,
-    "totalFailed": 1168,
-    "totalPages": 106687,
-    "sessionScraped": 4
+    "totalScraped": 390958,
+    "totalFailed": 1169,
+    "totalPages": 107191,
+    "sessionScraped": 6
   }
 }
