@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-20T23:14:42.135Z",
-  "lastActivity": "2026-06-21T04:06:13.006Z",
+  "startedAt": "2026-06-21T06:31:14.582Z",
+  "lastActivity": "2026-06-21T11:22:24.072Z",
   "activeFandom": {
-    "name": "The Lord of the Rings - All Media Types",
-    "url": "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20All%20Media%20Types/works",
+    "name": "GAIMAN Neil - Works",
+    "url": "https://archiveofourown.org/tags/GAIMAN%20Neil%20-%20Works/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 1058
+    "lastPage": 384
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -85,12 +85,13 @@
     "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20*a*%20Related%20Fandoms%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Dungeons%20*a*%20Dragons%20(Roleplaying%20Game)/works",
     "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20-%20George%20R*d*%20R*d*%20Martin/works",
-    "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works"
+    "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 411370,
-    "totalFailed": 1184,
-    "totalPages": 108857,
-    "sessionScraped": 8937
+    "totalScraped": 411693,
+    "totalFailed": 1189,
+    "totalPages": 109615,
+    "sessionScraped": 323
   }
 }
