@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-20T17:35:25.497Z",
-  "lastActivity": "2026-06-20T22:25:31.548Z",
+  "startedAt": "2026-06-20T23:14:42.135Z",
+  "lastActivity": "2026-06-21T04:06:13.006Z",
   "activeFandom": {
     "name": "The Lord of the Rings - All Media Types",
     "url": "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 608
+    "lastPage": 1058
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -88,9 +88,9 @@
     "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 402433,
-    "totalFailed": 1182,
-    "totalPages": 107799,
-    "sessionScraped": 11475
+    "totalScraped": 411370,
+    "totalFailed": 1184,
+    "totalPages": 108857,
+    "sessionScraped": 8937
   }
 }

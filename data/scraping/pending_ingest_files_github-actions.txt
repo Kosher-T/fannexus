@@ -65,3 +65,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/star_wars_the_clone_wars_2008_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/star_wars_the_clone_wars_2008_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/the_lord_of_the_rings_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/the_lord_of_the_rings_all_media_types.jsonl
