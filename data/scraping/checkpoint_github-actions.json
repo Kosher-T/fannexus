@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-23T17:39:16.310Z",
-  "lastActivity": "2026-06-23T22:29:48.635Z",
+  "startedAt": "2026-06-23T23:40:35.785Z",
+  "lastActivity": "2026-06-24T03:24:05.994Z",
   "activeFandom": {
     "name": "Good Omens - Neil Gaiman & Terry Pratchett",
     "url": "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 649
+    "lastPage": 936
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -90,9 +90,9 @@
     "https://archiveofourown.org/tags/GAIMAN%20Neil%20-%20Works/works"
   ],
   "stats": {
-    "totalScraped": 411804,
-    "totalFailed": 1215,
-    "totalPages": 116940,
-    "sessionScraped": 2
+    "totalScraped": 411807,
+    "totalFailed": 1224,
+    "totalPages": 117876,
+    "sessionScraped": 3
   }
 }
