@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-24T23:18:00.261Z",
-  "lastActivity": "2026-06-25T04:07:50.507Z",
+  "startedAt": "2026-06-25T05:35:44.766Z",
+  "lastActivity": "2026-06-25T08:26:24.844Z",
   "activeFandom": {
     "name": "Forgotten Realms (Roleplaying Game)",
     "url": "https://archiveofourown.org/tags/Forgotten%20Realms%20(Roleplaying%20Game)/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 591
+    "lastPage": 98
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -91,9 +91,9 @@
     "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works"
   ],
   "stats": {
-    "totalScraped": 416110,
-    "totalFailed": 1270,
-    "totalPages": 120487,
-    "sessionScraped": 4298
+    "totalScraped": 416115,
+    "totalFailed": 1281,
+    "totalPages": 120585,
+    "sessionScraped": 5
   }
 }
