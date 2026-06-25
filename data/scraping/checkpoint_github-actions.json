@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-24T17:48:33.343Z",
-  "lastActivity": "2026-06-24T18:30:03.383Z",
+  "startedAt": "2026-06-24T23:18:00.261Z",
+  "lastActivity": "2026-06-25T04:07:50.507Z",
   "activeFandom": {
-    "name": "Good Omens - Neil Gaiman & Terry Pratchett",
-    "url": "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works",
+    "name": "Forgotten Realms (Roleplaying Game)",
+    "url": "https://archiveofourown.org/tags/Forgotten%20Realms%20(Roleplaying%20Game)/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 16
+    "lastPage": 591
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -87,12 +87,13 @@
     "https://archiveofourown.org/tags/A%20Song%20of%20Ice%20and%20Fire%20-%20George%20R*d*%20R*d*%20Martin/works",
     "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works",
     "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/GAIMAN%20Neil%20-%20Works/works"
+    "https://archiveofourown.org/tags/GAIMAN%20Neil%20-%20Works/works",
+    "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works"
   ],
   "stats": {
-    "totalScraped": 411812,
-    "totalFailed": 1253,
-    "totalPages": 117997,
-    "sessionScraped": 2
+    "totalScraped": 416110,
+    "totalFailed": 1270,
+    "totalPages": 120487,
+    "sessionScraped": 4298
   }
 }
