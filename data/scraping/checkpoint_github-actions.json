@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-25T11:35:02.060Z",
+  "startedAt": "2026-06-25T17:49:49.052Z",
   "lastActivity": "2026-06-25T11:52:44.586Z",
   "activeFandom": {
     "name": "Forgotten Realms (Roleplaying Game)",
     "url": "https://archiveofourown.org/tags/Forgotten%20Realms%20(Roleplaying%20Game)/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 4
+    "lastPage": 0
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -92,7 +92,7 @@
   ],
   "stats": {
     "totalScraped": 416115,
-    "totalFailed": 1283,
+    "totalFailed": 1285,
     "totalPages": 120589,
     "sessionScraped": 0
   }
