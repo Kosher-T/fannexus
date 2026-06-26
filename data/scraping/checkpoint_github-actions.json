@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-26T05:42:17.886Z",
-  "lastActivity": "2026-06-26T10:33:04.167Z",
+  "startedAt": "2026-06-26T17:41:21.942Z",
+  "lastActivity": "2026-06-26T22:27:42.231Z",
   "activeFandom": {
-    "name": "Forgotten Realms (Roleplaying Game)",
-    "url": "https://archiveofourown.org/tags/Forgotten%20Realms%20(Roleplaying%20Game)/works",
+    "name": "Percy Jackson and the Olympians - Rick Riordan",
+    "url": "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20-%20Rick%20Riordan/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 468
+    "lastPage": 474
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -91,9 +91,9 @@
     "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works"
   ],
   "stats": {
-    "totalScraped": 416128,
-    "totalFailed": 1302,
-    "totalPages": 121207,
-    "sessionScraped": 4
+    "totalScraped": 416338,
+    "totalFailed": 1318,
+    "totalPages": 121681,
+    "sessionScraped": 210
   }
 }
