@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-26T17:41:21.942Z",
-  "lastActivity": "2026-06-26T22:27:42.231Z",
+  "startedAt": "2026-06-26T23:18:22.423Z",
+  "lastActivity": "2026-06-27T04:08:00.188Z",
   "activeFandom": {
-    "name": "Percy Jackson and the Olympians - Rick Riordan",
-    "url": "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20-%20Rick%20Riordan/works",
+    "name": "Avatar: The Last Airbender (Cartoon 2005)",
+    "url": "https://archiveofourown.org/tags/Avatar:%20The%20Last%20Airbender%20(Cartoon%202005)/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 474
+    "lastPage": 421
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -88,12 +88,13 @@
     "https://archiveofourown.org/tags/Arthurian%20Mythology%20*a*%20Related%20Fandoms/works",
     "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/GAIMAN%20Neil%20-%20Works/works",
-    "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works"
+    "https://archiveofourown.org/tags/Good%20Omens%20-%20Neil%20Gaiman%20*a*%20Terry%20Pratchett/works",
+    "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20-%20Rick%20Riordan/works"
   ],
   "stats": {
-    "totalScraped": 416338,
-    "totalFailed": 1318,
-    "totalPages": 121681,
-    "sessionScraped": 210
+    "totalScraped": 424608,
+    "totalFailed": 1331,
+    "totalPages": 122390,
+    "sessionScraped": 8270
   }
 }

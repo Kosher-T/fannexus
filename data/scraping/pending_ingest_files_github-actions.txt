@@ -87,3 +87,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/forgotten_realms_roleplaying_game.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/forgotten_realms_roleplaying_game.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/percy_jackson_and_the_olympians_rick_riordan.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/percy_jackson_and_the_olympians_rick_riordan.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/avatar_the_last_airbender_cartoon_2005.jsonl
