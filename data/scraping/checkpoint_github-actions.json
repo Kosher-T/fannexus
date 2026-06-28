@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-27T16:54:14.739Z",
-  "lastActivity": "2026-06-27T21:44:19.530Z",
+  "startedAt": "2026-06-27T23:33:13.518Z",
+  "lastActivity": "2026-06-28T04:23:17.815Z",
   "activeFandom": {
     "name": "Avatar: The Last Airbender (Cartoon 2005)",
     "url": "https://archiveofourown.org/tags/Avatar:%20The%20Last%20Airbender%20(Cartoon%202005)/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 652
+    "lastPage": 1024
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -92,9 +92,9 @@
     "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20-%20Rick%20Riordan/works"
   ],
   "stats": {
-    "totalScraped": 430512,
-    "totalFailed": 1352,
-    "totalPages": 123762,
-    "sessionScraped": 5
+    "totalScraped": 436594,
+    "totalFailed": 1356,
+    "totalPages": 124786,
+    "sessionScraped": 6082
   }
 }
