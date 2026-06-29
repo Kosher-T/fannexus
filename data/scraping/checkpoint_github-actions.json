@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-29T12:54:26.728Z",
-  "lastActivity": "2026-06-29T17:45:21.845Z",
+  "startedAt": "2026-06-29T18:05:17.998Z",
+  "lastActivity": "2026-06-29T22:55:28.259Z",
   "activeFandom": {
     "name": "The Shadowhunter Chronicles - All Media Types",
     "url": "https://archiveofourown.org/tags/The%20Shadowhunter%20Chronicles%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 597
+    "lastPage": 1735
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -93,9 +93,9 @@
     "https://archiveofourown.org/tags/Avatar:%20The%20Last%20Airbender%20(Cartoon%202005)/works"
   ],
   "stats": {
-    "totalScraped": 462406,
-    "totalFailed": 1366,
-    "totalPages": 130248,
-    "sessionScraped": 1
+    "totalScraped": 471225,
+    "totalFailed": 1367,
+    "totalPages": 131983,
+    "sessionScraped": 8819
   }
 }
