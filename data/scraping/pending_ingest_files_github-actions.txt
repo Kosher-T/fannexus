@@ -102,3 +102,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/the_shadowhunter_chronicles_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/wied_min_the_witcher_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/wied_min_the_witcher_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/wied_min_the_witcher_all_media_types.jsonl
