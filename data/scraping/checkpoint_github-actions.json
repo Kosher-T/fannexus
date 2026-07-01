@@ -1,13 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-01T11:44:54.806Z",
-  "lastActivity": "2026-07-01T14:50:07.400Z",
+  "startedAt": "2026-07-01T17:51:43.422Z",
+  "lastActivity": "2026-07-01T22:41:42.376Z",
   "activeFandom": {
-    "name": "Star Wars: Rebellion Era - All Media Types",
-    "url": "https://archiveofourown.org/tags/Star%20Wars:%20Rebellion%20Era%20-%20All%20Media%20Types/works",
-    "category": "Books & Literature",
-    "dateChunk": null,
-    "lastPage": 406
+    "name": "Marvel Cinematic Universe",
+    "url": "https://archiveofourown.org/tags/Marvel%20Cinematic%20Universe/works",
+    "category": "Cartoons & Comics & Graphic Novels",
+    "dateChunk": {
+      "from": "2012-01-01",
+      "to": "2012-12-31"
+    },
+    "lastPage": 190
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -93,12 +96,34 @@
     "https://archiveofourown.org/tags/Avatar:%20The%20Last%20Airbender%20(Cartoon%202005)/works",
     "https://archiveofourown.org/tags/The%20Shadowhunter%20Chronicles%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Wied%C5%BAmin%20%7C%20The%20Witcher%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/The%20Hobbit%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/The%20Hobbit%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Star%20Wars:%20Rebellion%20Era%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Star%20Wars%20Prequel%20Trilogy/works",
+    "https://archiveofourown.org/tags/The%20Silmarillion%20and%20other%20histories%20of%20Middle-Earth%20-%20J*d*%20R*d*%20R*d*%20Tolkien/works",
+    "https://archiveofourown.org/tags/Gravity%20Falls/works",
+    "https://archiveofourown.org/tags/Mass%20Effect%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Game%20Changers%20%7C%20Heated%20Rivalry%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/The%20Vampire%20Diaries%20*a*%20Related%20Fandoms/works",
+    "https://archiveofourown.org/tags/The%20Lord%20of%20the%20Rings%20-%20J*d*%20R*d*%20R*d*%20Tolkien/works",
+    "https://archiveofourown.org/tags/%E4%BA%BA%E6%B8%A3%E5%8F%8D%E6%B4%BE%E8%87%AA%E6%95%91%E7%B3%BB%E7%BB%9F%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20The%20Scum%20Villain's%20Self-Saving%20System%20-%20M%C3%B2xi%C4%81ng%20T%C3%B3ngxi%C3%B9/works",
+    "https://archiveofourown.org/tags/%E5%A4%A9%E5%AE%98%E8%B5%90%E7%A6%8F%20-%20%E5%A2%A8%E9%A6%99%E9%93%9C%E8%87%AD%20%7C%20Tian%20Guan%20Ci%20Fu%20%7C%20Heaven%20Official's%20Blessing%20-%20Moxiang%20Tongxiu/works",
+    "https://archiveofourown.org/tags/Hunger%20Games%20Series%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Les%20Mis%C3%A9rables%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B%20-%20%E8%9D%B4%E8%9D%B6%E8%93%9D%20%7C%20Qu%C3%A1nzh%C3%AD%20G%C4%81osh%C7%92u%20-%20H%C3%BAdi%C3%A9%20L%C3%A1n/works",
+    "https://archiveofourown.org/tags/All%20For%20The%20Game%20-%20Nora%20Sakavic/works",
+    "https://archiveofourown.org/tags/The%20Heroes%20of%20Olympus%20-%20Rick%20Riordan/works",
+    "https://archiveofourown.org/tags/Twilight%20Series%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Star%20Wars%20Legends%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Grishaverse%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/KING%20Stephen%20-%20Works/works",
+    "https://archiveofourown.org/tags/Star%20Wars%20Original%20Trilogy/works",
+    "https://archiveofourown.org/tags/Ancient%20Greek%20Religion%20*a*%20Lore/works",
+    "https://archiveofourown.org/tags/Marvel/works"
   ],
   "stats": {
-    "totalScraped": 566085,
-    "totalFailed": 1380,
-    "totalPages": 142934,
-    "sessionScraped": 2
+    "totalScraped": 635757,
+    "totalFailed": 1469,
+    "totalPages": 146432,
+    "sessionScraped": 69672
   }
 }
