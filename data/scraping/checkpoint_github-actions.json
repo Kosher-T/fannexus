@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-06-30T17:50:32.334Z",
-  "lastActivity": "2026-06-30T22:40:34.771Z",
+  "startedAt": "2026-06-30T23:23:55.580Z",
+  "lastActivity": "2026-07-01T04:13:57.971Z",
   "activeFandom": {
-    "name": "The Hobbit - All Media Types",
-    "url": "https://archiveofourown.org/tags/The%20Hobbit%20-%20All%20Media%20Types/works",
+    "name": "Star Wars: Rebellion Era - All Media Types",
+    "url": "https://archiveofourown.org/tags/Star%20Wars:%20Rebellion%20Era%20-%20All%20Media%20Types/works",
     "category": "Books & Literature",
     "dateChunk": null,
-    "lastPage": 24
+    "lastPage": 757
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -92,12 +92,13 @@
     "https://archiveofourown.org/tags/Percy%20Jackson%20and%20the%20Olympians%20-%20Rick%20Riordan/works",
     "https://archiveofourown.org/tags/Avatar:%20The%20Last%20Airbender%20(Cartoon%202005)/works",
     "https://archiveofourown.org/tags/The%20Shadowhunter%20Chronicles%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/Wied%C5%BAmin%20%7C%20The%20Witcher%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/Wied%C5%BAmin%20%7C%20The%20Witcher%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/The%20Hobbit%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 521770,
-    "totalFailed": 1371,
-    "totalPages": 138911,
-    "sessionScraped": 14611
+    "totalScraped": 563817,
+    "totalFailed": 1372,
+    "totalPages": 141657,
+    "sessionScraped": 42047
   }
 }
