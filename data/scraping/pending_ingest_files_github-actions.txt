@@ -107,3 +107,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/the_hobbit_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/the_hobbit_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/star_wars_rebellion_era_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/books_literature/star_wars_rebellion_era_all_media_types.jsonl
