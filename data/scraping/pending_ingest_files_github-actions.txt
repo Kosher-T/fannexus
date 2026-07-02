@@ -118,3 +118,7 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/batman_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/disney_theatrical_animated_universe.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/dcu_comics.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/dcu_comics.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/captain_america_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/spider_man_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/hellaverse_hazbin_hotel_helluva_boss_universe.jsonl

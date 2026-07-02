@@ -1,16 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-02T11:17:49.629Z",
-  "lastActivity": "2026-07-02T16:09:50.378Z",
+  "startedAt": "2026-07-02T17:36:11.967Z",
+  "lastActivity": "2026-07-02T22:27:30.884Z",
   "activeFandom": {
-    "name": "DCU (Comics)",
-    "url": "https://archiveofourown.org/tags/DCU%20(Comics)/works",
+    "name": "Hellaverse | Hazbin Hotel & Helluva Boss Universe",
+    "url": "https://archiveofourown.org/tags/Hellaverse%20%7C%20Hazbin%20Hotel%20*a*%20Helluva%20Boss%20Universe/works",
     "category": "Cartoons & Comics & Graphic Novels",
-    "dateChunk": {
-      "from": "2022-01-01",
-      "to": "2022-12-31"
-    },
-    "lastPage": 539
+    "dateChunk": null,
+    "lastPage": 731
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -122,12 +119,15 @@
     "https://archiveofourown.org/tags/Marvel%20Cinematic%20Universe/works",
     "https://archiveofourown.org/tags/DCU/works",
     "https://archiveofourown.org/tags/Batman%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/Disney%20Theatrical%20Animated%20Universe/works"
+    "https://archiveofourown.org/tags/Disney%20Theatrical%20Animated%20Universe/works",
+    "https://archiveofourown.org/tags/DCU%20(Comics)/works",
+    "https://archiveofourown.org/tags/Captain%20America%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Spider-Man%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 753206,
-    "totalFailed": 1472,
-    "totalPages": 157134,
-    "sessionScraped": 21606
+    "totalScraped": 783926,
+    "totalFailed": 1473,
+    "totalPages": 160316,
+    "sessionScraped": 30720
   }
 }
