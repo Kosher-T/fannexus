@@ -111,3 +111,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/books_literature/star_wars_rebellion_era_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/marvel.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/marvel_cinematic_universe.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/marvel_cinematic_universe.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/dcu.jsonl

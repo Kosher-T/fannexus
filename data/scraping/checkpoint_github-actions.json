@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-01T17:51:43.422Z",
-  "lastActivity": "2026-07-01T22:41:42.376Z",
+  "startedAt": "2026-07-01T23:36:59.083Z",
+  "lastActivity": "2026-07-02T04:27:18.984Z",
   "activeFandom": {
-    "name": "Marvel Cinematic Universe",
-    "url": "https://archiveofourown.org/tags/Marvel%20Cinematic%20Universe/works",
+    "name": "DCU",
+    "url": "https://archiveofourown.org/tags/DCU/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": {
-      "from": "2012-01-01",
-      "to": "2012-12-31"
+      "from": "2017-01-01",
+      "to": "2017-12-31"
     },
-    "lastPage": 190
+    "lastPage": 1130
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -118,12 +118,13 @@
     "https://archiveofourown.org/tags/KING%20Stephen%20-%20Works/works",
     "https://archiveofourown.org/tags/Star%20Wars%20Original%20Trilogy/works",
     "https://archiveofourown.org/tags/Ancient%20Greek%20Religion%20*a*%20Lore/works",
-    "https://archiveofourown.org/tags/Marvel/works"
+    "https://archiveofourown.org/tags/Marvel/works",
+    "https://archiveofourown.org/tags/Marvel%20Cinematic%20Universe/works"
   ],
   "stats": {
-    "totalScraped": 635757,
-    "totalFailed": 1469,
-    "totalPages": 146432,
-    "sessionScraped": 69672
+    "totalScraped": 689732,
+    "totalFailed": 1470,
+    "totalPages": 150478,
+    "sessionScraped": 53975
   }
 }
