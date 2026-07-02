@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-02T05:16:46.409Z",
-  "lastActivity": "2026-07-02T10:07:28.268Z",
+  "startedAt": "2026-07-02T11:17:49.629Z",
+  "lastActivity": "2026-07-02T16:09:50.378Z",
   "activeFandom": {
-    "name": "Batman - All Media Types",
-    "url": "https://archiveofourown.org/tags/Batman%20-%20All%20Media%20Types/works",
+    "name": "DCU (Comics)",
+    "url": "https://archiveofourown.org/tags/DCU%20(Comics)/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": {
       "from": "2022-01-01",
       "to": "2022-12-31"
     },
-    "lastPage": 847
+    "lastPage": 539
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -120,12 +120,14 @@
     "https://archiveofourown.org/tags/Ancient%20Greek%20Religion%20*a*%20Lore/works",
     "https://archiveofourown.org/tags/Marvel/works",
     "https://archiveofourown.org/tags/Marvel%20Cinematic%20Universe/works",
-    "https://archiveofourown.org/tags/DCU/works"
+    "https://archiveofourown.org/tags/DCU/works",
+    "https://archiveofourown.org/tags/Batman%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Disney%20Theatrical%20Animated%20Universe/works"
   ],
   "stats": {
-    "totalScraped": 731600,
-    "totalFailed": 1471,
-    "totalPages": 154064,
-    "sessionScraped": 41868
+    "totalScraped": 753206,
+    "totalFailed": 1472,
+    "totalPages": 157134,
+    "sessionScraped": 21606
   }
 }

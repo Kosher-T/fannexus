@@ -115,3 +115,6 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/dcu.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/dcu.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/batman_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/batman_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/disney_theatrical_animated_universe.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/dcu_comics.jsonl
