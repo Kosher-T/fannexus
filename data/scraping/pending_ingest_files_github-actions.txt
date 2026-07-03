@@ -125,3 +125,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/hellaverse_hazbin_hotel_helluva_boss_universe.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/voltron_legendary_defender.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/voltron_legendary_defender.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/voltron_legendary_defender.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/league_of_legends_video_game_related_fandoms.jsonl
