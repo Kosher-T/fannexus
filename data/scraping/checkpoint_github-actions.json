@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-02T17:36:11.967Z",
-  "lastActivity": "2026-07-02T22:27:30.884Z",
+  "startedAt": "2026-07-03T05:27:06.857Z",
+  "lastActivity": "2026-07-03T10:17:07.601Z",
   "activeFandom": {
-    "name": "Hellaverse | Hazbin Hotel & Helluva Boss Universe",
-    "url": "https://archiveofourown.org/tags/Hellaverse%20%7C%20Hazbin%20Hotel%20*a*%20Helluva%20Boss%20Universe/works",
+    "name": "Voltron: Legendary Defender",
+    "url": "https://archiveofourown.org/tags/Voltron:%20Legendary%20Defender/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 731
+    "lastPage": 2970
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -122,12 +122,13 @@
     "https://archiveofourown.org/tags/Disney%20Theatrical%20Animated%20Universe/works",
     "https://archiveofourown.org/tags/DCU%20(Comics)/works",
     "https://archiveofourown.org/tags/Captain%20America%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/Spider-Man%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/Spider-Man%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Hellaverse%20%7C%20Hazbin%20Hotel%20*a*%20Helluva%20Boss%20Universe/works"
   ],
   "stats": {
-    "totalScraped": 783926,
-    "totalFailed": 1473,
-    "totalPages": 160316,
-    "sessionScraped": 30720
+    "totalScraped": 843050,
+    "totalFailed": 1477,
+    "totalPages": 163843,
+    "sessionScraped": 59124
   }
 }
