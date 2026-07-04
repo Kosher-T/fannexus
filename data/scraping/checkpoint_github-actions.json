@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-03T17:18:48.415Z",
-  "lastActivity": "2026-07-03T22:08:47.290Z",
+  "startedAt": "2026-07-03T23:13:36.082Z",
+  "lastActivity": "2026-07-04T04:03:39.263Z",
   "activeFandom": {
     "name": "League of Legends (Video Game) & Related Fandoms",
     "url": "https://archiveofourown.org/tags/League%20of%20Legends%20(Video%20Game)%20*a*%20Related%20Fandoms/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 27
+    "lastPage": 2403
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -127,9 +127,9 @@
     "https://archiveofourown.org/tags/Voltron:%20Legendary%20Defender/works"
   ],
   "stats": {
-    "totalScraped": 843584,
-    "totalFailed": 1493,
-    "totalPages": 167222,
-    "sessionScraped": 530
+    "totalScraped": 890873,
+    "totalFailed": 1495,
+    "totalPages": 169625,
+    "sessionScraped": 47289
   }
 }
