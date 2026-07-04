@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-04T04:55:35.026Z",
-  "lastActivity": "2026-07-04T09:45:36.846Z",
+  "startedAt": "2026-07-04T11:02:01.963Z",
+  "lastActivity": "2026-07-04T15:52:19.880Z",
   "activeFandom": {
-    "name": "League of Legends (Video Game) & Related Fandoms",
-    "url": "https://archiveofourown.org/tags/League%20of%20Legends%20(Video%20Game)%20*a*%20Related%20Fandoms/works",
+    "name": "Transformers - All Media Types",
+    "url": "https://archiveofourown.org/tags/Transformers%20-%20All%20Media%20Types/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 2153
+    "lastPage": 61
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -124,12 +124,13 @@
     "https://archiveofourown.org/tags/Captain%20America%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Spider-Man%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Hellaverse%20%7C%20Hazbin%20Hotel%20*a*%20Helluva%20Boss%20Universe/works",
-    "https://archiveofourown.org/tags/Voltron:%20Legendary%20Defender/works"
+    "https://archiveofourown.org/tags/Voltron:%20Legendary%20Defender/works",
+    "https://archiveofourown.org/tags/League%20of%20Legends%20(Video%20Game)%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 890878,
-    "totalFailed": 1497,
-    "totalPages": 171778,
-    "sessionScraped": 5
+    "totalScraped": 894444,
+    "totalFailed": 1502,
+    "totalPages": 174361,
+    "sessionScraped": 3566
   }
 }
