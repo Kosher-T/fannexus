@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-05T05:36:16.437Z",
-  "lastActivity": "2026-07-05T10:27:39.685Z",
+  "startedAt": "2026-07-05T11:04:23.477Z",
+  "lastActivity": "2026-07-05T15:54:22.525Z",
   "activeFandom": {
-    "name": "Marvel (Comics)",
-    "url": "https://archiveofourown.org/tags/Marvel%20(Comics)/works",
+    "name": "Miraculous Ladybug",
+    "url": "https://archiveofourown.org/tags/Miraculous%20Ladybug/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 1427
+    "lastPage": 940
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -126,12 +126,13 @@
     "https://archiveofourown.org/tags/Hellaverse%20%7C%20Hazbin%20Hotel%20*a*%20Helluva%20Boss%20Universe/works",
     "https://archiveofourown.org/tags/Voltron:%20Legendary%20Defender/works",
     "https://archiveofourown.org/tags/League%20of%20Legends%20(Video%20Game)%20*a*%20Related%20Fandoms/works",
-    "https://archiveofourown.org/tags/Transformers%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/Transformers%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Marvel%20(Comics)/works"
   ],
   "stats": {
-    "totalScraped": 978879,
-    "totalFailed": 1516,
-    "totalPages": 181288,
-    "sessionScraped": 27444
+    "totalScraped": 1008525,
+    "totalFailed": 1520,
+    "totalPages": 184249,
+    "sessionScraped": 29646
   }
 }

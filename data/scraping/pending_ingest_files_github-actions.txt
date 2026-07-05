@@ -135,3 +135,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/transformers_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/transformers_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/marvel_comics.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/marvel_comics.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/miraculous_ladybug.jsonl
