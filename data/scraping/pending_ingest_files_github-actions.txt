@@ -145,3 +145,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/hazbin_hotel_cartoon.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/homestuck.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/homestuck.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/homestuck.jsonl
