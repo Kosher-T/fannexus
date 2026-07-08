@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-08T10:57:14.672Z",
-  "lastActivity": "2026-07-08T15:47:19.874Z",
+  "startedAt": "2026-07-08T17:41:21.680Z",
+  "lastActivity": "2026-07-08T22:31:20.942Z",
   "activeFandom": {
     "name": "Arcane: League of Legends (Cartoon 2021)",
     "url": "https://archiveofourown.org/tags/Arcane:%20League%20of%20Legends%20(Cartoon%202021)/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 169
+    "lastPage": 2910
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -134,9 +134,9 @@
     "https://archiveofourown.org/tags/Marvel%20616/works"
   ],
   "stats": {
-    "totalScraped": 1247022,
-    "totalFailed": 1537,
-    "totalPages": 213829,
-    "sessionScraped": 16830
+    "totalScraped": 1260171,
+    "totalFailed": 1538,
+    "totalPages": 216739,
+    "sessionScraped": 13149
   }
 }
