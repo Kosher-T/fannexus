@@ -157,3 +157,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/thor_movies.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/thor_movies.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/spider_man_tom_holland_movies.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/spider_man_tom_holland_movies.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/rwby.jsonl
