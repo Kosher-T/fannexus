@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-08T23:31:55.116Z",
-  "lastActivity": "2026-07-09T04:21:55.746Z",
+  "startedAt": "2026-07-09T05:40:50.239Z",
+  "lastActivity": "2026-07-09T10:30:49.996Z",
   "activeFandom": {
-    "name": "Thor (Movies)",
-    "url": "https://archiveofourown.org/tags/Thor%20(Movies)/works",
+    "name": "Spider-Man (Tom Holland Movies)",
+    "url": "https://archiveofourown.org/tags/Spider-Man%20(Tom%20Holland%20Movies)/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 275
+    "lastPage": 396
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -132,12 +132,13 @@
     "https://archiveofourown.org/tags/Homestuck/works",
     "https://archiveofourown.org/tags/X-Men%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Marvel%20616/works",
-    "https://archiveofourown.org/tags/Arcane:%20League%20of%20Legends%20(Cartoon%202021)/works"
+    "https://archiveofourown.org/tags/Arcane:%20League%20of%20Legends%20(Cartoon%202021)/works",
+    "https://archiveofourown.org/tags/Thor%20(Movies)/works"
   ],
   "stats": {
-    "totalScraped": 1265740,
-    "totalFailed": 1539,
-    "totalPages": 219968,
-    "sessionScraped": 5569
+    "totalScraped": 1303424,
+    "totalFailed": 1540,
+    "totalPages": 222943,
+    "sessionScraped": 37684
   }
 }
