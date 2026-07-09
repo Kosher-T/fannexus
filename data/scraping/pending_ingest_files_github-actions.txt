@@ -153,3 +153,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/marvel_616.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/arcane_league_of_legends_cartoon_2021.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/arcane_league_of_legends_cartoon_2021.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/arcane_league_of_legends_cartoon_2021.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/thor_movies.jsonl
