@@ -161,3 +161,5 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/rwby.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/rwby.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/batman_comics.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/batman_comics.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/superman_all_media_types.jsonl

@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-09T23:36:43.772Z",
-  "lastActivity": "2026-07-10T04:27:10.577Z",
+  "startedAt": "2026-07-10T05:41:15.706Z",
+  "lastActivity": "2026-07-10T10:31:16.117Z",
   "activeFandom": {
-    "name": "Batman (Comics)",
-    "url": "https://archiveofourown.org/tags/Batman%20(Comics)/works",
+    "name": "Superman - All Media Types",
+    "url": "https://archiveofourown.org/tags/Superman%20-%20All%20Media%20Types/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 1650
+    "lastPage": 1992
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -135,12 +135,13 @@
     "https://archiveofourown.org/tags/Arcane:%20League%20of%20Legends%20(Cartoon%202021)/works",
     "https://archiveofourown.org/tags/Thor%20(Movies)/works",
     "https://archiveofourown.org/tags/Spider-Man%20(Tom%20Holland%20Movies)/works",
-    "https://archiveofourown.org/tags/RWBY/works"
+    "https://archiveofourown.org/tags/RWBY/works",
+    "https://archiveofourown.org/tags/Batman%20(Comics)/works"
   ],
   "stats": {
-    "totalScraped": 1405829,
-    "totalFailed": 1542,
-    "totalPages": 230092,
-    "sessionScraped": 57407
+    "totalScraped": 1441635,
+    "totalFailed": 1543,
+    "totalPages": 234159,
+    "sessionScraped": 35806
   }
 }
