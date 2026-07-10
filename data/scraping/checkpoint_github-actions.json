@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-10T11:48:30.868Z",
-  "lastActivity": "2026-07-10T16:38:53.981Z",
+  "startedAt": "2026-07-10T17:56:26.826Z",
+  "lastActivity": "2026-07-10T22:46:39.233Z",
   "activeFandom": {
-    "name": "Teenage Mutant Ninja Turtles - All Media Types",
-    "url": "https://archiveofourown.org/tags/Teenage%20Mutant%20Ninja%20Turtles%20-%20All%20Media%20Types/works",
+    "name": "The Owl House (Cartoon)",
+    "url": "https://archiveofourown.org/tags/The%20Owl%20House%20(Cartoon)/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 867
+    "lastPage": 594
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -137,12 +137,13 @@
     "https://archiveofourown.org/tags/Spider-Man%20(Tom%20Holland%20Movies)/works",
     "https://archiveofourown.org/tags/RWBY/works",
     "https://archiveofourown.org/tags/Batman%20(Comics)/works",
-    "https://archiveofourown.org/tags/Superman%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/Superman%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Teenage%20Mutant%20Ninja%20Turtles%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 1459674,
-    "totalFailed": 1543,
-    "totalPages": 237072,
-    "sessionScraped": 18039
+    "totalScraped": 1488643,
+    "totalFailed": 1545,
+    "totalPages": 239431,
+    "sessionScraped": 28969
   }
 }
