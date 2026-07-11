@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-11T10:08:22.250Z",
-  "lastActivity": "2026-07-11T14:58:21.312Z",
+  "startedAt": "2026-07-11T17:08:37.205Z",
+  "lastActivity": "2026-07-11T21:58:37.736Z",
   "activeFandom": {
-    "name": "Steven Universe (Cartoon)",
-    "url": "https://archiveofourown.org/tags/Steven%20Universe%20(Cartoon)/works",
+    "name": "Archie Comics & Related Fandoms",
+    "url": "https://archiveofourown.org/tags/Archie%20Comics%20*a*%20Related%20Fandoms/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 1004
+    "lastPage": 702
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -144,12 +144,14 @@
     "https://archiveofourown.org/tags/South%20Park/works",
     "https://archiveofourown.org/tags/The%20Flash%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/Transformers%20Generation%20One/works",
-    "https://archiveofourown.org/tags/Danny%20Phantom/works"
+    "https://archiveofourown.org/tags/Danny%20Phantom/works",
+    "https://archiveofourown.org/tags/Steven%20Universe%20(Cartoon)/works",
+    "https://archiveofourown.org/tags/Helluva%20Boss%20(Web%20Series)/works"
   ],
   "stats": {
-    "totalScraped": 1624843,
-    "totalFailed": 1554,
-    "totalPages": 250250,
-    "sessionScraped": 49027
+    "totalScraped": 1655564,
+    "totalFailed": 1560,
+    "totalPages": 253222,
+    "sessionScraped": 30721
   }
 }

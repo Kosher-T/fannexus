@@ -176,3 +176,6 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/transformers_generation_one.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/danny_phantom.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/steven_universe_cartoon.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/steven_universe_cartoon.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/helluva_boss_web_series.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/archie_comics_related_fandoms.jsonl
