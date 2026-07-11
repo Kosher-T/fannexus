@@ -173,3 +173,6 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/south_park.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/the_flash_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/transformers_generation_one.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/transformers_generation_one.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/danny_phantom.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/steven_universe_cartoon.jsonl

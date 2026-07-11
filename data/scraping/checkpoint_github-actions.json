@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-11T05:04:41.349Z",
-  "lastActivity": "2026-07-11T09:54:41.436Z",
+  "startedAt": "2026-07-11T10:08:22.250Z",
+  "lastActivity": "2026-07-11T14:58:21.312Z",
   "activeFandom": {
-    "name": "Transformers Generation One",
-    "url": "https://archiveofourown.org/tags/Transformers%20Generation%20One/works",
+    "name": "Steven Universe (Cartoon)",
+    "url": "https://archiveofourown.org/tags/Steven%20Universe%20(Cartoon)/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 805
+    "lastPage": 1004
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -142,12 +142,14 @@
     "https://archiveofourown.org/tags/The%20Owl%20House%20(Cartoon)/works",
     "https://archiveofourown.org/tags/LEGO%20-%20All%20Media%20Types/works",
     "https://archiveofourown.org/tags/South%20Park/works",
-    "https://archiveofourown.org/tags/The%20Flash%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/The%20Flash%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/Transformers%20Generation%20One/works",
+    "https://archiveofourown.org/tags/Danny%20Phantom/works"
   ],
   "stats": {
-    "totalScraped": 1575816,
-    "totalFailed": 1551,
-    "totalPages": 246558,
-    "sessionScraped": 34718
+    "totalScraped": 1624843,
+    "totalFailed": 1554,
+    "totalPages": 250250,
+    "sessionScraped": 49027
   }
 }
