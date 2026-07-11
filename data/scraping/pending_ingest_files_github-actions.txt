@@ -167,3 +167,6 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/teenage_mutant_ninja_turtles_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/teenage_mutant_ninja_turtles_all_media_types.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/the_owl_house_cartoon.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/the_owl_house_cartoon.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/lego_all_media_types.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/south_park.jsonl

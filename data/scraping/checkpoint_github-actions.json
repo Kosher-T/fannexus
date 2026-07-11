@@ -1,13 +1,13 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-07-10T17:56:26.826Z",
-  "lastActivity": "2026-07-10T22:46:39.233Z",
+  "startedAt": "2026-07-10T23:10:44.099Z",
+  "lastActivity": "2026-07-11T04:00:42.874Z",
   "activeFandom": {
-    "name": "The Owl House (Cartoon)",
-    "url": "https://archiveofourown.org/tags/The%20Owl%20House%20(Cartoon)/works",
+    "name": "South Park",
+    "url": "https://archiveofourown.org/tags/South%20Park/works",
     "category": "Cartoons & Comics & Graphic Novels",
     "dateChunk": null,
-    "lastPage": 594
+    "lastPage": 970
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -138,12 +138,14 @@
     "https://archiveofourown.org/tags/RWBY/works",
     "https://archiveofourown.org/tags/Batman%20(Comics)/works",
     "https://archiveofourown.org/tags/Superman%20-%20All%20Media%20Types/works",
-    "https://archiveofourown.org/tags/Teenage%20Mutant%20Ninja%20Turtles%20-%20All%20Media%20Types/works"
+    "https://archiveofourown.org/tags/Teenage%20Mutant%20Ninja%20Turtles%20-%20All%20Media%20Types/works",
+    "https://archiveofourown.org/tags/The%20Owl%20House%20(Cartoon)/works",
+    "https://archiveofourown.org/tags/LEGO%20-%20All%20Media%20Types/works"
   ],
   "stats": {
-    "totalScraped": 1488643,
-    "totalFailed": 1545,
-    "totalPages": 239431,
-    "sessionScraped": 28969
+    "totalScraped": 1541098,
+    "totalFailed": 1550,
+    "totalPages": 242685,
+    "sessionScraped": 52455
   }
 }
