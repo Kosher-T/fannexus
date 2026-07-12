@@ -182,3 +182,4 @@
 /home/runner/work/fannexus/fannexus/data/scraped/cartoons_comics_graphic_novels/archie_comics_related_fandoms.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/celebrities_real_people/real_person_fiction.jsonl
 /home/runner/work/fannexus/fannexus/data/scraped/celebrities_real_people/real_person_fiction.jsonl
+/home/runner/work/fannexus/fannexus/data/scraped/celebrities_real_people/real_person_fiction.jsonl
