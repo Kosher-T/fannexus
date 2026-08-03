@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-08-02T17:10:22.591Z",
-  "lastActivity": "2026-08-02T22:00:23.004Z",
+  "startedAt": "2026-08-02T23:09:43.541Z",
+  "lastActivity": "2026-08-02T23:47:19.877Z",
   "activeFandom": {
     "name": "Real Person Fiction",
     "url": "https://archiveofourown.org/tags/Real%20Person%20Fiction/works",
     "category": "Celebrities & Real People",
     "dateChunk": {
-      "from": "2018-01-01",
-      "to": "2018-12-31"
+      "from": "2008-01-01",
+      "to": "2008-12-31"
     },
-    "lastPage": 1348
+    "lastPage": 24
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -154,8 +154,8 @@
   ],
   "stats": {
     "totalScraped": 1750526,
-    "totalFailed": 1908,
-    "totalPages": 449676,
+    "totalFailed": 1911,
+    "totalPages": 449700,
     "sessionScraped": 0
   }
 }
