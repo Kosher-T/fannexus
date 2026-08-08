@@ -1,6 +1,6 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-08-07T17:05:46.471Z",
+  "startedAt": "2026-08-07T22:48:29.861Z",
   "lastActivity": "2026-08-07T17:24:04.481Z",
   "activeFandom": {
     "name": "Real Person Fiction",
@@ -10,7 +10,7 @@
       "from": "2008-01-01",
       "to": "2008-12-31"
     },
-    "lastPage": 39
+    "lastPage": 0
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -154,7 +154,7 @@
   ],
   "stats": {
     "totalScraped": 1750543,
-    "totalFailed": 1940,
+    "totalFailed": 1941,
     "totalPages": 459524,
     "sessionScraped": 0
   }
