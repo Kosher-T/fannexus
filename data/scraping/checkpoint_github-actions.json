@@ -1,16 +1,16 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-09-09T13:43:12.462Z",
-  "lastActivity": "2026-09-09T18:33:12.781Z",
+  "startedAt": "2026-09-10T00:18:11.818Z",
+  "lastActivity": "2026-09-10T05:08:13.134Z",
   "activeFandom": {
     "name": "Real Person Fiction",
     "url": "https://archiveofourown.org/tags/Real%20Person%20Fiction/works",
     "category": "Celebrities & Real People",
     "dateChunk": {
-      "from": "2019-01-01",
-      "to": "2019-12-31"
+      "from": "2021-01-01",
+      "to": "2021-12-31"
     },
-    "lastPage": 1484
+    "lastPage": 3457
   },
   "completedFandoms": [
     "https://archiveofourown.org/tags/%EF%BC%82%E9%9B%A8%E6%AC%A3%E4%B8%8E%E5%8D%97%E6%B3%BD%E7%9A%84%E7%88%B1%E6%83%85%EF%BC%82/works",
@@ -153,9 +153,9 @@
     "https://archiveofourown.org/tags/Archie%20Comics%20*a*%20Related%20Fandoms/works"
   ],
   "stats": {
-    "totalScraped": 1750619,
-    "totalFailed": 2296,
-    "totalPages": 581222,
-    "sessionScraped": 1
+    "totalScraped": 1750624,
+    "totalFailed": 2298,
+    "totalPages": 584679,
+    "sessionScraped": 5
   }
 }
