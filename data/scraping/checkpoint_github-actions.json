@@ -1,6 +1,6 @@
 {
   "runnerId": "github-actions",
-  "startedAt": "2026-10-17T05:46:01.143Z",
+  "startedAt": "2026-10-17T12:40:39.582Z",
   "lastActivity": "2026-10-17T01:46:14.057Z",
   "activeFandom": {
     "name": "Real Person Fiction",
@@ -154,7 +154,7 @@
   ],
   "stats": {
     "totalScraped": 1750628,
-    "totalFailed": 2790,
+    "totalFailed": 2792,
     "totalPages": 627200,
     "sessionScraped": 0
   }
